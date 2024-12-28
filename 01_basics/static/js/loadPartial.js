@@ -6,6 +6,7 @@
  * @returns {Promise<void>}
  */
 export async function loadPartial(id, filePath) {
+    console.log(`loadPartial: Loading content for #${id} from ${filePath}`);
     const element = document.getElementById(id);
 
     // Fetch the content from the provided file path
@@ -18,12 +19,8 @@ export async function loadPartial(id, filePath) {
 
     // Extract text content from the response
     const content = await response.text();
+    console.log(`loadPartial: Successfully loaded content for #${id} from ${filePath}`);
 
     // Insert the fetched content into the specified DOM element
     element.innerHTML = content;
 }
-
-// Load partials
-loadPartial('header', 'partials/header.html');
-loadPartial('main', 'partials/home.html');
-loadPartial('footer', 'partials/footer.html');

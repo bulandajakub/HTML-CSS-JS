@@ -6,21 +6,28 @@
  * @property {string} description - The meta description of the page
  */
 export function updateHead(sectionName, sections) {
-    const sectionData = sections[sectionName];
+    console.log(`updateHead: Updating head for section "${sectionName}"`);
 
+    // Check if the section exists
+    const sectionData = sections[sectionName];
     if (!sectionData) {
-        console.error(`Section "${sectionName}" not found.`);
+        console.error(`updateHead: Section "${sectionName}" not found.`);
         return;
     }
 
-    const { title, description } = sectionData;
+    // Destructure title and description with fallback values
+    const { title = 'HTML Basics', description = 'This page contains all the things I am learning how to create as I learn HTML.' } = sectionData;
 
     // Set the title of the page
-    document.title = title || 'HTML Basics';
+    document.title = title;
+    console.log(`updateHead: Updated page title to "${title}"`);
 
     // Set the meta description of the page
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-        metaDescription.content = description || 'This page contains all the things I am learning how to create as I learn HTML.';
+        metaDescription.content = description;
+        console.log(`updateHead: Updated meta description to "${description}"`);
+    } else {
+        console.warn('updateHead: Meta description element not found.');
     }
 }
