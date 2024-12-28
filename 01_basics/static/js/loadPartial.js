@@ -25,5 +25,5 @@ export async function loadPartial(id, filePath) {
 
 // Load partials
 loadPartial('header', 'partials/header.html');
-loadPartial('main', 'partials/main.html');
+loadPartial('main', 'partials/home.html');
 loadPartial('footer', 'partials/footer.html');

@@ -16,20 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = {
         home: {
             title: 'HTML Basics',
-            description: 'This page contains all the things I am learning how to create as I learn HTML.'
+            description: 'This page contains all the things I am learning how to create as I learn HTML.',
         },
         about: {
             title: 'About Me',
-            description: 'Learn more about this website and its creator',
+            description: 'Learn more about this website and its creator.',
         },
-        // Add more sections as needed    
+        contact: {
+            title: 'Contact',
+            description: 'Get in touch with me.',
+        },
     };
 
     // Attach event listeners to navigation links
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach((link) => {
-        link.addEventListener('click', (event) => {
+    document.body.addEventListener('click', (event) => {
+        if (event.target.classList.contains('nav-link')) {
             handleNavigation(event, sections);
-        });
+        }
     });
 });

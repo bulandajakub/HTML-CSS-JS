@@ -1,9 +1,9 @@
-import { loadPartial } from "./loadPartial.js";
-import './eventHandlers.js'
+import { loadPartial } from './loadPartial.js';
+import './eventHandlers.js';
 
 // Load partials into the page
 document.addEventListener('DOMContentLoaded', () => {
     loadPartial('header', 'partials/header.html');
-    loadPartial('main', 'partials/main.html');
+    loadPartial('main', 'partials/home.html');
     loadPartial('footer', 'partials/footer.html');
-})
+});
