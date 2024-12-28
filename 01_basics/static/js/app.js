@@ -6,11 +6,7 @@ console.log('app.js: Starting to load initial content');
 // Load the initial partials
 document.addEventListener('DOMContentLoaded', () => {
     console.log('app.js: DOMContentLoaded triggered');
-    loadPartial('header', 'partials/header.html');
-    loadPartial('main', 'partials/home.html');
-    loadPartial('footer', 'partials/footer.html');
 
-    // Define sections for navigation
     const sections = {
         home: {
             title: 'HTML Basics',
@@ -26,12 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     };
 
+    // Get the current section from the URL hash or fallback to 'home'
+    const hash = window.location.hash.slice(1) || 'home';
+    console.log(`app.js: Loading section "${hash}" from URL hash`);
+    loadPartial('header', 'partials/header.html');
+    loadPartial('main', `partials/${hash}.html`);
+    loadPartial('footer', 'partials/footer.html');
+
     // Attach event listeners to navigation links (after header is loaded)
     document.getElementById('header').addEventListener('click', (event) => {
         const navLink = event.target.closest('.nav-link');
         if (navLink) {
             event.preventDefault();
+            const sectionName = navLink.dataset.section;
             handleNavigation(event, sections);
+
+            // Update the URL hash without reloading the page
+            window.location.hash = sectionName;
         }
     });
 });
