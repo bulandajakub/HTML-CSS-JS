@@ -31,9 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const navLink = event.target.closest('.nav-link');
         if (navLink) {
             event.preventDefault();
-            const sectionName = navLink.dataset.section;
             handleNavigation(event, sections);
-            loadPartial('main', `partials/${sectionName}.html`);
         }
     });
 });
