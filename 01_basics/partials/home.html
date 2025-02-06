@@ -1,107 +1,201 @@
 <!-- I can check heading hierarchy using outline HTML5 extension in browser -->
 <h1>My Goals for the Year</h1>
 
-<hr>
+<hr />
 
 <nav>
-    <ul>
-        <li>
-            <a href="#html">The HTML</a>
-        </li>
-        <li>
-            <a href="#vacation">Vacation</a>
-        </li>
-    </ul>
+  <ul>
+    <li>
+      <a href="#html">The HTML</a>
+    </li>
+    <li>
+      <a href="#vacation">Vacation</a>
+    </li>
+  </ul>
 </nav>
 
-<hr> <!-- horizontal rule - line across page -->
+<hr />
+<!-- horizontal rule - line across page -->
 <!-- div and span have no semantic meaning -->
 
-<article id="html"> <!-- article - independent content, section - related content -->
-    <h2>and there</h2>
-    <p>I am a paragraph</p>
-    <!-- width & height attributes not required but recommended, after naming just one, second will be calculated keeping aspect ratio -->
+<article id="html">
+  <!-- article - independent content, section - related content -->
+  <h2>and there</h2>
+  <p>I am a paragraph</p>
+  <!-- width & height attributes not required but recommended, after naming just one, second will be calculated keeping aspect ratio -->
 
-    <section>
-        <img src="static/images/html_logo_300x300.png" alt="HTML5 logo" title="HTML5 logo" width="300">
-        <figure>
-            <figcaption>
-                An Example of HTML5 code
-            </figcaption>
-            <p>
-                <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
-            </p>
-        </figure>
-    </section>
+  <section>
+    <img
+      src="static/images/html_logo_300x300.png"
+      alt="HTML5 logo"
+      title="HTML5 logo"
+      width="300"
+    />
+    <figure>
+      <figcaption>An Example of HTML5 code</figcaption>
+      <p>
+        <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
+      </p>
+    </figure>
+  </section>
 
-    <section>
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how...</p>
-        <ol> <!-- ordered list - numbered list -->
-            <li>&nbsp;&nbsp;&nbsp;...I learn more about web dev. <!-- line break --> </li>
-            <li>&nbsp;&nbsp;&nbsp;I check available resources...</li>
-            <li>&nbsp;&nbsp;&nbsp;...then experiment with them.</li>
-            <li>&nbsp;&nbsp;&nbsp;I use resources from <abbr title="Mozilla Developer Network">
-                    <a href="https://developer.mozilla.org/en-US/">MDN</a></abbr></li>
-            <!-- &nbsp; - non-breaking space, <abbr> - abbreviation, <a> - anchor with absolute reference -->
-        </ol>
-        <aside>
-            <details>
-                <summary>
-                    Do You know <mark>how many hours</mark> I code per week?
-                </summary>
-                <p>Do I start at <time datetime="08:00">8 am</time>, finish at <time datetime="20:00">8 pm</time> and write code for <time datetime="PT12H">12 hours every day?</time></p>
-                <p>I dunno either :<</p>
-            </details>
-        </aside>
-    </section>
+  <section>
+    <h3>My Daily Schedule</h3>
+    <p>Let me tell you how...</p>
+    <ol>
+      <!-- ordered list - numbered list -->
+      <li>
+        &nbsp;&nbsp;&nbsp;...I learn more about web dev.
+        <!-- line break -->
+      </li>
+      <li>&nbsp;&nbsp;&nbsp;I check available resources...</li>
+      <li>&nbsp;&nbsp;&nbsp;...then experiment with them.</li>
+      <li>
+        &nbsp;&nbsp;&nbsp;I use resources from
+        <abbr title="Mozilla Developer Network">
+          <a href="https://developer.mozilla.org/en-US/">MDN</a></abbr
+        >
+      </li>
+      <!-- &nbsp; - non-breaking space, <abbr> - abbreviation, <a> - anchor with absolute reference -->
+    </ol>
+
+    <aside>
+      <details>
+        <summary>
+          Do You know <mark>how many hours</mark> I code per week?
+        </summary>
+        <p>
+          Do I start at <time datetime="08:00">8 am</time>, finish at
+          <time datetime="20:00">8 pm</time> and write code for
+          <time datetime="PT12H">12 hours every day?</time>
+        </p>
+        <p>I dunno either :<</p>
+      </details>
+    </aside>
+
+    <br />
+
+    <table>
+      <caption>
+        My daily schedule
+      </caption>
+
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th scope="col">Time</th>
+          <th scope="col">Activity</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Morning</th>
+          <td>
+            <time datetime="08:00">8am</time>-<time datetime="12:00">12pm</time>
+          </td>
+          <td>Coding</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Break</th>
+          <td>
+            <time datetime="12:00">12pm</time>-<time datetime="14:00">2pm</time>
+          </td>
+          <td>Me? Just hanging around</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Afternoon</th>
+          <td>
+            <time datetime="14:00">2pm</time>-<time datetime="20:00">8pm</time>
+          </td>
+          <td>Coding</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Evening</th>
+          <td rowspan="2">All other times</td>
+          <td>Free time</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Night</th>
+          <td>Sleep</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">And that's what I do every day... obviously</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
 </article>
 
-<hr>
+<hr />
 
 <article id="vacation">
-    <h2>I am also planning a vacation</h2>
-    <p>Maybe in this life. <em>Beach and sun would be nice.</em></p> <!-- <em> - emphasis tag -->
+  <h2>I am also planning a vacation</h2>
+  <p>Maybe in this life. <em>Beach and sun would be nice.</em></p>
+  <!-- <em> - emphasis tag -->
 
-    <section>
-        <h3>Place i'd like to visit</h3>
-        <ul> <!-- unordered list - bullet list -->
-            <li>
-                <p>I've heard good things about the Carribbean</p>
-                <figure>
-                    <img src="static/images/caribbean.jpg" alt="Caribbean beach" title="I'd like to visit" width="400" height="225" loading="lazy"> <!-- lazy for images below the fold (load when visible) -->
-                    <figcaption>
-                        Caribbean beach
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <p>I've heard good things about going here:</p>
-                <address> <!-- address tag - for contact info -->
-                    Margaritaville Island Reserve Riviera Cancún<br>
-                    Bahia Petempich Puerto Morelos, Mexico<br>
-                    Colonia Morelos, México 77580
-                </address>
-                <figure>
-                    <img src="static/images/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'clock somewhere" width="400" height="267" loading="lazy">
-                    <figcaption>
-                        A Caribbean Vacation Image
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-    </section>
+  <section>
+    <h3>Place i'd like to visit</h3>
+    <ul>
+      <!-- unordered list - bullet list -->
+      <li>
+        <p>I've heard good things about the Carribbean</p>
+        <figure>
+          <img
+            src="static/images/caribbean.jpg"
+            alt="Caribbean beach"
+            title="I'd like to visit"
+            width="400"
+            height="225"
+            loading="lazy"
+          />
+          <!-- lazy for images below the fold (load when visible) -->
+          <figcaption>Caribbean beach</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>I've heard good things about going here:</p>
+        <address>
+          <!-- address tag - for contact info -->
+          Margaritaville Island Reserve Riviera Cancún<br />
+          Bahia Petempich Puerto Morelos, Mexico<br />
+          Colonia Morelos, México 77580
+        </address>
+        <figure>
+          <img
+            src="static/images/vacation.jpg"
+            alt="Cancun Vacation"
+            title="It's 5 o'clock somewhere"
+            width="400"
+            height="267"
+            loading="lazy"
+          />
+          <figcaption>A Caribbean Vacation Image</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
 
-    <section>
-        <h3>Places I want to avoid</h3>
-        <dl> <!-- description list - list of terms and definitions -->
-            <dt>North Pole</dt> <!-- definition term -->
-            <dd>I heard this is <strong>cold</strong>!</dd> <!-- definition description -->
+  <section>
+    <h3>Places I want to avoid</h3>
+    <dl>
+      <!-- description list - list of terms and definitions -->
+      <dt>North Pole</dt>
+      <!-- definition term -->
+      <dd>I heard this is <strong>cold</strong>!</dd>
+      <!-- definition description -->
 
-            <dt>South Pole</dt>
-            <dd>This is <strong>too cold</strong>!</dd>
+      <dt>South Pole</dt>
+      <dd>This is <strong>too cold</strong>!</dd>
 
-            <p>Anywhere cold. <strong>No way!</strong></p> <!-- <strong> - strong tag - bold -->
-        </dl>
-    </section>
+      <p>Anywhere cold. <strong>No way!</strong></p>
+      <!-- <strong> - strong tag - bold -->
+    </dl>
+  </section>
 </article>
