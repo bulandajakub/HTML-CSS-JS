@@ -1,16 +1,32 @@
 <section class="contact">
-    <h1>Contact me at</h1>
+  <h1>Contact me at</h1>
 
-    <ul>
-        <li>
-            <!-- not advised to use email links -->
-            My email adress <a href="mailto:random@gmail.com">send</a>
-        </li>
-        <li>
-            My phone number <a href="tel:+11111111111">call</a>
-        </li>
-        <li>
-            Open <a href="https://www.google.com/" target="_blank">Google</a> in a new tab.
-        </li>
-    </ul>
+  <ul>
+    <li>
+      <!-- not advised to use email links -->
+      My email adress <a href="mailto:random@gmail.com">send</a>
+    </li>
+    <li>My phone number <a href="tel:+11111111111">call</a></li>
+    <li>
+      Open <a href="https://www.google.com/" target="_blank">Google</a> in a new
+      tab.
+    </li>
+  </ul>
+
+  <form action="https://httpbin.org/get" method="get"></form>
+  <label for="firstName">Fisrst Name:</label>
+  <input
+    type="text"
+    name="firstName"
+    id="firstName"
+    placeholder="Optimus"
+    autocomplete="on"
+    required
+    autofocus
+  />
+  <!-- name - the name of the form data to send to the server -->
+  <!-- autocomplete on will suggest values based on previous entries -->
+  <!-- required makes the field mandatory -->
+  <!-- autofocus will focus this element on page load -->
+  <!-- id is used in the for attribute of the label -->
 </section>
