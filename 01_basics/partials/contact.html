@@ -13,20 +13,160 @@
     </li>
   </ul>
 
-  <form action="https://httpbin.org/get" method="get"></form>
-  <label for="firstName">Fisrst Name:</label>
-  <input
-    type="text"
-    name="firstName"
-    id="firstName"
-    placeholder="Optimus"
-    autocomplete="on"
-    required
-    autofocus
-  />
-  <!-- name - the name of the form data to send to the server -->
-  <!-- autocomplete on will suggest values based on previous entries -->
-  <!-- required makes the field mandatory -->
-  <!-- autofocus will focus this element on page load -->
-  <!-- id is used in the for attribute of the label -->
+  <form action="https://httpbin.org/get" method="get">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <!-- name - the name of the form data to send to the server -->
+      <!-- id is used in the for attribute of the label -->
+      <!-- autocomplete on will suggest values based on previous entries -->
+      <!-- required makes the field mandatory -->
+      <!-- autofocus will focus this element on page load, only one per page -->
+      <p>
+        <label for="firstName">Fisrst Name:</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Optimus"
+          autocomplete="on"
+          required
+          autofocus
+        />
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Prime"
+          autocomplete="on"
+          required
+        />
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Ultron.sucks123"
+          required
+        />
+      </p>
+      <p>
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="123456789"
+          pattern="d{6}d{4}"
+        />
+      </p>
+      <p>
+        <label for="decade">Favorite Decade:</label>
+        <input
+          type="number"
+          name="decade"
+          min="1950"
+          max="2025"
+          step="10"
+          value="1970"
+        />
+      </p>
+      <!-- <p>
+        <label for="browser">Favorite Browser:</label>
+        <select type="text" name="browser" id="browser" multiple size="6">
+          <optgroup label="Popular Browsers">
+            <option value="Chrome" selected>Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Edge">Edge</option>
+          </optgroup>
+          <optgroup label="Less Popular Browsers">
+            <option value="Safari">Safari</option>
+            <option value="Opera">Opera</option>
+            <option value="Vivaldi">Vivaldi</option>
+            <option value="Other">Other</option>
+          </optgroup>
+        </select>
+      </p> -->
+      <p>
+        <label for="browser">Favorite Browser:</label>
+        <input type="text" name="browser" id="browser" list="browsers" />
+        <datalist id="browsers">
+          <option value="Chrome">Chrome</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Edge">Edge</option>
+          <option value="Safari">Safari</option>
+          <option value="Opera">Opera</option>
+          <option value="Vivaldi">Vivaldi</option>
+          <option value="Other">Other</option>
+        </datalist>
+      </p>
+    </fieldset>
+
+    <br />
+    <fieldset>
+      <legend>What is your favorite food</legend>
+      <p>
+        <input type="radio" name="food" value="Pizza" id="pizza" />
+        <label for="pizza">pizza</label>
+      </p>
+      <p>
+        <input type="radio" name="food" value="tacos" id="tacos" />
+        <label for="pizza">tacos</label>
+      </p>
+      <p>
+        <input type="radio" name="food" value="other" id="other" />
+        <label for="pizza">other</label>
+      </p>
+    </fieldset>
+
+    <br />
+    <fieldset>
+      <legend>Do you have pets?</legend>
+      <p>
+        <input type="checkbox" name="pets" value="dog" id="dog" />
+        <label for="dog">dog</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" value="cat" id="cat" />
+        <label for="cat">cat</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" value="otherPet" id="otherPet" />
+        <label for="oterPet">other</label>
+      </p>
+    </fieldset>
+
+    <br />
+    <fieldset>
+      <legend>Send me a note</legend>
+      <label for="message">Your message:</label>
+      <br />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Type your message here"
+      ></textarea>
+    </fieldset>
+
+    <br />
+    <!-- 'send' button will submit the form using the default action and method (GET)
+     we can see the data in the URL -->
+    <button type="submit">send</button>
+    <!-- 'post' button will submit the form using the POST method
+    personal data should be sent that way -->
+    <button
+      type="submit"
+      formaction="https://httpbin.org/post"
+      formmethod="post"
+    >
+      post
+    </button>
+    <button type="clear">clear</button>
+  </form>
 </section>
