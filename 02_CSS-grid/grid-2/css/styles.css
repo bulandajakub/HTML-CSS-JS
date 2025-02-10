@@ -26,6 +26,7 @@ body {
 #content div {
   background: #3bbced;
   padding: 30px;
+  place-content: center;
 }
 
 #content div:nth-child(even) {
