@@ -20,22 +20,14 @@ This project is a collection of simple web pages created while learning HTML, CS
 ## 02_CSS-grid ##  
 This project contains multiple **CSS Grid layouts**, each designed to showcase different aspects of grid-based design. The goal is to practice grid properties and learn how to build flexible and responsive layouts using CSS Grid.  
 
----
-
 ### grid-1 ###  
 A simple **3x3 grid** layout demonstrating the fundamental concepts of CSS Grid.  
-
----
 
 ### grid-2 ###  
 A layout demonstrating how **grid items can span multiple columns and rows**.  
 
----
-
 ### grid-3 ###  
 This example explores **nesting grids inside grid items** to create more complex layouts.  
-
----
 
 ### grid-4 ###  
 This layout focuses on **precise alignment and positioning** of grid items using CSS Grid properties.  
