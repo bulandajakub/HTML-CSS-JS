@@ -1,7 +1,7 @@
 # HTML-CSS-JS  
 A collection of simple projects created to practice and learn HTML, CSS, and JavaScript. This repository includes various small exercises, UI components, and interactive elements to improve frontend development skills.  
 
-### Projects list  
+# Projects list  
 
 ## 01_Basics ##  
 This project is a collection of simple web pages created while learning HTML, CSS, and JavaScript. The main focus is on structuring HTML properly, applying CSS for styling, and using JavaScript to enhance interactivity.  
