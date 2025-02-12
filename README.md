@@ -26,7 +26,7 @@ This project contains multiple **CSS Grid layouts**, each designed to showcase d
 
 ---
 
-### 02.01_Basic Grid Layout ###  
+### grid-1 ###  
 A simple **3x3 grid** layout demonstrating the fundamental concepts of CSS Grid.  
 
 **Features:**  
@@ -39,7 +39,7 @@ A simple **3x3 grid** layout demonstrating the fundamental concepts of CSS Grid.
 
 ---
 
-### 02.02_Column & Row Spanning ###  
+### grid-2 ###  
 A layout demonstrating how **grid items can span multiple columns and rows**.  
 
 **Features:**  
@@ -52,7 +52,7 @@ A layout demonstrating how **grid items can span multiple columns and rows**.
 
 ---
 
-### 02.03_Nested Grids ###  
+### grid-3 ###  
 This example explores **nesting grids inside grid items** to create more complex layouts.  
 
 **Features:**  
@@ -65,7 +65,7 @@ This example explores **nesting grids inside grid items** to create more complex
 
 ---
 
-### 02.04_Alignment & Justification ###  
+### grid-4 ###  
 This layout focuses on **precise alignment and positioning** of grid items using CSS Grid properties.  
 
 **Features:**  
