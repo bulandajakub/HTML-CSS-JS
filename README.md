@@ -33,6 +33,6 @@ This example explores **nesting grids inside grid items** to create more complex
 This layout focuses on **precise alignment and positioning** of grid items using CSS Grid properties.
 
 ### grid-5 ###  
-A **12-column CSS Grid layout** that structures a webpage with a header, main content, section, aside, navigation, and footer. The layout also includes a **toggleable grid overlay** for better visualization of the structure.
+A **12-column CSS Grid layout** which also includes a **toggleable grid overlay** for better visualization of the structure.
 
 ---
