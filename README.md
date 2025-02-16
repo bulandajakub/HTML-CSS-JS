@@ -36,6 +36,6 @@ This layout focuses on **precise alignment and positioning** of grid items using
 A **12-column CSS Grid layout** which also includes a **toggleable grid overlay** for better visualization of the structure.
 
 ### grid-6 ### 
-This **mosaic layout** consists of five distinct grid items, each spanning multiple rows and columns, creating a visually appealing mosaic effect. The entire grid is rotated by 45 degrees and scaled down, giving it a unique, artistic look.
+This layout consists of five distinct grid items, each spanning multiple rows and columns, creating a visually appealing **mosaic effect**. The entire grid is rotated by 45 degrees and scaled down, giving it a unique, artistic look.
 
 ---
