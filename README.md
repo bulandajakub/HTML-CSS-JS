@@ -50,6 +50,9 @@ This layout consists of five distinct grid items, each spanning multiple rows an
 
 ### grid-7
 
-This grid-based page structure follows a **semantic layout**. Using **grid-template-areas**, each element is placed in a visually balanced manner, ensuring flexibility and responsiveness.
+This **responsive grid-based layout** follows a structured **semantic arrangement**.
+
+- 📱 **On smaller screens:** The **footer moves above the main content**, while `aside` and `nav` are placed below.
+- 💻 **For wider screens (`min-width: 760px`)** a **two-column structure** is applied, positioning `aside` and `nav` alongside the `main` content for better usability.
 
 ---
