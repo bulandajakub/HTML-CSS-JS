@@ -23,11 +23,33 @@ body {
   margin: 0 auto;
   grid-template-areas:
     "header header header header"
-    "aside . main main"
-    "nav . main main"
+    "footer footer footer footer"
+    "main main main main"
+    "main main main main"
+    "aside aside nav nav"
     "section section section section"
-    "section section section section"
-    "footer footer footer footer";
+    "section section section section";
+}
+
+@media screen and (min-width: 760px) {
+  #content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 0.75rem;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-areas:
+      "header header header header"
+      /* "aside . main main"
+      "nav . main main" */
+      /* The dot (.) is a "grid item placeholder" that ensures the 'nav' element is placed in the correct position even if the 'aside' element is not present in the DOM. This is useful for responsive design when the 'aside' element is hidden on smaller screens. */
+      "aside aside main main"
+      "nav nav main main"
+      "section section section section"
+      "section section section section"
+      "footer footer footer footer";
+  }
 }
 
 #content > * {
