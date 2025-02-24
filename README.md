@@ -56,3 +56,18 @@ This **responsive grid-based layout** follows a structured **semantic arrangemen
 - 💻 **For wider screens (`min-width: 760px`)** a **two-column structure** is applied, positioning `aside` and `nav` alongside the `main` content for better usability.
 
 ---
+
+# 03_CSS-animation
+
+This project is a collection of simple animations created while learning CSS animations and transitions. The main focus is on using **CSS keyframes**, **transitions**, and **timing functions** to create smooth and engaging effects.
+
+Based on the YouTube playlist:  
+📌 [The Net Ninja - CSS Animations](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5)
+
+### Features:
+
+- Various **CSS animations** and **effects**
+- Smooth **transitions** for interactive elements
+- Keyframe animations with different easing functions
+
+---
