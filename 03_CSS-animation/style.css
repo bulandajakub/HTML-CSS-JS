@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+
 body {
   background: lightblue;
   text-align: center;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -11,4 +17,20 @@ body {
 
 img {
   transform: translate(-200px, 200px) scale(0.75) rotate(10deg);
+}
+
+.circle {
+  background: pink;
+  color: aliceblue;
+  width: max-content;
+  padding: 10px 20px;
+  margin: 60px auto;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.circle:hover {
+  background: salmon;
+  transform: scale(1.2);
 }
