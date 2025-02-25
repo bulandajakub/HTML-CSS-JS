@@ -49,18 +49,21 @@ body {
   left: 0;
   /* animation-name: drive;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both; */
-  animation: drive 3s both infinite;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  animattion-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+  animation: drive 3s both ease-in-out infinite;
 }
 
 /*// KEYFRAMES //*/
 @keyframes drive {
   from {
-    transform: translateX(0);
+    transform: translateX(-200px);
   }
 
   to {
-    transform: translateX(500px);
+    transform: translateX(1000px);
   }
 }
