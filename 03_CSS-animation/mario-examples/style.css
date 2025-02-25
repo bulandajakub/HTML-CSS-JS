@@ -49,12 +49,20 @@ body {
   left: 0;
   /* animation-name: drive;
   animation-duration: 3s;
-  animation-fill-mode: both;
   animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-direction: reverse;
   animattion-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite; */
   animation: drive 3s both ease-in-out infinite;
+}
+
+.luigi {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  animation: drive 3s 1s both alternate-reverse ease-in-out infinite;
 }
 
 /*// KEYFRAMES //*/
