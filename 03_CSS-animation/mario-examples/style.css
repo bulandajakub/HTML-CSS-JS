@@ -81,8 +81,7 @@ body {
   top: 150px;
   opacity: 0.75;
   z-index: 2;
-  animation: clouds 15s reverse cubic-bezier(0, 0.5, 1, 0.5) infinite;
-  animation: clouds 15s reverse linear infinite 3s;
+  animation: clouds 14s reverse ease infinite;
 }
 
 .cloud:nth-child(2) {
@@ -90,8 +89,7 @@ body {
   top: 50px;
   opacity: 0.5;
   z-index: 1;
-  animation: clouds 15s reverse linear infinite;
-  animation: clouds 15s reverse cubic-bezier(0, 0.5, 1, 0.5) infinite 4s;
+  animation: clouds 14s reverse ease-in-out infinite;
 }
 
 /*// KEYFRAMES //*/
