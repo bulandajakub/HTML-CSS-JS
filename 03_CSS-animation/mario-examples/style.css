@@ -43,19 +43,26 @@ body {
 }
 
 /*// ELEMENTS TO ANIMATE //*/
-.mario {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  /* animation-name: drive;
+
+/* animation-name: drive;
   animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: both;
   animation-direction: reverse;
   animattion-iteration-count: infinite;
+  
   animation-timing-function: ease-in-out;
+  cool sites for setting timing functions (cubic-bezier):
+  http://easings.net/
+  https://cubic-bezier.com
+
   animation-iteration-count: infinite; */
-  animation: drive 3s both ease-in-out infinite;
+
+.mario {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 2s both linear infinite;
 }
 
 .luigi {
