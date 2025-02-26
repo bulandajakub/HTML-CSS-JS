@@ -62,20 +62,52 @@ body {
   position: absolute;
   top: -40px;
   left: 0;
-  animation: drive 2s both linear infinite;
+  animation: drive 2s 0.3s both linear infinite;
 }
 
 .luigi {
   position: absolute;
   top: 40px;
   left: 0;
-  animation: drive 3s 1s both alternate-reverse ease-in-out infinite;
+  animation: drive 2s both cubic-bezier(0, 0.1, 0.7, 0.4) infinite;
+}
+
+.cloud {
+  position: absolute;
+}
+
+.cloud:nth-child(1) {
+  width: 250px;
+  top: 150px;
+  opacity: 0.75;
+  z-index: 2;
+  animation: clouds 15s reverse cubic-bezier(0, 0.5, 1, 0.5) infinite;
+  animation: clouds 15s reverse linear infinite 3s;
+}
+
+.cloud:nth-child(2) {
+  width: 200px;
+  top: 50px;
+  opacity: 0.5;
+  z-index: 1;
+  animation: clouds 15s reverse linear infinite;
+  animation: clouds 15s reverse cubic-bezier(0, 0.5, 1, 0.5) infinite 4s;
 }
 
 /*// KEYFRAMES //*/
 @keyframes drive {
   from {
     transform: translateX(-20vw);
+  }
+
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes clouds {
+  from {
+    transform: translateX(-50vw);
   }
 
   to {
