@@ -68,10 +68,10 @@ body {
 /*// KEYFRAMES //*/
 @keyframes drive {
   from {
-    transform: translateX(-200px);
+    transform: translateX(-20vw);
   }
 
   to {
-    transform: translateX(1000px);
+    transform: translateX(100vw);
   }
 }
