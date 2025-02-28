@@ -69,7 +69,17 @@ body {
   position: absolute;
   top: 40px;
   left: 0;
-  animation: drive 2s both cubic-bezier(0, 0.1, 0.7, 0.4) infinite;
+  animation: driveAndJump 2s cubic-bezier(0, 0.1, 0.7, 0.4) infinite;
+  z-index: 1;
+}
+
+.banana {
+  position: absolute;
+  bottom: 60px;
+  left: 25%; /* adjust based on where you want it */
+  width: 50px;
+  height: auto;
+  animation: spin 2s linear infinite;
 }
 
 .cloud {
@@ -110,5 +120,28 @@ body {
 
   to {
     transform: translateX(100vw);
+  }
+}
+
+@keyframes driveAndJump {
+  0% {
+    transform: translateX(-20vw);
+    top: 40px;
+  }
+  20% {
+    top: 40px;
+    transform: translateX(0vw) rotate(0deg);
+  }
+  40% {
+    top: 0px;
+    transform: translateX(15vw) rotate(-180deg);
+  }
+  50% {
+    top: 40px;
+    transform: translateX(30vw) rotate(-360deg);
+  }
+  100% {
+    transform: translateX(100vw) rotate(-360deg);
+    top: 40px;
   }
 }
