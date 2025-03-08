@@ -64,10 +64,16 @@ This project is a collection of simple animations created while learning CSS ani
 Based on the YouTube playlist:  
 📌 [The Net Ninja - CSS Animations](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5)
 
-### Features:
+#### 🏎️ **luigiStuntman**
 
-- Various **CSS animations** and **effects**
-- Smooth **transitions** for interactive elements
-- Keyframe animations with different easing functions
+- A fun animation where **Luigi performs a backflip** while driving.
+- Uses **CSS keyframes** to animate movement and rotation.
+- Includes background elements like **clouds, grass, and a road** for a complete scene.
+
+#### 🛍️ **webThings**
+
+- **Pop-up Animation:** A stylish **swinging pop-up** with email input.
+- **Basket Animation:** A **smooth zoom effect** when adding products to the basket.
+- Uses **CSS keyframes** and **JavaScript/jQuery** for interactive effects.
 
 ---
