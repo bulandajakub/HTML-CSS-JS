@@ -76,4 +76,10 @@ Based on the YouTube playlist:
 - **Basket Animation:** A **smooth zoom effect** when adding products to the basket.
 - Uses **CSS keyframes** and **JavaScript/jQuery** for interactive effects.
 
+### 🎴 **flippingCards**
+
+- A **hover-based card flip animation** using **CSS keyframes**.
+- Each card has a **front and back face**, rotating on the Y-axis.
+- Uses **timing functions** for smooth flipping effects.
+
 ---
