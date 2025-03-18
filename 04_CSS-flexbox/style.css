@@ -20,23 +20,28 @@ body {
 
 .box {
   height: 100px;
-  min-width: 100px;
-  /* flex-grow: 1; */
+  width: 320px;
+  /* flex-grow: 1;
+  can be used for all elements*/
 }
 
 .one {
   background: rosybrown;
-  flex-grow: 2;
+  flex-grow: 2; 
+  /* or for single one */
+  /* flex-shrink: 1; */
 }
 
 .two {
   background: mediumpurple;
   flex-grow: 3;
+  /* flex-shrink: 2; */
 }
 
 .three {
   background: lightskyblue;
   flex-grow: 1;
+  /* flex-shrink: 4; */
 }
-
-/* these flex-grow values could be used for 12 columns layout */
+/* 2, 3, 1 flex-grow values could be used for 12 columns layout */
+/* flex-shring barely used */
