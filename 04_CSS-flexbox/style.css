@@ -21,16 +21,22 @@ body {
 .box {
   height: 100px;
   min-width: 100px;
+  /* flex-grow: 1; */
 }
 
 .one {
   background: rosybrown;
+  flex-grow: 2;
 }
 
 .two {
   background: mediumpurple;
+  flex-grow: 3;
 }
 
 .three {
   background: lightskyblue;
+  flex-grow: 1;
 }
+
+/* these flex-grow values could be used for 12 columns layout */
