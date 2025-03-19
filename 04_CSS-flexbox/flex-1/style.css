@@ -1,0 +1,47 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: rgb(37, 41, 41);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: rgb(20, 20, 20);
+}
+
+.box {
+  height: 100px;
+  width: 320px;
+  /* flex-grow: 1;
+  can be used for all elements*/
+}
+
+.one {
+  background: rosybrown;
+  flex-grow: 2; 
+  /* or for single one */
+  /* flex-shrink: 1; */
+}
+
+.two {
+  background: mediumpurple;
+  flex-grow: 3;
+  /* flex-shrink: 2; */
+}
+
+.three {
+  background: lightskyblue;
+  flex-grow: 1;
+  /* flex-shrink: 4; */
+}
+/* 2, 3, 1 flex-grow values could be used for 12 columns layout */
+/* flex-shring barely used */
