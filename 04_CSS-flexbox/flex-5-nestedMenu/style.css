@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    font-family: "Sour Gummy", serif;
+    margin: 0;
+}
+
+body{
+    background: rgb(20, 20, 20);;
+}
+
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    background: rgb(10, 10, 10);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(150, 150, 150);
+    display: block;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    background-color: rgb(30, 30, 30);
+    color: rgb(245, 245, 245);
+  }
+
+  a.tw {
+    background-image: url('img/tw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+  }
+
+  a.fb {
+    background-image: url('img/fb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+  }
+
+  .social a{
+    text-indent: -9999px;
+  }
+
+@media screen and (min-width: 760px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav li {
+        flex: 1 1 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+}
