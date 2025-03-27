@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
 
-* {
+html {
   font-family: "Sour Gummy", serif;
   margin: 0;
 }
 
 body {
   background: rgb(20, 20, 20);
+  color: rgb(200, 200, 200);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(245, 245, 245);
+  font-family: "Fascinate", serif;
 }
 
 .wrapper {
@@ -69,7 +76,7 @@ nav ul.social li {
   flex: 1 1 0;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   nav ul {
     display: flex;
     justify-content: flex-start;
