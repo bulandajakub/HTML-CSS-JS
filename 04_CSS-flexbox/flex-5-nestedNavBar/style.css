@@ -13,10 +13,6 @@ body {
   padding: 0;
 }
 
-article {
-  padding: 20px;
-}
-
 h1,
 h2,
 h3,
@@ -25,7 +21,7 @@ h5,
 h6 {
   color: rgb(245, 245, 245);
   font-family: "Fascinate", serif;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 p {
@@ -75,13 +71,21 @@ a.fb {
   background-size: 80%;
 }
 
+.social {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
 .social a {
   text-indent: -9999px;
 }
 
-.social {
-  max-width: 80px;
-  margin: 0 auto;
+#blocks {
+  margin: 20px;
+}
+
+section {
+  padding-top: 20px;
 }
 
 nav ul.social {
