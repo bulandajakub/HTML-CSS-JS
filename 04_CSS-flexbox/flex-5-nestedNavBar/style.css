@@ -37,10 +37,12 @@ p {
 nav {
   background: rgb(10, 10, 10);
   margin: 0;
+  padding: 0;
 }
 
 nav ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -50,6 +52,15 @@ nav a {
   color: rgb(150, 150, 150);
   display: block;
   padding: 12px;
+}
+
+nav ul.social {
+  flex: 1 1 0;
+  display: flex;
+}
+
+nav ul.social li {
+  flex: 1 1 0;
 }
 
 nav a:hover {
@@ -73,7 +84,7 @@ a.fb {
 }
 
 .social {
-  max-width: 80px;
+  max-width: 60px;
   margin: 0 auto;
 }
 
@@ -83,6 +94,13 @@ a.fb {
 
 #blocks {
   margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+#blocks.stack {
+  display: block; /* Switch to stacked layout */
 }
 
 section {
@@ -112,25 +130,18 @@ section:hover p {
   color: rgb(225, 225, 225);
 }
 
-nav ul.social {
-  flex: 1 1 0;
-  display: flex;
-}
-
-nav ul.social li {
-  flex: 1 1 0;
-}
-
 @media screen and (min-width: 768px) {
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px;
   }
 
   nav ul {
     display: flex;
     justify-content: flex-start;
+    margin: 0;
   }
 
   nav li {
@@ -139,6 +150,15 @@ nav ul.social li {
 
   .social {
     margin: 0;
-    padding: 12px;
+    padding: 0;
+  }
+
+  section {
+    flex: 0 1 32%;
+    transition: flex-basis 0.2s linear;
+  }
+
+  section.stack {
+    flex: 0 1 100%;
   }
 }
