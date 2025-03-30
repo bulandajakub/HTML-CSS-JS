@@ -155,7 +155,6 @@ section:hover p {
 
   section {
     flex: 0 1 32%;
-    transition: flex-basis 0.2s linear;
   }
 
   section.stack {
