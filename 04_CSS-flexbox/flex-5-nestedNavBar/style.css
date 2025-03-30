@@ -9,11 +9,27 @@ html {
 body {
   background: rgb(20, 20, 20);
   color: rgb(200, 200, 200);
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+article {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: rgb(245, 245, 245);
   font-family: "Fascinate", serif;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .wrapper {
@@ -24,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
   background: rgb(10, 10, 10);
+  margin: 0;
 }
 
 nav ul {
@@ -36,7 +53,7 @@ nav a {
   text-align: center;
   color: rgb(150, 150, 150);
   display: block;
-  padding: 10px;
+  padding: 12px;
 }
 
 nav a:hover {
@@ -77,6 +94,12 @@ nav ul.social li {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   nav ul {
     display: flex;
     justify-content: flex-start;
@@ -86,12 +109,8 @@ nav ul.social li {
     flex: 1 1 0;
   }
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .social {
     margin: 0;
+    padding: 12px;
   }
 }
