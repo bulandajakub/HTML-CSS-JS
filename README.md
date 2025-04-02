@@ -83,3 +83,41 @@ Based on the YouTube playlist:
 - Uses **timing functions** for smooth flipping effects.
 
 ---
+
+## 04_CSS-flexbox
+
+This project contains multiple **CSS Flexbox layouts**, each designed to showcase different aspects of flexible box-based design. The goal is to practice flex properties and learn how to build adaptable and responsive layouts using CSS Flexbox.
+
+### flex-1
+
+A simple **flex container** demonstrating the fundamental concepts of Flexbox, including `flex-grow`, `flex-shrink`, and `flex-basis`.
+
+### flex-2
+
+This example demonstrates **flex-wrap** in CSS Flexbox. The `flex-wrap` property allows items to wrap onto multiple lines instead of shrinking to fit within the container.
+
+### flex-3
+
+This example focuses on **flex-basis** and the shorthand `flex` property in CSS Flexbox. This example also highlights the difference between `width` and `flex-basis`
+
+### flex-4-navBar
+
+This example demonstrates how to create a **responsive navigation bar** using CSS Flexbox.
+
+### flex-5-nestedNavBar
+
+This example expands on the previous navigation bar by introducing a **nested flexbox layout** for a social media menu.
+
+- The navigation bar has two `ul` elements: one for main navigation links and one for social media links.
+- `display: flex;` is applied to `nav` to create a **flexible navigation structure**.
+- The `.social` list is styled as a **flex container**, with each social media item evenly distributed.
+- A **grid-based article section** is included, which switches to a stacked layout using JavaScript.
+- The layout dynamically changes between **grid and stacked formats** using the `stack` class.
+
+This setup demonstrates **nested flexbox usage** and a **hybrid grid-flexbox approach** for responsive design.
+
+### flex-6
+
+This example demonstrates **flexbox ordering**, which allows elements to be visually rearranged **without changing the HTML structure**. This technique is useful for dynamically **changing layouts without modifying the HTML**.
+
+---
