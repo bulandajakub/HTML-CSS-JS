@@ -1,8 +1,15 @@
 /* --- Variables --- */
+/* CSS variables can be edited in the sources tab of the dev tools unlike Sass or Less */
+/* CSS variables can be overridden in media queries */
 
 :root {
+  /* --- Colors --- */
   --primary-color: #3e84da;
   --secondary-color: #daa33e;
+}
+
+.footer .blurbs {
+  --layout-columns: 1fr 1fr 1fr;
 }
 
 /* --- Main styles --- */
@@ -76,7 +83,7 @@ footer {
 
 footer .blurbs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: var(--layout-columns);
   max-width: 760px;
   margin: 0 auto;
   grid-gap: 40px;
@@ -87,4 +94,11 @@ footer .blurb {
   color: #333;
   line-height: 2em;
   font-size: 0.9em;
+}
+
+/* --- Media queries --- */
+@media screen and (max-width: 760px) {
+  footer .blurbs {
+    --layout-columns: 1fr;
+  }
 }
