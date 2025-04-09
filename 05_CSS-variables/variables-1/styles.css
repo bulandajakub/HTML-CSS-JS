@@ -2,13 +2,14 @@
 /* CSS variables can be edited in the sources tab of the dev tools unlike Sass or Less */
 /* CSS variables can be overridden in media queries */
 
+/* --- Colors --- */
 :root {
-  /* --- Colors --- */
   --primary-color: #3e84da;
   --secondary-color: #daa33e;
 }
 
-.footer .blurbs {
+/* --- Layout --- */
+footer .blurbs {
   --layout-columns: 1fr 1fr 1fr;
 }
 
@@ -94,6 +95,14 @@ footer .blurb {
   color: #333;
   line-height: 2em;
   font-size: 0.9em;
+}
+
+.swatches span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 /* --- Media queries --- */
