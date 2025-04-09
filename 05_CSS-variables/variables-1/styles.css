@@ -1,3 +1,10 @@
+/* --- Base styles --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* --- Variables --- */
 /* CSS variables can be edited in the sources tab of the dev tools unlike Sass or Less */
 /* CSS variables can be overridden in media queries */
@@ -9,6 +16,7 @@
 }
 
 /* --- Layout --- */
+nav.main-nav ul,
 footer .blurbs {
   --layout-columns: 1fr 1fr 1fr;
 }
@@ -27,17 +35,17 @@ body {
 }
 
 nav.main-nav ul {
-  width: 600px;
-  margin: 30px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  list-style-type: none;
+  grid-template-columns: var(--layout-columns);
+  gap: 20px;
   padding: 0;
+  list-style-type: none;
   text-align: center;
 }
 
 nav a {
   color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .banner {
@@ -49,17 +57,27 @@ nav a {
 }
 
 .content {
-  width: 760px;
+  width: 100%;
+  max-width: 760px;
   margin: 0 auto;
   position: relative;
   top: -100px;
   padding: 40px 60px;
   background: #fff;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
 }
 
+.content a {
+  color: var(--secondary-color);
+  font-size: 1.2em;
+}
 .spot {
-  margin: 0 40px 80px;
-  text-align: center;
+  flex: 1 1 240px;
+  max-width: 360px;
 }
 
 .spot h2 {
@@ -70,11 +88,6 @@ nav a {
   color: #333;
   line-height: 2em;
   font-size: 0.9em;
-}
-
-.content a {
-  color: var(--secondary-color);
-  font-size: 1.2em;
 }
 
 footer {
@@ -107,7 +120,15 @@ footer .blurb {
 
 /* --- Media queries --- */
 @media screen and (max-width: 760px) {
+  nav.main-nav ul,
   footer .blurbs {
     --layout-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .content {
+    padding: 20px;
+    gap: 20px;
   }
 }
