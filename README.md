@@ -121,3 +121,17 @@ This setup demonstrates **nested flexbox usage** and a **hybrid grid-flexbox app
 This example demonstrates **flexbox ordering**, which allows elements to be visually rearranged **without changing the HTML structure**. This technique is useful for dynamically **changing layouts without modifying the HTML**.
 
 ---
+
+## 05_CSS-variables
+
+This project demonstrates the use of **CSS variables** to create dynamic, reusable styles across the website. The focus is on leveraging **CSS custom properties** for colors, layouts, and other elements to make the design adaptable and easy to maintain.
+
+### variables-1
+
+This project demonstrates how **CSS variables** can be used to manage layout and color schemes. The goal is to create reusable, maintainable styles that can be easily customized across the site. It showcases how to:
+
+- Define **custom properties** for colors and layout.
+- Apply these variables consistently across different elements.
+- Use **media queries** to adjust the layout for responsiveness.
+
+---
