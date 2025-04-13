@@ -13,10 +13,10 @@ This project is a collection of simple web pages created while learning HTML, CS
 
 **Features:**
 
-- Various HTML page structures
-- CSS styling for layout and typography
-- JavaScript script for dynamically loading partial HTML files into the main page
-- This project serves as a practice ground for experimenting with front-end technologies. 🚀
+-   Various HTML page structures
+-   CSS styling for layout and typography
+-   JavaScript script for dynamically loading partial HTML files into the main page
+-   This project serves as a practice ground for experimenting with front-end technologies. 🚀
 
 ---
 
@@ -52,8 +52,8 @@ This layout consists of five distinct grid items, each spanning multiple rows an
 
 This **responsive grid-based layout** follows a structured **semantic arrangement**.
 
-- 📱 **On smaller screens:** The **footer moves above the main content**, while `aside` and `nav` are placed below.
-- 💻 **For wider screens (`min-width: 760px`)** a **two-column structure** is applied, positioning `aside` and `nav` alongside the `main` content for better usability.
+-   📱 **On smaller screens:** The **footer moves above the main content**, while `aside` and `nav` are placed below.
+-   💻 **For wider screens (`min-width: 760px`)** a **two-column structure** is applied, positioning `aside` and `nav` alongside the `main` content for better usability.
 
 ---
 
@@ -62,25 +62,25 @@ This **responsive grid-based layout** follows a structured **semantic arrangemen
 This project is a collection of simple animations created while learning CSS animations and transitions. The main focus is on using **CSS keyframes**, **transitions**, and **timing functions** to create smooth and engaging effects.
 
 Based on the YouTube playlist:  
-📌 [The Net Ninja - CSS Animations](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5)
+📌 [The Net Ninja - CSS Animations] https://shorturl.at/V6PTY
 
 #### 🏎️ **luigiStuntman**
 
-- A fun animation where **Luigi performs a backflip** while driving.
-- Uses **CSS keyframes** to animate movement and rotation.
-- Includes background elements like **clouds, grass, and a road** for a complete scene.
+-   A fun animation where **Luigi performs a backflip** while driving.
+-   Uses **CSS keyframes** to animate movement and rotation.
+-   Includes background elements like **clouds, grass, and a road** for a complete scene.
 
 #### 🛍️ **webThings**
 
-- **Pop-up Animation:** A stylish **swinging pop-up** with email input.
-- **Basket Animation:** A **smooth zoom effect** when adding products to the basket.
-- Uses **CSS keyframes** and **JavaScript/jQuery** for interactive effects.
+-   **Pop-up Animation:** A stylish **swinging pop-up** with email input.
+-   **Basket Animation:** A **smooth zoom effect** when adding products to the basket.
+-   Uses **CSS keyframes** and **JavaScript/jQuery** for interactive effects.
 
 ### 🎴 **flippingCards**
 
-- A **hover-based card flip animation** using **CSS keyframes**.
-- Each card has a **front and back face**, rotating on the Y-axis.
-- Uses **timing functions** for smooth flipping effects.
+-   A **hover-based card flip animation** using **CSS keyframes**.
+-   Each card has a **front and back face**, rotating on the Y-axis.
+-   Uses **timing functions** for smooth flipping effects.
 
 ---
 
@@ -108,11 +108,11 @@ This example demonstrates how to create a **responsive navigation bar** using CS
 
 This example expands on the previous navigation bar by introducing a **nested flexbox layout** for a social media menu.
 
-- The navigation bar has two `ul` elements: one for main navigation links and one for social media links.
-- `display: flex;` is applied to `nav` to create a **flexible navigation structure**.
-- The `.social` list is styled as a **flex container**, with each social media item evenly distributed.
-- A **grid-based article section** is included, which switches to a stacked layout using JavaScript.
-- The layout dynamically changes between **grid and stacked formats** using the `stack` class.
+-   The navigation bar has two `ul` elements: one for main navigation links and one for social media links.
+-   `display: flex;` is applied to `nav` to create a **flexible navigation structure**.
+-   The `.social` list is styled as a **flex container**, with each social media item evenly distributed.
+-   A **grid-based article section** is included, which switches to a stacked layout using JavaScript.
+-   The layout dynamically changes between **grid and stacked formats** using the `stack` class.
 
 This setup demonstrates **nested flexbox usage** and a **hybrid grid-flexbox approach** for responsive design.
 
@@ -130,8 +130,19 @@ This project demonstrates the use of **CSS variables** to create dynamic, reusab
 
 This project demonstrates how **CSS variables** can be used to manage layout and color schemes. The goal is to create reusable, maintainable styles that can be easily customized across the site. It showcases how to:
 
-- Define **custom properties** for colors and layout.
-- Apply these variables consistently across different elements.
-- Use **media queries** to adjust the layout for responsiveness.
+-   Define **custom properties** for colors and layout.
+-   Apply these variables consistently across different elements.
+-   Use **media queries** to adjust the layout for responsiveness.
+
+### variables-2-Theme_switcher
+
+This project demonstrates the use of **CSS variables** to create a dynamic theme switcher. The focus is on utilizing **CSS custom properties** to manage colors, background, and layout schemes efficiently across the site. The theme can be toggled between light, dark, and solar modes using simple buttons.
+
+A **subtle animation** is applied to the logo during theme changes, providing a nice touch that enhances the user experience.
+
+The theme structure is well-organized, with **CSS variables** controlling the design elements and ensuring that changes to the theme are reflected consistently throughout the page.
+
+Based on the YouTube tutorial:  
+📌 [Fireship - CSS Theme Switcher] https://shorturl.at/Afm3C
 
 ---
