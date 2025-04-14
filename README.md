@@ -7,6 +7,21 @@ Grab a coffee ☕, get comfy 🛋️, and enjoy the ride through this ever-growi
 
 # Projects list
 
+## 00-components
+
+This folder is intended to collect **reusable UI components** and patterns, which can be shared or integrated into other projects over time.
+
+### theme_switcher / 01-CSS_theme_switcher
+
+This project demonstrates the use of **CSS variables** to create a dynamic theme switcher. The focus is on utilizing **CSS custom properties** to manage colors, background, and layout schemes efficiently across the site. The theme can be toggled between light, dark, and solar modes using simple buttons.
+
+A **subtle animation** is applied to the logo during theme changes, providing a nice touch that enhances the user experience.
+
+The theme structure is well-organized, with **CSS variables** controlling the design elements and ensuring that changes to the theme are reflected consistently throughout the page.
+
+Based on the YouTube tutorial:  
+📌 [Fireship - CSS Theme Switcher] https://shorturl.at/Afm3C
+
 ## 01_Basics
 
 This project is a collection of simple web pages created while learning HTML, CSS, and JavaScript. The main focus is on structuring HTML properly, applying CSS for styling, and using JavaScript to enhance interactivity.
@@ -133,16 +148,5 @@ This project demonstrates how **CSS variables** can be used to manage layout and
 -   Define **custom properties** for colors and layout.
 -   Apply these variables consistently across different elements.
 -   Use **media queries** to adjust the layout for responsiveness.
-
-### variables-2-Theme_switcher
-
-This project demonstrates the use of **CSS variables** to create a dynamic theme switcher. The focus is on utilizing **CSS custom properties** to manage colors, background, and layout schemes efficiently across the site. The theme can be toggled between light, dark, and solar modes using simple buttons.
-
-A **subtle animation** is applied to the logo during theme changes, providing a nice touch that enhances the user experience.
-
-The theme structure is well-organized, with **CSS variables** controlling the design elements and ensuring that changes to the theme are reflected consistently throughout the page.
-
-Based on the YouTube tutorial:  
-📌 [Fireship - CSS Theme Switcher] https://shorturl.at/Afm3C
 
 ---
