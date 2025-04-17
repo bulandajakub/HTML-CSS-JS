@@ -8,95 +8,148 @@ import { ReactComponent as ChevronIcon } from "./icons/chevron.svg";
 import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
 import { ReactComponent as BoltIcon } from "./icons/bolt.svg";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 
-// Main App component
+/**
+ * Main application component rendering the navbar and dropdown.
+ * This component serves as the entry point for the navigation bar
+ * and the dropdown menu system, using the `Navbar` and `NavItem` components.
+ * It manages the icons displayed in the navbar and incorporates a dropdown
+ * that toggles when an icon is clicked.
+ */
 function App() {
   return (
     <Navbar>
       <NavItem icon={<PlusIcon />} />
       <NavItem icon={<BellIcon />} />
       <NavItem icon={<MessengerIcon />} />
-
       <NavItem icon={<CaretIcon />}>
-        <DropdownMenu></DropdownMenu>
+        <DropdownMenu />
       </NavItem>
     </Navbar>
   );
 }
 
-// Navbar component: Renders the navigation bar
-function Navbar(props) {
+/**
+ * Renders a navigation bar that wraps navigation items.
+ * The navbar serves as a container for multiple navigation items (e.g., icons).
+ * It accepts children as a prop, allowing for flexibility in the items rendered within.
+ */
+function Navbar({ children }) {
   return (
     <nav className="navbar">
-      <ul className="navbar-nav">{props.children}</ul>
+      <ul className="navbar-nav">{children}</ul>
     </nav>
   );
 }
 
-// NavItem component: Represents an individual navigation item with an icon
-function NavItem(props) {
+/**
+ * Represents a single item in the navigation bar.
+ * Clicking the icon toggles its dropdown content.
+ *
+ * @param {Object} props - Component props.
+ * @param {JSX.Element} props.icon - The icon displayed for this nav item.
+ * @param {JSX.Element} props.children - The content (dropdown) that is conditionally displayed when the nav item is clicked.
+ */
+function NavItem({ icon, children }) {
   const [open, setOpen] = useState(false);
 
   return (
     <li className="nav-item">
       <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
-        {props.icon}
+        {icon}
       </a>
-
-      {open && props.children}
+      {open && children}
     </li>
   );
 }
 
-// DropdownMenu component: Renders a dropdown menu with multiple items
+/**
+ * Renders the dropdown menu with animated transitions between submenus.
+ * Automatically adjusts its height depending on the content of the active submenu.
+ * Uses `useLayoutEffect` to calculate the height of the visible submenu and
+ * dynamically adjust the dropdown height.
+ */
 function DropdownMenu() {
-  const [activeMenu, setActiveMenu] = useState("main"); // Tracks the active menu
-  const [menuHeight, setMenuHeight] = useState(null); // Stores the current menu height
-  const dropdownRef = useRef(null);
+  const [activeMenu, setActiveMenu] = useState("main"); // Tracks the currently visible submenu
+  const [menuHeight, setMenuHeight] = useState(null); // Dynamic height for the dropdown container
 
-  // Refs for CSSTransition nodes to control animation
+  // Refs for each submenu used for height calculation
+  const dropdownRef = useRef(null);
   const mainRef = useRef(null);
   const settingsRef = useRef(null);
   const animalsRef = useRef(null);
 
-  // Effect hook to set the height of the main menu when it's first rendered
-  useEffect(() => {
-    setMenuHeight(mainRef.current?.offsetHeight);
-  }, []);
+  /**
+   * Returns the corresponding submenu reference based on the menu name.
+   *
+   * @param {string} menu - The name of the active menu (e.g., 'main', 'settings', 'animals').
+   * @returns {React.RefObject} - The reference to the submenu for height calculation.
+   */
+  const getMenuRef = (menu) => {
+    switch (menu) {
+      case "main":
+        return mainRef;
+      case "settings":
+        return settingsRef;
+      case "animals":
+        return animalsRef;
+      default:
+        return null;
+    }
+  };
 
-  // Function to calculate the height of the menu dynamically
-  function calcHeight(el) {
-    const height = el.offsetHeight;
-    setMenuHeight(height);
-  }
+  /**
+   * Calculates and sets the dropdown's height based on the currently active menu.
+   * This hook runs after DOM mutations (like when a menu is shown) but before
+   * the browser repaints, ensuring that the dropdown height is set precisely.
+   *
+   * `useLayoutEffect` is used here to avoid flickering and ensure the layout is updated
+   * before the next paint.
+   */
+  useLayoutEffect(() => {
+    const ref = getMenuRef(activeMenu); // Get the ref for the active menu
+    if (ref.current) {
+      const height = ref.current.offsetHeight; // Measure the height of the active menu
+      setMenuHeight(height); // Set the height for the dropdown container
+    }
+  }, [activeMenu]);
 
-  // DropdownItem component: Represents an item in the dropdown menu
-  function DropdownItem(props) {
+  /**
+   * Represents a clickable item in the dropdown menu.
+   * Changes the visible submenu when clicked (if `goToMenu` is specified).
+   *
+   * @param {Object} props - Component props.
+   * @param {JSX.Element} props.children - The content of the dropdown item.
+   * @param {JSX.Element} [props.leftIcon] - An optional icon to display on the left side.
+   * @param {JSX.Element} [props.rightIcon] - An optional icon to display on the right side.
+   * @param {string} [props.goToMenu] - The name of the submenu to navigate to when clicked.
+   */
+  function DropdownItem({ children, leftIcon, rightIcon, goToMenu }) {
     return (
       <a
         href="#"
         className="menu-item"
-        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
+        onClick={() => goToMenu && setActiveMenu(goToMenu)}
       >
-        <span className="icon-button">{props.leftIcon}</span>
-        {props.children}
-        <span className="icon-right">{props.rightIcon}</span>
+        <span className="icon-button">{leftIcon}</span>
+        {children}
+        <span className="icon-right">{rightIcon}</span>
       </a>
     );
   }
 
   return (
     <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
-      {/* CSSTransition for main menu */}
+      {/* Main Menu */}
       <CSSTransition
         in={activeMenu === "main"}
         timeout={500}
         classNames="menu-primary"
         unmountOnExit
-        onEnter={calcHeight}
         nodeRef={mainRef}
+        onEnter={() => setMenuHeight(mainRef.current?.offsetHeight)} // Set height of the menu on transition enter
       >
         <div className="menu" ref={mainRef}>
           <DropdownItem>My Profile</DropdownItem>
@@ -108,7 +161,7 @@ function DropdownMenu() {
             Settings
           </DropdownItem>
           <DropdownItem
-            leftIcon="🦧"
+            leftIcon="🦗"
             rightIcon={<ChevronIcon />}
             goToMenu="animals"
           >
@@ -117,18 +170,18 @@ function DropdownMenu() {
         </div>
       </CSSTransition>
 
-      {/* CSSTransition for settings menu */}
+      {/* Settings Menu */}
       <CSSTransition
         in={activeMenu === "settings"}
         timeout={500}
         classNames="menu-secondary"
         unmountOnExit
-        onEnter={calcHeight}
         nodeRef={settingsRef}
+        onEnter={() => setMenuHeight(settingsRef.current?.offsetHeight)} // Set height for the settings menu
       >
         <div className="menu" ref={settingsRef}>
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-            <h2>My Tutorial</h2>
+            <h2>Settings</h2>
           </DropdownItem>
           <DropdownItem leftIcon={<BoltIcon />}>HTML</DropdownItem>
           <DropdownItem leftIcon={<BoltIcon />}>CSS</DropdownItem>
@@ -137,14 +190,14 @@ function DropdownMenu() {
         </div>
       </CSSTransition>
 
-      {/* CSSTransition for animals menu */}
+      {/* Animals Menu */}
       <CSSTransition
         in={activeMenu === "animals"}
         timeout={500}
         classNames="menu-secondary"
         unmountOnExit
-        onEnter={calcHeight}
         nodeRef={animalsRef}
+        onEnter={() => setMenuHeight(animalsRef.current?.offsetHeight)} // Set height for the animals menu
       >
         <div className="menu" ref={animalsRef}>
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
@@ -152,7 +205,7 @@ function DropdownMenu() {
           </DropdownItem>
           <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
           <DropdownItem leftIcon="🐸">Frog</DropdownItem>
-          <DropdownItem leftIcon="🦋">Horse?</DropdownItem>
+          <DropdownItem leftIcon="🦋">Butterfly</DropdownItem>
           <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
         </div>
       </CSSTransition>
