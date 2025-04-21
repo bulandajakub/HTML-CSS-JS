@@ -26,6 +26,21 @@ Key features include:
 Based on the YouTube tutorial:  
 📌 [Fireship - Animated Responsive Navbar with CSS] https://tinyurl.com/sy3r3s6n
 
+### nav_bar / 02-Advanced_dropdown_menu
+
+An advanced dropdown menu component built with React and CSS. This menu features **nested navigation**, **smooth animated transitions**, and **automatic height calculation** to ensure layout stability during menu switches.
+
+Key features include:
+
+- 🧭 Multi-Level Navigation: Supports nested submenus with intuitive back navigation.
+- 📏 Dynamic Height Animation: Automatically adjusts height based on content, preserving transition effects.
+- 🎨 Smooth Transitions: Enter and exit animations for seamless user experience.
+- ⚙️ Component-Based Structure: Clean and reusable logic with React and CSSTransition.
+- 🛠️ Bug Fixes: Improved handling of layout glitches during height recalculations.
+
+Based on the YouTube tutorial:  
+📌 [Fireship - Advanced Dropdown Menu - React & CSS Animation] https://tinyurl.com/4c9245jb
+
 ### theme_switcher / 01-CSS_theme_switcher
 
 This project demonstrates the use of **CSS variables** to create a dynamic theme switcher. The focus is on utilizing **CSS custom properties** to manage colors, background, and layout schemes efficiently across the site. The theme can be toggled between light, dark, and solar modes using simple buttons.
