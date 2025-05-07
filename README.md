@@ -180,3 +180,20 @@ This project demonstrates how **CSS variables** can be used to manage layout and
 - Use **media queries** to adjust the layout for responsiveness.
 
 ---
+
+## 06-React_Next_ShadCN-UI_component_library
+
+A small UI component library built using **React**, **Next.js**, and the **ShadCN UI framework**. This project follows a tutorial by Dave Gray and demonstrates how to set up a component-driven design system using modern tools and conventions.
+
+Key features include:
+
+- ⚛️ React-based structure for reusable UI components
+- 💨 Tailwind CSS for utility-first styling
+- 🧩 ShadCN UI components: pre-built, accessible, and customizable
+- 📦 Organized file structure for scalability
+- 🛠️ Great starting point for creating a full component library or design system
+
+Based on the YouTube tutorial:  
+📌 [Dave Gray – UI Component Library Tutorial] https://www.youtube.com/watch?v=v0_AT8zaLo8
+
+---
