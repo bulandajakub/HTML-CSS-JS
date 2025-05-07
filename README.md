@@ -2,7 +2,7 @@
 
 A collection of simple projects created to practice and learn HTML, CSS, and JavaScript. This repository includes various small exercises, UI components, and interactive elements to improve frontend development skills.
 
-⚠️ **Warning:** This README might turn into an **endless scroll** as more projects get added. 🤖
+⚠️ **Warning:** This README might turn into an **endless scroll** as more projects get added. 🤖  
 Grab a coffee ☕, get comfy 🛋️, and enjoy the ride through this ever-growing collection of frontend experiments!
 
 # Projects list
@@ -24,7 +24,7 @@ Key features include:
 - 🧠 JS Theme Logic: Cycles through the themes and updates the DOM accordingly.
 
 Based on the YouTube tutorial:  
-📌 [Fireship - Animated Responsive Navbar with CSS] https://tinyurl.com/sy3r3s6n
+📌 [Fireship - Animated Responsive Navbar with CSS](https://tinyurl.com/sy3r3s6n)
 
 ### nav_bar / 02-Advanced_dropdown_menu
 
@@ -39,7 +39,7 @@ Key features include:
 - 🛠️ Bug Fixes: Improved handling of layout glitches during height recalculations.
 
 Based on the YouTube tutorial:  
-📌 [Fireship - Advanced Dropdown Menu - React & CSS Animation] https://tinyurl.com/4c9245jb
+📌 [Fireship - Advanced Dropdown Menu - React & CSS Animation](https://tinyurl.com/4c9245jb)
 
 ### theme_switcher / 01-CSS_theme_switcher
 
@@ -50,7 +50,7 @@ A **subtle animation** is applied to the logo during theme changes, providing a 
 The theme structure is well-organized, with **CSS variables** controlling the design elements and ensuring that changes to the theme are reflected consistently throughout the page.
 
 Based on the YouTube tutorial:  
-📌 [Fireship - CSS Theme Switcher] https://shorturl.at/Afm3C
+📌 [Fireship - CSS Theme Switcher](https://shorturl.at/Afm3C)
 
 ## 01_Basics
 
@@ -107,7 +107,7 @@ This **responsive grid-based layout** follows a structured **semantic arrangemen
 This project is a collection of simple animations created while learning CSS animations and transitions. The main focus is on using **CSS keyframes**, **transitions**, and **timing functions** to create smooth and engaging effects.
 
 Based on the YouTube playlist:  
-📌 [The Net Ninja - CSS Animations] https://shorturl.at/V6PTY
+📌 [The Net Ninja - CSS Animations](https://shorturl.at/V6PTY)
 
 #### 🏎️ **luigiStuntman**
 
@@ -194,6 +194,6 @@ Key features include:
 - 🛠️ Great starting point for creating a full component library or design system
 
 Based on the YouTube tutorial:  
-📌 [Dave Gray – UI Component Library Tutorial] https://www.youtube.com/watch?v=v0_AT8zaLo8
+📌 [Dave Gray – UI Component Library Tutorial](https://www.youtube.com/watch?v=v0_AT8zaLo8)
 
 ---
