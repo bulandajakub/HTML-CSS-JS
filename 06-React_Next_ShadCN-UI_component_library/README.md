@@ -2,6 +2,10 @@
 
 This project uses [pnpm](https://pnpm.io/) and [ShadCN UI](https://ui.shadcn.com/) component library in a Next.js environment.
 
+> **ℹ️ Warning**  
+> If you run into Tailwind CLI binary issues with **pnpm**, it’s often simpler to redo the setup with **npm** instead — the ShadCN docs and Tailwind v4 upgrade guide currently assume npm.  
+> (Use `npm create next-app`, `npm install`, etc.)
+
 **⚙️ Requirements**
 
 - Node.js (v18 or higher recommended)
