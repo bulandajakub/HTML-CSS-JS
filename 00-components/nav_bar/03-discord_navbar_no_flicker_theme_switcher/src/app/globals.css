@@ -24,7 +24,7 @@
 }
 
 /* Optional: additional theme semantic mappings */
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -42,14 +42,22 @@
 }
 
 /* Global styles */
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+
+/* If you want to add your own default base styles for specific HTML elements, use the @layer directive to add those styles to Tailwind's base layer: */
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  }
 }
 
+/* Use the components layer for any more complicated classes you want to add to your project that you'd still like to be able to override with utility classes.
+
+Traditionally these would be classes like card, btn, badge — that kind of thing. */
 @layer components {
   .sidebar-icon {
+    /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
     @apply relative flex items-center justify-center 
     h-12 w-12 mt-2 mb-2 mx-auto  
   bg-gray-400 hover:bg-green-600 dark:bg-gray-800 
@@ -57,5 +65,20 @@ body {
     hover:rounded-xl rounded-3xl
     transition-all duration-300 ease-linear
     cursor-pointer shadow-lg;
+    /* This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML. */
+  }
+
+  .sidebar {
+    @apply fixed top-0 left-0 h-screen w-16 flex flex-col bg-gray-900 text-white;
   }
 }
+
+/* If your project has class names that conflict with Tailwind CSS utilities, you can prefix all Tailwind-generated classes and CSS variables using the prefix option: */
+/* @layer theme {
+  
+} */
+
+/* In addition to using the utilities that ship with Tailwind, you can also add your own custom utilities. This can be useful when there's a CSS feature you'd like to use in your project that Tailwind doesn't include utilities for out of the box. */
+/* @layer utilities {
+
+} */
