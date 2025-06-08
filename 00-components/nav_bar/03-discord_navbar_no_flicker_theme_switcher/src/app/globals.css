@@ -71,6 +71,16 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .sidebar {
     @apply fixed top-0 left-0 h-screen w-16 flex flex-col bg-gray-900 text-white;
   }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+  }
+
+  .sidebar-hr {
+    @apply bg-gray-200 dark:bg-gray-800 
+    border border-gray-200 dark:border-gray-800 rounded-full
+    mx-2;
+  }
 }
 
 /* If your project has class names that conflict with Tailwind CSS utilities, you can prefix all Tailwind-generated classes and CSS variables using the prefix option: */
