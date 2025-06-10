@@ -81,6 +81,10 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     border border-gray-200 dark:border-gray-800 rounded-full
     mx-2;
   }
+
+  .channel-bar {
+    @apply w-64 bg-gray-800 text-white p-4;
+  }
 }
 
 /* If your project has class names that conflict with Tailwind CSS utilities, you can prefix all Tailwind-generated classes and CSS variables using the prefix option: */
