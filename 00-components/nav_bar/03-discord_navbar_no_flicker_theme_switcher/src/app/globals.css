@@ -50,12 +50,18 @@
     color: var(--foreground);
     font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   }
+
+  html,
+  body {
+    @apply h-full;
+  }
 }
 
 /* Use the components layer for any more complicated classes you want to add to your project that you'd still like to be able to override with utility classes.
 
 Traditionally these would be classes like card, btn, badge — that kind of thing. */
 @layer components {
+  /* sidebar */
   .sidebar-icon {
     /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
     @apply relative flex items-center justify-center 
@@ -69,7 +75,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .sidebar {
-    @apply fixed top-0 left-0 h-screen w-16 flex flex-col bg-gray-900 text-white;
+    @apply flex flex-col w-16 h-full bg-gray-900 text-white;
   }
 
   .sidebar-tooltip {
@@ -82,8 +88,38 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     mx-2;
   }
 
+  /* channel-bar */
   .channel-bar {
-    @apply w-64 bg-gray-800 text-white p-4;
+    @apply flex flex-col w-64 h-full bg-gray-800 text-white p-4;
+  }
+
+  /* top-navigation */
+  .title {
+    @apply flex items-center gap-2;
+  }
+
+  .top-navigation {
+    @apply flex items-center justify-between bg-gray-700 text-white h-12 px-4;
+  }
+
+  .top-navigation-title {
+    @apply text-lg font-semibold text-white;
+  }
+
+  .top-navigation-icon {
+    @apply p-2 text-gray-400 hover:text-white cursor-pointer;
+  }
+
+  .top-navigation-actions {
+    @apply flex items-center space-x-4;
+  }
+
+  .top-navigation-search {
+    @apply bg-gray-600 text-white px-2 py-1 rounded focus:outline-none;
+  }
+
+  .search {
+    @apply flex items-center space-x-2 bg-gray-600 px-2 py-1 rounded;
   }
 }
 

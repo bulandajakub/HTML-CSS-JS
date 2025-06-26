@@ -1,12 +1,22 @@
 import SideBar from "@/components/layout/SideBar";
 import ChannelBar from "@/components/layout/ChannelBar";
+import TopNavigation from "@/components/layout/TopNavigation";
+
+// App layout structure:
+// - <div class="flex h-screen">
+//   - <SideBar />                   // fixed width, vertical
+//   - <ChannelBar />               // fixed width, vertical
+//   - <MainSection />              // fills remaining space
+//     - <TopNavigation />         // horizontal, fixed height
+//     - <MainContent />           // flexible scrollable chat area
 
 export default function Home() {
   return (
     <div className="flex h-screen">
       <SideBar />
-      <div className="ml-16 flex flex-1">
-        <ChannelBar />
+      <ChannelBar />
+      <div className="flex flex-1 flex-col">
+        <TopNavigation />
       </div>
     </div>
   );
