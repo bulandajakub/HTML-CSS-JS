@@ -1,6 +1,7 @@
 import SideBar from "@/components/layout/SideBar";
 import ChannelBar from "@/components/layout/ChannelBar";
 import TopNavigation from "@/components/layout/TopNavigation";
+import MainContent from "@/components/layout/MainContent";
 
 // App layout structure:
 // - <div class="flex h-screen">
@@ -17,6 +18,7 @@ export default function Home() {
       <ChannelBar />
       <div className="flex flex-1 flex-col">
         <TopNavigation />
+        <MainContent />
       </div>
     </div>
   );

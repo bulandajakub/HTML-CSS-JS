@@ -121,6 +121,11 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .search {
     @apply flex items-center space-x-2 bg-gray-600 px-2 py-1 rounded;
   }
+
+  /* main-content */
+  .main-content {
+    @apply flex-1 overflow-y-auto p-4;
+  }
 }
 
 /* If your project has class names that conflict with Tailwind CSS utilities, you can prefix all Tailwind-generated classes and CSS variables using the prefix option: */
