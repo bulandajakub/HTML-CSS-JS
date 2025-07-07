@@ -107,11 +107,11 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .top-navigation-icon {
-    @apply p-2 text-gray-400 hover:text-white cursor-pointer;
+    @apply flex items-center justify-center m-2 size-5 text-gray-400 hover:text-white cursor-pointer;
   }
 
   .top-navigation-actions {
-    @apply flex items-center space-x-4;
+    @apply flex items-center;
   }
 
   .top-navigation-search {
