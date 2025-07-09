@@ -75,7 +75,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .sidebar {
-    @apply flex flex-col w-16 h-full bg-gray-900 text-white;
+    @apply flex flex-col w-16 h-full bg-gray-900 border-r-2 border-gray-800 text-white;
   }
 
   .sidebar-tooltip {
@@ -90,7 +90,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
 
   /* channel-bar */
   .channel-bar {
-    @apply flex flex-col w-64 h-full bg-gray-800 text-white p-4;
+    @apply flex flex-col w-64 h-full bg-gray-900 text-white p-4;
   }
 
   /* top-navigation */
@@ -99,7 +99,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .top-navigation {
-    @apply flex items-center justify-between bg-gray-700 text-white h-12 px-4;
+    @apply flex items-center justify-between bg-gray-800 text-white h-12 px-4;
   }
 
   .top-navigation-title {
