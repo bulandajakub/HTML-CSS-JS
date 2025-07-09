@@ -107,19 +107,19 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .top-navigation-icon {
-    @apply flex items-center justify-center m-2 size-5 text-gray-400 hover:text-white cursor-pointer;
+    @apply flex items-center justify-center p-1 size-8 text-gray-400 hover:text-white cursor-pointer;
   }
 
   .top-navigation-actions {
-    @apply flex items-center;
+    @apply flex items-center gap-x-2;
   }
 
   .top-navigation-search {
-    @apply bg-gray-600 text-white px-2 py-1 rounded focus:outline-none;
+    @apply bg-gray-600 text-white rounded focus:outline-none;
   }
 
   .search {
-    @apply flex items-center space-x-2 bg-gray-600 px-2 py-1 rounded;
+    @apply flex items-center bg-gray-600 px-2 py-1 gap-x-2 rounded;
   }
 
   /* main-content */
