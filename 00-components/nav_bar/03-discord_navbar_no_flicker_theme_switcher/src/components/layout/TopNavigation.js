@@ -17,11 +17,23 @@ const TopNavigation = () => {
 
 const Title = () => (
   <div className="title">
-    <TopIcon icon={<FaHashtag />} />
-    <h3 className="top-navigation-title">general</h3>
+    <TopIcon
+      icon={<FaHashtag />}
+      className="title-icon"
+      applyDefaultStyles={false}
+    />
+    <h3 className="top-navigation-title channel-name-text">general</h3>
   </div>
 );
-const TopIcon = ({ icon }) => <div className="top-navigation-icon">{icon}</div>;
+const TopIcon = ({ icon, className = "", applyDefaultStyles = true }) => (
+  <div
+    className={`${
+      applyDefaultStyles ? "top-navigation-icon" : ""
+    } ${className}`}
+  >
+    {icon}
+  </div>
+);
 const SearchInput = () => (
   <div className="search">
     <input type="text" placeholder="Search" className="top-navigation-search" />

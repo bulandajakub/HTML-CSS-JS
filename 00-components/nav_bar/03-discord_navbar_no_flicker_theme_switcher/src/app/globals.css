@@ -107,7 +107,11 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .top-navigation-icon {
-    @apply flex items-center justify-center p-1 size-8 text-gray-400 hover:text-white cursor-pointer;
+    @apply bg-gray-800 hover:bg-gray-600 rounded-lg flex items-center justify-center p-1 size-8 text-gray-400 hover:text-white cursor-pointer;
+  }
+
+  .title-icon {
+    @apply flex items-center justify-center p-1 size-8 text-gray-400;
   }
 
   .top-navigation-actions {
@@ -119,7 +123,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .search {
-    @apply flex items-center bg-gray-600 px-2 py-1 gap-x-2 rounded;
+    @apply flex items-center bg-gray-600 px-2 py-1 gap-x-2 rounded-lg;
   }
 
   /* main-content */
