@@ -136,14 +136,14 @@
   --size-sidebar-width: 4rem; /* 64px */
   --size-channelbar-width: 16rem; /* 256px */
   --size-topnav-height: 3rem; /* 48px */
-  --size-icon: 2rem; /* 32px */
-  --size-icon-lg: 3rem; /* 48px for sidebar icons */
+  --size-icon-1: 2rem; /* 32px */
+  --size-icon-2: 3rem; /* 48px  */
 
   /* Radius */
   --radius-1: calc(var(--radius) - 4px); /* sm */
   --radius-2: calc(var(--radius) - 2px); /* md */
   --radius-3: var(--radius); /* lg */
-  --radius-round: 9999px; /* full circle */
+  --radius-round: 50%; /* full circle */
 
   /* Spacing */
   --spacing-1: var(--spacing); /* 0.25rem */
@@ -188,14 +188,15 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   /* sidebar */
   .sidebar-icon {
     /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
-    @apply relative flex items-center justify-center
-    h-[var(--size-icon-lg)] w-[var(--size-icon-lg)] mt-[var(--spacing-2)] mb-[var(--spacing-2)] mx-auto
-    bg-[var(--color-sidebar-icon-bg)] hover:bg-[var(--color-sidebar-icon-hover-bg)] dark:bg-[var(--color-gray-800)]
-    text-[var(--color-sidebar-icon-color)] hover:text-[var(--color-white)]
-    rounded-[var(--radius-round)] hover:rounded-[var(--radius-3)] /* Default rounded-full, hover rounded-lg */
-    transition-all duration-300 ease-in-out /* Smoother transition */
-    cursor-pointer shadow-lg;
     /* This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML. */
+    @apply relative flex items-center justify-center
+    h-[var(--size-icon-2)] w-[var(--size-icon-2)] mt-[var(--spacing-2)] mb-[var(--spacing-2)] mx-auto
+    bg-[var(--color-sidebar-icon-bg)]
+    cursor-pointer shadow-lg
+    hover:bg-[var(--color-sidebar-icon-hover-bg)] dark:bg-[var(--color-gray-800)]
+    text-[var(--color-sidebar-icon-color)] hover:text-[var(--color-white)]
+    rounded-[var(--radius-round)] hover:rounded-[var(--radius-3)]
+    transition-all duration-300 ease-in-out;
   }
 
   .sidebar {
@@ -231,12 +232,12 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .top-navigation-icon {
-    @apply bg-[var(--color-topnav-icon-bg)] hover:bg-[var(--color-topnav-icon-hover-bg)] rounded-[var(--radius-round)] flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon)] h-[var(--size-icon)] text-[var(--color-topnav-icon-color)] hover:text-[var(--color-white)] cursor-pointer
+    @apply bg-[var(--color-topnav-icon-bg)] hover:bg-[var(--color-topnav-icon-hover-bg)] rounded-[var(--radius-round)] flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon-1)] h-[var(--size-icon-1)] text-[var(--color-topnav-icon-color)] hover:text-[var(--color-white)] cursor-pointer
     transition-all duration-300 ease-in-out hover:rounded-[var(--radius-3)];
   }
 
   .title-icon {
-    @apply flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon)] h-[var(--size-icon)] text-[var(--color-topnav-icon-color)] rounded-[var(--radius-round)];
+    @apply flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon-1)] h-[var(--size-icon-1)] text-[var(--color-topnav-icon-color)] rounded-[var(--radius-round)];
   }
 
   .top-navigation-actions {
