@@ -35,41 +35,64 @@
 /* All theme semantic mappings, component mappings, and sizing */
 @theme inline {
   /* Mapped semantic colors */
-  --color-background: var(--gray-100); /* Default light mode background */
-  --color-foreground: var(--gray-900);
-  --color-border: var(--gray-300);
-  --color-text: var(--gray-900);
+  --color-background-1: var(--color-neutral-900);
+  --color-background-2: var(--color-neutral-800);
+  --color-border: var(--color-neutral-800);
+  --color-text: var(--color-neutral-200);
 
   --color-black: var(--black);
   --color-white: var(--white);
 
   /* Component mapping */
-  --color-sidebar-background: var(--color-neutral-900);
-  --color-sidebar-border: var(--gray-800);
-  --color-sidebar-icon-bg: var(--gray-700);
-  --color-sidebar-icon-hover-bg: var(--color-primary-700);
-  --color-sidebar-icon-color: var(--color-primary-600);
+  /* Sidebar */
+  --color-sidebar-background-default: var(--color-background-1);
+  --color-sidebar-text-default: var(--color-white);
+  --color-sidebar-border-default: var(--color-border);
 
-  --color-tooltip-bg: var(--gray-800);
-  --color-tooltip-border: var(--gray-800);
-  --color-tooltip-text: var(--gray-100);
+  --color-sidebar-icon-background-default: var(--color-background-2);
+  --color-sidebar-icon-background-hover: var(--color-primary-600);
+  --color-sidebar-icon-text-default: var(--color-primary-600);
+  --color-sidebar-icon-text-hover: var(--color-white);
 
-  --color-channelbar-background: var(--color-neutral-900);
-  --color-topnav-background: var(--color-neutral-900);
+  /* Tooltip */
+  --color-tooltip-background-default: var(--color-background-1);
+  --color-tooltip-text-default: var(--gray-100);
+  --color-tooltip-border-default: var(--gray-800);
 
-  --color-topnav-icon-bg: var(--gray-800);
-  --color-topnav-icon-hover-bg: var(--gray-600);
-  --color-topnav-icon-color: var(--gray-400);
-  --color-topnav-search-bg: var(--gray-600);
+  /* Channel Bar */
+  --color-channelbar-background-default: var(--color-background-1);
+  --color-channelbar-text-default: var(--color-white);
+  --color-channelbar-border-default: var(--color-border);
 
-  --color-divider-light: var(
-    --gray-200
-  ); /* This will be overridden for sidebar-hr */
-  --color-divider-dark: var(
-    --gray-800
-  ); /* This will be overridden for sidebar-hr */
+  /* Top Navigation */
+  --color-topnav-background-default: var(----color-background-1);
+  --color-topnav-text-default: var(--color-white);
+  --color-topnav-border-default: var(--color-border);
 
-  /* Generic color scales (already present) */
+  --color-topnav-title-text-default: var(--color-white);
+
+  --color-topnav-icon-background-default: var(--color-background-1);
+  --color-topnav-icon-background-hover: var(--color-background-2);
+  --color-topnav-icon-text-default: var(--gray-400);
+  --color-topnav-icon-text-hover: var(--color-white);
+
+  /* Title */
+  --color-title-icon-text-default: var(--gray-400);
+  --color-title-icon-background-default: transparent;
+
+  /* Search */
+  --color-search-background-default: var(--color-background-2);
+
+  --color-topnav-search-text-default: var(--color-white);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
+  --color-main-content-text-default: var(--color-text);
+  --color-main-content-border-default: var(--color-border);
+
+  --color-divider: var(--gray-800);
+
+  /* Generic color scales */
   --color-primary-100: var(--color-emerald-100);
   --color-primary-200: var(--color-emerald-200);
   --color-primary-300: var(--color-emerald-300);
@@ -133,45 +156,41 @@
   --font-mono: var(--font-mono);
 
   /* Sizing */
-  --size-sidebar-width: 4rem; /* 64px */
-  --size-channelbar-width: 16rem; /* 256px */
-  --size-topnav-height: 3rem; /* 48px */
-  --size-icon-1: 2rem; /* 32px */
-  --size-icon-2: 3rem; /* 48px  */
+  --size-sidebar-width: 4rem;
+  --size-channelbar-width: 16rem;
+  --size-topnav-height: 3rem;
+  --size-icon-1: 2rem;
+  --size-icon-2: 3rem;
 
   /* Radius */
-  --radius-1: calc(var(--radius) - 4px); /* sm */
-  --radius-2: calc(var(--radius) - 2px); /* md */
-  --radius-3: var(--radius); /* lg */
-  --radius-round: 50%; /* full circle */
+  --radius-1: calc(var(--radius) - 4px);
+  --radius-2: calc(var(--radius) - 2px);
+  --radius-3: var(--radius);
+  --radius-round: 50%;
 
   /* Spacing */
-  --spacing-1: var(--spacing); /* 0.25rem */
-  --spacing-2: calc(var(--spacing) * 2); /* 0.5rem */
-  --spacing-3: calc(var(--spacing) * 3); /* 0.75rem */
-  --spacing-4: calc(var(--spacing) * 4); /* 1rem */
-  --spacing-5: calc(var(--spacing) * 5); /* 1.25rem */
-  --spacing-6: calc(var(--spacing) * 6); /* 1.5rem */
-  --spacing-7: calc(var(--spacing) * 7); /* 1.75rem */
-  --spacing-8: calc(var(--spacing) * 8); /* 2rem */
+  --spacing-1: var(--spacing);
+  --spacing-2: calc(var(--spacing) * 2);
+  --spacing-3: calc(var(--spacing) * 3);
+  --spacing-4: calc(var(--spacing) * 4);
+  --spacing-5: calc(var(--spacing) * 5);
+  --spacing-6: calc(var(--spacing) * 6);
+  --spacing-7: calc(var(--spacing) * 7);
+  --spacing-8: calc(var(--spacing) * 8);
 }
 
 /* Dark mode override */
 @media (prefers-color-scheme: dark) {
   @theme inline {
     /* Apply dark mode overrides within the theme */
-    --color-background: var(--color-neutral-800);
-    --color-foreground: var(--gray-100);
-    --color-text: var(--gray-100);
-    --color-border: var(--gray-700);
   }
 }
 
 /* Global styles */
 @layer base {
   body {
-    background: var(--color-background); /* Use theme variables */
-    color: var(--color-text); /* Use theme variables */
+    background: var(--color-background-1);
+    color: var(--color-text);
     font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   }
 
@@ -185,59 +204,93 @@
 
 Traditionally these would be classes like card, btn, badge — that kind of thing. */
 @layer components {
-  /* sidebar */
-  .sidebar-icon {
+  /* Sidebar */
+  .sidebar {
     /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
     /* This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML. */
+    @apply flex flex-col w-[var(--size-sidebar-width)] h-full
+    bg-[var(--color-sidebar-background-default)]
+    text-[var(--color-sidebar-text-default)]
+    border-r-2 border-[var(--color-sidebar-border-default)];
+  }
+
+  .sidebar-icon {
     @apply relative flex items-center justify-center
-    h-[var(--size-icon-2)] w-[var(--size-icon-2)] mt-[var(--spacing-2)] mb-[var(--spacing-2)] mx-auto
-    bg-[var(--color-sidebar-icon-bg)]
+    h-[var(--size-icon-2)] w-[var(--size-icon-2)]
+    mt-[var(--spacing-2)] mb-[var(--spacing-2)] mx-auto
+    bg-[var(--color-sidebar-icon-background-default)]
     cursor-pointer shadow-lg
-    hover:bg-[var(--color-sidebar-icon-hover-bg)] dark:bg-[var(--color-gray-800)]
-    text-[var(--color-sidebar-icon-color)] hover:text-[var(--color-white)]
+    hover:bg-[var(--color-sidebar-icon-background-hover)]
+    text-[var(--color-sidebar-icon-text-default)]
+    hover:text-[var(--color-sidebar-icon-text-hover)]
     rounded-[var(--radius-round)] hover:rounded-[var(--radius-3)]
     transition-all duration-300 ease-in-out;
   }
 
-  .sidebar {
-    @apply flex flex-col w-[var(--size-sidebar-width)] h-full bg-[var(--color-sidebar-background)] text-[var(--color-white)] border-r-2 border-[var(--color-neutral-800)];
-  }
-
   .sidebar-tooltip {
-    @apply absolute w-auto p-[var(--spacing-2)] m-[var(--spacing-2)] min-w-max left-14 rounded-[var(--radius-2)] shadow-md text-[var(--color-tooltip-text)] bg-[var(--color-tooltip-bg)] text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    @apply absolute w-auto p-[var(--spacing-2)] m-[var(--spacing-2)]
+    min-w-max left-14
+    rounded-[var(--radius-2)]
+    shadow-md
+    text-[var(--color-tooltip-text-default)]
+    bg-[var(--color-tooltip-background-default)]
+    text-xs font-bold
+    transition-all duration-100 scale-0 origin-left;
   }
 
   .sidebar-hr {
-    @apply bg-[var(--color-sidebar-icon-bg)] dark:bg-[var(--color-sidebar-icon-bg)]
-    border border-[var(--color-sidebar-icon-bg)] dark:border-[var(--color-sidebar-icon-bg)] rounded-[var(--radius-round)]
-    mx-[var(--spacing-2)];
+    @apply bg-[var(--color-sidebar-icon-background-default)]
+    border-[var(--color-sidebar-border-default)]
+    rounded-[var(--radius-round)] mx-[var(--spacing-2)];
   }
 
-  /* channel-bar */
+  /* Channel Bar */
   .channel-bar {
-    @apply flex flex-col w-[var(--size-channelbar-width)] h-full bg-[var(--color-channelbar-background)] text-[var(--color-white)] p-[var(--spacing-4)] border-r-2 border-[var(--color-neutral-800)];
+    @apply flex flex-col w-[var(--size-channelbar-width)] h-full
+    bg-[var(--color-channelbar-background-default)]
+    text-[var(--color-channelbar-text-default)]
+    p-[var(--spacing-4)]
+    border-r-2 border-[var(--color-channelbar-border-default)];
   }
 
-  /* top-navigation */
-  .title {
-    @apply flex items-center gap-[var(--spacing-2)];
-  }
-
+  /* Top Navigation */
   .top-navigation {
-    @apply flex items-center justify-between bg-[var(--color-topnav-background)] text-[var(--color-white)] h-[var(--size-topnav-height)] px-[var(--spacing-4)] border-b-2 border-[var(--color-neutral-800)];
+    @apply flex items-center justify-between
+    bg-[var(--color-topnav-background-default)]
+    text-[var(--color-topnav-text-default)]
+    h-[var(--size-topnav-height)]
+    px-[var(--spacing-4)]
+    border-b-2 border-[var(--color-topnav-border-default)];
   }
 
   .top-navigation-title {
-    @apply text-lg font-semibold text-[var(--color-white)];
+    @apply text-lg font-semibold text-[var(--color-topnav-title-text-default)];
   }
 
   .top-navigation-icon {
-    @apply bg-[var(--color-topnav-icon-bg)] hover:bg-[var(--color-topnav-icon-hover-bg)] rounded-[var(--radius-round)] flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon-1)] h-[var(--size-icon-1)] text-[var(--color-topnav-icon-color)] hover:text-[var(--color-white)] cursor-pointer
-    transition-all duration-300 ease-in-out hover:rounded-[var(--radius-3)];
+    @apply bg-[var(--color-topnav-icon-background-default)]
+    hover:bg-[var(--color-topnav-icon-background-hover)]
+    rounded-[var(--radius-round)] hover:rounded-[var(--radius-3)]
+    flex items-center justify-center
+    p-[var(--spacing-1)]
+    w-[var(--size-icon-1)] h-[var(--size-icon-1)]
+    text-[var(--color-topnav-icon-text-default)]
+    hover:text-[var(--color-topnav-icon-text-hover)]
+    cursor-pointer
+    transition-all duration-300 ease-in-out;
   }
 
   .title-icon {
-    @apply flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon-1)] h-[var(--size-icon-1)] text-[var(--color-topnav-icon-color)] rounded-[var(--radius-round)];
+    @apply flex items-center justify-center
+    p-[var(--spacing-1)]
+    w-[var(--size-icon-1)] h-[var(--size-icon-1)]
+    text-[var(--color-title-icon-text-default)]
+    bg-[var(--color-title-icon-background-default)]
+    rounded-[var(--radius-round)];
+  }
+
+  .title {
+    @apply flex items-center gap-[var(--spacing-2)];
   }
 
   .top-navigation-actions {
@@ -245,17 +298,26 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .top-navigation-search {
-    @apply bg-[var(--color-topnav-search-bg)] text-[var(--color-white)] rounded-[var(--radius-2)] focus:outline-none;
+    @apply bg-[var(--color-topnav-search-background-default)]
+    text-[var(--color-topnav-search-text-default)]
+    rounded-[var(--radius-2)]
+    focus:outline-none;
   }
 
   .search {
-    @apply flex items-center bg-[var(--color-topnav-search-bg)] px-[var(--spacing-2)] py-[var(--spacing-1)] gap-[var(--spacing-2)] rounded-[var(--radius-3)];
+    @apply flex items-center
+    bg-[var(--color-search-background-default)]
+    px-[var(--spacing-2)] py-[var(--spacing-1)]
+    gap-[var(--spacing-2)]
+    rounded-[var(--radius-3)];
   }
 
-  /* main-content */
+  /* Main Content */
   .main-content {
-    /* Added left, right, and bottom borders with primary-800 */
-    @apply flex-1 overflow-y-auto bg-[var(--color-background)] p-[var(--spacing-4)] border-l-2 border-b-2 border-r-2 border-[var(--color-neutral-800)];
+    @apply flex-1 overflow-y-auto
+    bg-[var(--color-main-content-background-default)]
+    p-[var(--spacing-4)]
+    border-l-2 border-b-2 border-r-2 border-[var(--color-main-content-border-default)];
   }
 }
 
