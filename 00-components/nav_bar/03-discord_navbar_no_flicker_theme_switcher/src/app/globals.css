@@ -1,53 +1,177 @@
 @import "tailwindcss";
 
-/* Base variables */
-:root {
-  /* Theme colors */
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #202225;
-  --secondary: #5865f2;
+/*
+  Use the @apply directive to inline Tailwind utility classes into your custom CSS.
+  This allows you to reuse Tailwind's utility-based design tokens inside reusable CSS classes.
+  Especially useful for third-party styling overrides or consistent styling without repeating utility classes in HTML/JSX.
+*/
 
-  /* Gray scale */
-  --color-gray-900: #202225;
-  --color-gray-800: #2f3136;
-  --color-gray-700: #36393f;
-  --color-gray-600: #4f545c;
-  --color-gray-400: #d4d7dc;
-  --color-gray-300: #e3e5e8;
-  --color-gray-200: #ebedef;
-  --color-gray-100: #f2f3f5;
+/* Tailwind 4.1 dark mode using class selector */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Base variables - Fundamental, raw design tokens */
+:root {
+  --radius: 0.625rem; /* Base for radius calculations */
+  --spacing: 0.25rem;
+
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Grayscale */
+  --gray-100: #f2f3f5;
+  --gray-200: #ebedef;
+  --gray-300: #e3e5e8;
+  --gray-400: #d4d7dc;
+  --gray-600: #4f545c;
+  --gray-700: #36393f;
+  --gray-800: #2f3136;
+  --gray-900: #202225;
 
   /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-/* Optional: additional theme semantic mappings */
-@theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* All theme semantic mappings, component mappings, and sizing */
+@theme inline {
+  /* Mapped semantic colors */
+  --color-background: var(--gray-100); /* Default light mode background */
+  --color-foreground: var(--gray-900);
+  --color-border: var(--gray-300);
+  --color-text: var(--gray-900);
+
+  --color-black: var(--black);
+  --color-white: var(--white);
+
+  /* Component mapping */
+  --color-sidebar-background: var(--color-neutral-900);
+  --color-sidebar-border: var(--gray-800);
+  --color-sidebar-icon-bg: var(--gray-700);
+  --color-sidebar-icon-hover-bg: var(--color-primary-700);
+  --color-sidebar-icon-color: var(--color-primary-600);
+
+  --color-tooltip-bg: var(--gray-800);
+  --color-tooltip-border: var(--gray-800);
+  --color-tooltip-text: var(--gray-100);
+
+  --color-channelbar-background: var(--color-neutral-900);
+  --color-topnav-background: var(--color-neutral-900);
+
+  --color-topnav-icon-bg: var(--gray-800);
+  --color-topnav-icon-hover-bg: var(--gray-600);
+  --color-topnav-icon-color: var(--gray-400);
+  --color-topnav-search-bg: var(--gray-600);
+
+  --color-divider-light: var(
+    --gray-200
+  ); /* This will be overridden for sidebar-hr */
+  --color-divider-dark: var(
+    --gray-800
+  ); /* This will be overridden for sidebar-hr */
+
+  /* Generic color scales (already present) */
+  --color-primary-100: var(--color-emerald-100);
+  --color-primary-200: var(--color-emerald-200);
+  --color-primary-300: var(--color-emerald-300);
+  --color-primary-400: var(--color-emerald-400);
+  --color-primary-500: var(--color-emerald-500);
+  --color-primary-600: var(--color-emerald-600);
+  --color-primary-700: var(--color-emerald-700);
+  --color-primary-800: var(--color-emerald-800);
+  --color-primary-900: var(--color-emerald-900);
+
+  --color-success-100: var(--color-green-100);
+  --color-success-200: var(--color-green-200);
+  --color-success-300: var(--color-green-300);
+  --color-success-400: var(--color-green-400);
+  --color-success-500: var(--color-green-500);
+  --color-success-600: var(--color-green-600);
+  --color-success-700: var(--color-green-700);
+  --color-success-800: var(--color-green-800);
+  --color-success-900: var(--color-green-900);
+
+  --color-error-100: var(--color-red-100);
+  --color-error-200: var(--color-red-200);
+  --color-error-300: var(--color-red-300);
+  --color-error-400: var(--color-red-400);
+  --color-error-500: var(--color-red-500);
+  --color-error-600: var(--color-red-600);
+  --color-error-700: var(--color-red-700);
+  --color-error-800: var(--color-red-800);
+  --color-error-900: var(--color-red-900);
+
+  --color-warning-100: var(--color-amber-100);
+  --color-warning-200: var(--color-amber-200);
+  --color-warning-300: var(--color-amber-300);
+  --color-warning-400: var(--color-amber-400);
+  --color-warning-500: var(--color-amber-500);
+  --color-warning-600: var(--color-amber-600);
+  --color-warning-700: var(--color-amber-700);
+  --color-warning-800: var(--color-amber-800);
+  --color-warning-900: var(--color-amber-900);
+
+  --color-info-100: var(--color-blue-100);
+  --color-info-200: var(--color-blue-200);
+  --color-info-300: var(--color-blue-300);
+  --color-info-400: var(--color-blue-400);
+  --color-info-500: var(--color-blue-500);
+  --color-info-600: var(--color-blue-600);
+  --color-info-700: var(--color-blue-700);
+  --color-info-800: var(--color-blue-800);
+  --color-info-900: var(--color-blue-900);
+
+  --color-neutral-100: var(--gray-100);
+  --color-neutral-200: var(--gray-200);
+  --color-neutral-300: var(--gray-300);
+  --color-neutral-400: var(--gray-400);
+  --color-neutral-600: var(--gray-600);
+  --color-neutral-700: var(--gray-700);
+  --color-neutral-800: var(--gray-800);
+  --color-neutral-900: var(--gray-900);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  /* Sizing */
+  --size-sidebar-width: 4rem; /* 64px */
+  --size-channelbar-width: 16rem; /* 256px */
+  --size-topnav-height: 3rem; /* 48px */
+  --size-icon: 2rem; /* 32px */
+  --size-icon-lg: 3rem; /* 48px for sidebar icons */
+
+  /* Radius */
+  --radius-1: calc(var(--radius) - 4px); /* sm */
+  --radius-2: calc(var(--radius) - 2px); /* md */
+  --radius-3: var(--radius); /* lg */
+  --radius-round: 9999px; /* full circle */
+
+  /* Spacing */
+  --spacing-1: var(--spacing); /* 0.25rem */
+  --spacing-2: calc(var(--spacing) * 2); /* 0.5rem */
+  --spacing-3: calc(var(--spacing) * 3); /* 0.75rem */
+  --spacing-4: calc(var(--spacing) * 4); /* 1rem */
+  --spacing-5: calc(var(--spacing) * 5); /* 1.25rem */
+  --spacing-6: calc(var(--spacing) * 6); /* 1.5rem */
+  --spacing-7: calc(var(--spacing) * 7); /* 1.75rem */
+  --spacing-8: calc(var(--spacing) * 8); /* 2rem */
 }
 
 /* Dark mode override */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @theme inline {
+    /* Apply dark mode overrides within the theme */
+    --color-background: var(--color-neutral-800);
+    --color-foreground: var(--gray-100);
+    --color-text: var(--gray-100);
+    --color-border: var(--gray-700);
   }
 }
 
 /* Global styles */
-
-/* If you want to add your own default base styles for specific HTML elements, use the @layer directive to add those styles to Tailwind's base layer: */
 @layer base {
   body {
-    background: var(--background);
-    color: var(--foreground);
+    background: var(--color-background); /* Use theme variables */
+    color: var(--color-text); /* Use theme variables */
     font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   }
 
@@ -64,77 +188,79 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   /* sidebar */
   .sidebar-icon {
     /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
-    @apply relative flex items-center justify-center 
-    h-12 w-12 mt-2 mb-2 mx-auto  
-  bg-gray-400 hover:bg-green-600 dark:bg-gray-800 
-  text-green-500 hover:text-white
-    hover:rounded-xl rounded-3xl
-    transition-all duration-300 ease-linear
+    @apply relative flex items-center justify-center
+    h-[var(--size-icon-lg)] w-[var(--size-icon-lg)] mt-[var(--spacing-2)] mb-[var(--spacing-2)] mx-auto
+    bg-[var(--color-sidebar-icon-bg)] hover:bg-[var(--color-sidebar-icon-hover-bg)] dark:bg-[var(--color-gray-800)]
+    text-[var(--color-sidebar-icon-color)] hover:text-[var(--color-white)]
+    rounded-[var(--radius-round)] hover:rounded-[var(--radius-3)] /* Default rounded-full, hover rounded-lg */
+    transition-all duration-300 ease-in-out /* Smoother transition */
     cursor-pointer shadow-lg;
     /* This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML. */
   }
 
   .sidebar {
-    @apply flex flex-col w-16 h-full bg-gray-900 border-r-2 border-gray-800 text-white;
+    @apply flex flex-col w-[var(--size-sidebar-width)] h-full bg-[var(--color-sidebar-background)] text-[var(--color-white)] border-r-2 border-[var(--color-neutral-800)];
   }
 
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    @apply absolute w-auto p-[var(--spacing-2)] m-[var(--spacing-2)] min-w-max left-14 rounded-[var(--radius-2)] shadow-md text-[var(--color-tooltip-text)] bg-[var(--color-tooltip-bg)] text-xs font-bold transition-all duration-100 scale-0 origin-left;
   }
 
   .sidebar-hr {
-    @apply bg-gray-200 dark:bg-gray-800 
-    border border-gray-200 dark:border-gray-800 rounded-full
-    mx-2;
+    @apply bg-[var(--color-sidebar-icon-bg)] dark:bg-[var(--color-sidebar-icon-bg)]
+    border border-[var(--color-sidebar-icon-bg)] dark:border-[var(--color-sidebar-icon-bg)] rounded-[var(--radius-round)]
+    mx-[var(--spacing-2)];
   }
 
   /* channel-bar */
   .channel-bar {
-    @apply flex flex-col w-64 h-full bg-gray-900 text-white p-4;
+    @apply flex flex-col w-[var(--size-channelbar-width)] h-full bg-[var(--color-channelbar-background)] text-[var(--color-white)] p-[var(--spacing-4)] border-r-2 border-[var(--color-neutral-800)];
   }
 
   /* top-navigation */
   .title {
-    @apply flex items-center gap-2;
+    @apply flex items-center gap-[var(--spacing-2)];
   }
 
   .top-navigation {
-    @apply flex items-center justify-between bg-gray-800 text-white h-12 px-4;
+    @apply flex items-center justify-between bg-[var(--color-topnav-background)] text-[var(--color-white)] h-[var(--size-topnav-height)] px-[var(--spacing-4)] border-b-2 border-[var(--color-neutral-800)];
   }
 
   .top-navigation-title {
-    @apply text-lg font-semibold text-white;
+    @apply text-lg font-semibold text-[var(--color-white)];
   }
 
   .top-navigation-icon {
-    @apply bg-gray-800 hover:bg-gray-600 rounded-lg flex items-center justify-center p-1 size-8 text-gray-400 hover:text-white cursor-pointer;
+    @apply bg-[var(--color-topnav-icon-bg)] hover:bg-[var(--color-topnav-icon-hover-bg)] rounded-[var(--radius-round)] flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon)] h-[var(--size-icon)] text-[var(--color-topnav-icon-color)] hover:text-[var(--color-white)] cursor-pointer
+    transition-all duration-300 ease-in-out hover:rounded-[var(--radius-3)];
   }
 
   .title-icon {
-    @apply flex items-center justify-center p-1 size-8 text-gray-400;
+    @apply flex items-center justify-center p-[var(--spacing-1)] w-[var(--size-icon)] h-[var(--size-icon)] text-[var(--color-topnav-icon-color)] rounded-[var(--radius-round)];
   }
 
   .top-navigation-actions {
-    @apply flex items-center gap-x-2;
+    @apply flex items-center gap-[var(--spacing-2)];
   }
 
   .top-navigation-search {
-    @apply bg-gray-600 text-white rounded focus:outline-none;
+    @apply bg-[var(--color-topnav-search-bg)] text-[var(--color-white)] rounded-[var(--radius-2)] focus:outline-none;
   }
 
   .search {
-    @apply flex items-center bg-gray-600 px-2 py-1 gap-x-2 rounded-lg;
+    @apply flex items-center bg-[var(--color-topnav-search-bg)] px-[var(--spacing-2)] py-[var(--spacing-1)] gap-[var(--spacing-2)] rounded-[var(--radius-3)];
   }
 
   /* main-content */
   .main-content {
-    @apply flex-1 overflow-y-auto p-4;
+    /* Added left, right, and bottom borders with primary-800 */
+    @apply flex-1 overflow-y-auto bg-[var(--color-background)] p-[var(--spacing-4)] border-l-2 border-b-2 border-r-2 border-[var(--color-neutral-800)];
   }
 }
 
 /* If your project has class names that conflict with Tailwind CSS utilities, you can prefix all Tailwind-generated classes and CSS variables using the prefix option: */
 /* @layer theme {
-  
+
 } */
 
 /* In addition to using the utilities that ship with Tailwind, you can also add your own custom utilities. This can be useful when there's a CSS feature you'd like to use in your project that Tailwind doesn't include utilities for out of the box. */
