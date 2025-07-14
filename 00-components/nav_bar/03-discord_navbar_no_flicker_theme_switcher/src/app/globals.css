@@ -17,28 +17,18 @@
   --black: #000000;
   --white: #ffffff;
 
-  /* Grayscale */
-  --gray-100: #f2f3f5;
-  --gray-200: #ebedef;
-  --gray-300: #e3e5e8;
-  --gray-400: #d4d7dc;
-  --gray-600: #4f545c;
-  --gray-700: #36393f;
-  --gray-800: #2f3136;
-  --gray-900: #202225;
-
   /* Fonts */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 /* All theme semantic mappings, component mappings, and sizing */
 @theme inline {
   /* Mapped semantic colors */
-  --color-background-1: var(--color-neutral-900);
-  --color-background-2: var(--color-neutral-800);
+  --color-background-1: var(--color-neutral-950);
+  --color-background-2: var(--color-neutral-900);
   --color-border: var(--color-neutral-800);
-  --color-text: var(--color-neutral-200);
+  --color-text: var(--color-neutral-300);
 
   --color-black: var(--black);
   --color-white: var(--white);
@@ -55,42 +45,40 @@
   --color-sidebar-icon-text-hover: var(--color-white);
 
   /* Tooltip */
-  --color-tooltip-background-default: var(--color-background-1);
-  --color-tooltip-text-default: var(--gray-100);
-  --color-tooltip-border-default: var(--gray-800);
+  --color-tooltip-background-default: var(--color-neutral-800);
+  --color-tooltip-text-default: var(--zinc-100);
+  --color-tooltip-border-default: var(--zinc-800);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--color-background-1);
-  --color-channelbar-text-default: var(--color-white);
+  --color-channelbar-text-default: var(--color-neutral-300);
   --color-channelbar-border-default: var(--color-border);
 
   /* Top Navigation */
-  --color-topnav-background-default: var(----color-background-1);
-  --color-topnav-text-default: var(--color-white);
+  --color-topnav-background-default: var(--color-background-1);
   --color-topnav-border-default: var(--color-border);
-
-  --color-topnav-title-text-default: var(--color-white);
 
   --color-topnav-icon-background-default: var(--color-background-1);
   --color-topnav-icon-background-hover: var(--color-background-2);
-  --color-topnav-icon-text-default: var(--gray-400);
-  --color-topnav-icon-text-hover: var(--color-white);
+  --color-topnav-icon-text-default: var(--color-neutral-300);
+  --color-topnav-icon-text-hover: var(--color-neutral-100);
 
   /* Title */
-  --color-title-icon-text-default: var(--gray-400);
-  --color-title-icon-background-default: transparent;
+  --color-topnav-title-text-default: var(--color-neutral-100);
+  --color-topnav-title-icon-background-default: transparent;
 
   /* Search */
-  --color-search-background-default: var(--color-background-2);
-
-  --color-topnav-search-text-default: var(--color-white);
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-neutral-800);
+  --color-topnav-search-text-default: var(--color-neutral-500);
+  --color-topnav-search-text-hover: var(--color-neutral-400);
 
   /* Main Content */
   --color-main-content-background-default: var(--color-background-2);
   --color-main-content-text-default: var(--color-text);
   --color-main-content-border-default: var(--color-border);
 
-  --color-divider: var(--gray-800);
+  --color-divider: var(--color-border);
 
   /* Generic color scales */
   --color-primary-100: var(--color-emerald-100);
@@ -143,17 +131,16 @@
   --color-info-800: var(--color-blue-800);
   --color-info-900: var(--color-blue-900);
 
-  --color-neutral-100: var(--gray-100);
-  --color-neutral-200: var(--gray-200);
-  --color-neutral-300: var(--gray-300);
-  --color-neutral-400: var(--gray-400);
-  --color-neutral-600: var(--gray-600);
-  --color-neutral-700: var(--gray-700);
-  --color-neutral-800: var(--gray-800);
-  --color-neutral-900: var(--gray-900);
-
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
+  --color-neutral-50: var(--color-zinc-50);
+  --color-neutral-100: var(--color-zinc-100);
+  --color-neutral-200: var(--color-zinc-200);
+  --color-neutral-300: var(--color-zinc-300);
+  --color-neutral-400: var(--color-zinc-400);
+  --color-neutral-600: var(--color-zinc-600);
+  --color-neutral-700: var(--color-zinc-700);
+  --color-neutral-800: var(--color-zinc-800);
+  --color-neutral-900: var(--color-zinc-900);
+  --color-neutral-950: var(--color-zinc-950);
 
   /* Sizing */
   --size-sidebar-width: 4rem;
@@ -180,11 +167,8 @@
 }
 
 /* Dark mode override */
-@media (prefers-color-scheme: dark) {
-  @theme inline {
-    /* Apply dark mode overrides within the theme */
-  }
-}
+/* .dark {
+} */
 
 /* Global styles */
 @layer base {
@@ -257,14 +241,14 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .top-navigation {
     @apply flex items-center justify-between
     bg-[var(--color-topnav-background-default)]
-    text-[var(--color-topnav-text-default)]
     h-[var(--size-topnav-height)]
     px-[var(--spacing-4)]
     border-b-2 border-[var(--color-topnav-border-default)];
   }
 
   .top-navigation-title {
-    @apply text-lg font-semibold text-[var(--color-topnav-title-text-default)];
+    @apply text-lg font-semibold text-[var(--color-topnav-title-text-default)]
+    p-[var(--spacing-1)];
   }
 
   .top-navigation-icon {
@@ -284,8 +268,8 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     @apply flex items-center justify-center
     p-[var(--spacing-1)]
     w-[var(--size-icon-1)] h-[var(--size-icon-1)]
-    text-[var(--color-title-icon-text-default)]
-    bg-[var(--color-title-icon-background-default)]
+    text-[var(--color-topnav-title-text-default)]
+    bg-[var(--color-topnav-title-icon-background-default)]
     rounded-[var(--radius-round)];
   }
 
@@ -298,15 +282,16 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .top-navigation-search {
-    @apply bg-[var(--color-topnav-search-background-default)]
-    text-[var(--color-topnav-search-text-default)]
-    rounded-[var(--radius-2)]
+    @apply rounded-[var(--radius-2)]
     focus:outline-none;
   }
 
   .search {
     @apply flex items-center
-    bg-[var(--color-search-background-default)]
+    bg-[var(--color-topnav-search-background-default)]
+    hover:bg-[var(--color-topnav-search-background-hover)]
+    text-[var(--color-topnav-search-text-default)]
+    hover:text-[var(--color-topnav-search-text-hover)]
     px-[var(--spacing-2)] py-[var(--spacing-1)]
     gap-[var(--spacing-2)]
     rounded-[var(--radius-3)];
