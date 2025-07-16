@@ -13,10 +13,10 @@ import MainContent from "@/components/layout/MainContent";
 
 export default function Home() {
   return (
-    <div className="flex h-screen">
+    <div className="home">
       <SideBar />
       <ChannelBar />
-      <div className="flex flex-1 flex-col">
+      <div className="main-section">
         <TopNavigation />
         <MainContent />
       </div>

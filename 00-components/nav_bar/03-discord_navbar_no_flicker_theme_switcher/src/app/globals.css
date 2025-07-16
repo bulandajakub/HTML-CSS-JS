@@ -188,14 +188,19 @@
 
 Traditionally these would be classes like card, btn, badge — that kind of thing. */
 @layer components {
+  /* Home */
+  .home {
+    @apply flex h-screen divide-x-2 divide-[var(--color-border)];
+  }
+
   /* Sidebar */
   .sidebar {
     /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
     /* This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML. */
-    @apply flex flex-col justify-center w-[var(--size-sidebar-width)] h-full
+    @apply flex flex-col justify-center h-full
     bg-[var(--color-sidebar-background-default)]
     text-[var(--color-sidebar-text-default)]
-    border-r-2 border-[var(--color-sidebar-border-default)];
+    p-[var(--spacing-3)];
   }
 
   .sidebar-icon {
@@ -233,17 +238,20 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     @apply flex flex-col w-[var(--size-channelbar-width)] h-full
     bg-[var(--color-channelbar-background-default)]
     text-[var(--color-channelbar-text-default)]
-    p-[var(--spacing-4)]
-    border-r-2 border-[var(--color-channelbar-border-default)];
+    p-[var(--spacing-4)];
+  }
+
+  /* Main section */
+  .main-section {
+    @apply flex flex-1 flex-col;
   }
 
   /* Top Navigation */
   .top-navigation {
     @apply flex items-center justify-between
     bg-[var(--color-topnav-background-default)]
-    h-[var(--size-topnav-height)]
-    px-[var(--spacing-4)]
-    border-b-2 border-[var(--color-topnav-border-default)];
+    /* h-[var(--size-topnav-height)] */
+    p-[var(--spacing-3)];
   }
 
   .top-navigation-title {
@@ -301,8 +309,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .main-content {
     @apply flex-1 overflow-y-auto
     bg-[var(--color-main-content-background-default)]
-    p-[var(--spacing-4)]
-    border-b-2 border-r-2 border-[var(--color-main-content-border-default)];
+    p-[var(--spacing-4)];
   }
 }
 
