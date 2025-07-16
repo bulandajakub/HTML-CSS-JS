@@ -16,14 +16,16 @@
 
   --black: #000000;
   --white: #ffffff;
+}
 
+@theme {
   /* Fonts */
   --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 /* All theme semantic mappings, component mappings, and sizing */
-@theme inline {
+@theme static {
   /* Mapped semantic colors */
   --color-background-1: var(--color-neutral-950);
   --color-background-2: var(--color-neutral-900);
@@ -32,53 +34,6 @@
 
   --color-black: var(--black);
   --color-white: var(--white);
-
-  /* Component mapping */
-  /* Sidebar */
-  --color-sidebar-background-default: var(--color-background-1);
-  --color-sidebar-text-default: var(--color-white);
-  --color-sidebar-border-default: var(--color-border);
-
-  --color-sidebar-icon-background-default: var(--color-background-2);
-  --color-sidebar-icon-background-hover: var(--color-primary-600);
-  --color-sidebar-icon-text-default: var(--color-primary-600);
-  --color-sidebar-icon-text-hover: var(--color-white);
-
-  /* Tooltip */
-  --color-tooltip-background-default: var(--color-neutral-800);
-  --color-tooltip-text-default: var(--zinc-100);
-  --color-tooltip-border-default: var(--zinc-800);
-
-  /* Channel Bar */
-  --color-channelbar-background-default: var(--color-background-1);
-  --color-channelbar-text-default: var(--color-neutral-300);
-  --color-channelbar-border-default: var(--color-border);
-
-  /* Top Navigation */
-  --color-topnav-background-default: var(--color-background-1);
-  --color-topnav-border-default: var(--color-border);
-
-  --color-topnav-icon-background-default: var(--color-background-1);
-  --color-topnav-icon-background-hover: var(--color-background-2);
-  --color-topnav-icon-text-default: var(--color-neutral-300);
-  --color-topnav-icon-text-hover: var(--color-neutral-100);
-
-  /* Title */
-  --color-topnav-title-text-default: var(--color-neutral-100);
-  --color-topnav-title-icon-background-default: transparent;
-
-  /* Search */
-  --color-topnav-search-background-default: var(--color-background-2);
-  --color-topnav-search-background-hover: var(--color-neutral-800);
-  --color-topnav-search-text-default: var(--color-neutral-500);
-  --color-topnav-search-text-hover: var(--color-neutral-400);
-
-  /* Main Content */
-  --color-main-content-background-default: var(--color-background-2);
-  --color-main-content-text-default: var(--color-text);
-  --color-main-content-border-default: var(--color-border);
-
-  --color-divider: var(--color-border);
 
   /* Generic color scales */
   --color-primary-100: var(--color-emerald-100);
@@ -166,6 +121,55 @@
   --spacing-8: calc(var(--spacing) * 8);
 }
 
+@theme inline {
+  /* Component mapping */
+  /* Sidebar */
+  --color-sidebar-background-default: var(--color-background-1);
+  --color-sidebar-text-default: var(--color-white);
+  --color-sidebar-border-default: var(--color-border);
+
+  --color-sidebar-icon-background-default: var(--color-background-2);
+  --color-sidebar-icon-background-hover: var(--color-primary-600);
+  --color-sidebar-icon-text-default: var(--color-primary-600);
+  --color-sidebar-icon-text-hover: var(--color-white);
+
+  /* Tooltip */
+  --color-tooltip-background-default: var(--color-neutral-800);
+  --color-tooltip-text-default: var(--zinc-100);
+  --color-tooltip-border-default: var(--zinc-800);
+
+  /* Channel Bar */
+  --color-channelbar-background-default: var(--color-background-1);
+  --color-channelbar-text-default: var(--color-neutral-300);
+  --color-channelbar-border-default: var(--color-border);
+
+  /* Top Navigation */
+  --color-topnav-background-default: var(--color-background-1);
+  --color-topnav-border-default: var(--color-border);
+
+  --color-topnav-icon-background-default: var(--color-background-1);
+  --color-topnav-icon-background-hover: var(--color-background-2);
+  --color-topnav-icon-text-default: var(--color-neutral-300);
+  --color-topnav-icon-text-hover: var(--color-neutral-100);
+
+  /* Title */
+  --color-topnav-title-text-default: var(--color-neutral-100);
+  --color-topnav-title-icon-background-default: transparent;
+
+  /* Search */
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-neutral-800);
+  --color-topnav-search-text-default: var(--color-neutral-500);
+  --color-topnav-search-text-hover: var(--color-neutral-400);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
+  --color-main-content-text-default: var(--color-text);
+  --color-main-content-border-default: var(--color-border);
+
+  --color-divider: var(--color-border);
+}
+
 /* Dark mode override */
 /* .dark {
 } */
@@ -175,7 +179,7 @@
   body {
     background: var(--color-background-1);
     color: var(--color-text);
-    font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+    font-family: var(--font-sans);
   }
 
   html,
