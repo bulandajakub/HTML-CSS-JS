@@ -26,15 +26,6 @@
 
 /* All theme semantic mappings, component mappings, and sizing */
 @theme static {
-  /* Mapped semantic colors */
-  --color-background-1: var(--color-neutral-950);
-  --color-background-2: var(--color-neutral-900);
-  --color-border: var(--color-neutral-800);
-  --color-text: var(--color-neutral-300);
-
-  --color-black: var(--black);
-  --color-white: var(--white);
-
   /* Generic color scales */
   --color-primary-100: var(--color-emerald-100);
   --color-primary-200: var(--color-emerald-200);
@@ -122,16 +113,22 @@
 }
 
 @theme inline {
+  /* Mapped semantic colors */
+  --color-background-1: var(--color-neutral-950);
+  --color-background-2: var(--color-neutral-900);
+  --color-border: var(--color-neutral-800);
+  --color-text: var(--color-neutral-300);
+
   /* Component mapping */
   /* Sidebar */
   --color-sidebar-background-default: var(--color-background-1);
-  --color-sidebar-text-default: var(--color-white);
+  --color-sidebar-text-default: var(--color-neutral-100);
   --color-sidebar-border-default: var(--color-border);
 
   --color-sidebar-icon-background-default: var(--color-background-2);
   --color-sidebar-icon-background-hover: var(--color-primary-600);
   --color-sidebar-icon-text-default: var(--color-primary-600);
-  --color-sidebar-icon-text-hover: var(--color-white);
+  --color-sidebar-icon-text-hover: var(--color-neutral-100);
 
   /* Tooltip */
   --color-tooltip-background-default: var(--color-neutral-800);
