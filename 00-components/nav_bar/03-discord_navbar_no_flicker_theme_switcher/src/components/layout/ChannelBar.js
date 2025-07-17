@@ -1,7 +1,7 @@
 export default function ChannelBar() {
   return (
     <section className="channel-bar">
-      <h3 className="text-lg text-gray-400">Channels</h3>
+      <h3 className="channelbar-title">Channels</h3>
       <aside>
         <details>
           <summary>Topics</summary>
