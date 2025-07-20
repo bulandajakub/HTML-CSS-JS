@@ -14,12 +14,14 @@ import MainContent from "@/components/layout/MainContent";
 export default function Home() {
   return (
     <div className="home">
-      <SideBar />
+      <nav>
+        <SideBar />
+      </nav>
       <ChannelBar />
-      <div className="main-section">
+      <main className="main-section">
         <TopNavigation />
         <MainContent />
-      </div>
+      </main>
     </div>
   );
 }
