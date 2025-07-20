@@ -128,7 +128,7 @@
 
   --color-sidebar-icon-background-default: var(--color-background-2);
   --color-sidebar-icon-background-hover: var(--color-primary-600);
-  --color-sidebar-icon-text-default: var(--color-text-1);
+  --color-sidebar-icon-text-default: var(--color-primary-500);
   --color-sidebar-icon-text-hover: var(--color-text-2);
 
   /* Tooltip */
