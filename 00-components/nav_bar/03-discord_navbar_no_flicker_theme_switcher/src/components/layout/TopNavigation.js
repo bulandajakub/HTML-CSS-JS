@@ -5,6 +5,7 @@ import {
   FaThumbtack,
   FaUserFriends,
 } from "react-icons/fa";
+import ThemeSwitch from "@/components/theme/ThemeSwitch";
 
 const TopNavigation = () => {
   return (
@@ -42,6 +43,7 @@ const SearchInput = () => (
 );
 const NavigationActions = () => (
   <div className="top-navigation-actions">
+    <ThemeSwitch />
     <TopIcon icon={<FaBell />} />
     <TopIcon icon={<FaThumbtack />} />
     <TopIcon icon={<FaUserFriends />} />
