@@ -42,7 +42,7 @@ function ThemeSwitch() {
   }
 
   if (resolvedTheme == "light") {
-    return <FiSun onClick={() => setTheme("dark")} />;
+    return <FiMoon onClick={() => setTheme("dark")} />;
   }
 }
 

@@ -126,10 +126,10 @@
   --color-sidebar-text-default: var(--color-text-1);
   --color-sidebar-border-default: var(--color-border);
 
-  --color-sidebar-icon-background-default: var(--color-background-2);
-  --color-sidebar-icon-background-hover: var(--color-primary-600);
   --color-sidebar-icon-text-default: var(--color-primary-500);
-  --color-sidebar-icon-text-hover: var(--color-text-2);
+  --color-sidebar-icon-text-hover: var(--color-background-1);
+  --color-sidebar-icon-background-default: var(--color-background-2);
+  --color-sidebar-icon-background-hover: var(--color-sidebar-icon-text-default);
 
   /* Tooltip */
   --color-tooltip-background-default: var(--color-background-1);
@@ -184,10 +184,10 @@
   --color-sidebar-text-default: var(--color-text-1);
   --color-sidebar-border-default: var(--color-border);
 
-  --color-sidebar-icon-background-default: var(--color-background-2);
-  --color-sidebar-icon-background-hover: var(--color-primary-600);
   --color-sidebar-icon-text-default: var(--color-primary-600);
   --color-sidebar-icon-text-hover: var(--color-text-1);
+  --color-sidebar-icon-background-default: var(--color-background-2);
+  --color-sidebar-icon-background-hover: var(--color-sidebar-icon-text-default);
 
   /* Tooltip */
   --color-tooltip-background-default: var(--color-neutral-800);
