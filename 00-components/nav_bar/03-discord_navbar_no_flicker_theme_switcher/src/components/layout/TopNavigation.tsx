@@ -8,7 +8,7 @@ import {
 import ThemeSwitch from "@/components/theme/ThemeSwitch";
 import Button from "@/components/ui/Button";
 
-const TopNavigation = () => {
+const TopNavigation: React.FC = () => {
   return (
     <header className="top-navigation">
       <Title />
@@ -17,7 +17,7 @@ const TopNavigation = () => {
   );
 };
 
-const Title = () => (
+const Title: React.FC = () => (
   <div className="title">
     <Button className="title-icon" applyDefaultStyles={false}>
       <FaHashtag />
@@ -25,13 +25,15 @@ const Title = () => (
     <h3 className="top-navigation-title channel-name-text">general</h3>
   </div>
 );
-const SearchInput = () => (
+
+const SearchInput: React.FC = () => (
   <div className="search">
     <input type="text" placeholder="Search" className="top-navigation-search" />
     <FaSearch />
   </div>
 );
-const NavigationActions = () => (
+
+const NavigationActions: React.FC = () => (
   <div className="top-navigation-actions">
     <ThemeSwitch />
     <Button>

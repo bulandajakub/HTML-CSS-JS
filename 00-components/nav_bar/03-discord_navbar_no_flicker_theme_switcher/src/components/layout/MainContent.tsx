@@ -1,4 +1,4 @@
-const MainContent = () => {
+const MainContent: React.FC = () => {
   return (
     <section className="main-content">
       <p>Main content area.</p>

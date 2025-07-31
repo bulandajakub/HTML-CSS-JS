@@ -1,4 +1,4 @@
-import SideBar from "@/components/layout/SideBar";
+import Sidebar from "@/components/layout/Sidebar";
 import ChannelBar from "@/components/layout/ChannelBar";
 import TopNavigation from "@/components/layout/TopNavigation";
 import MainContent from "@/components/layout/MainContent";
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="home">
       <nav>
-        <SideBar />
+        <Sidebar />
       </nav>
       <ChannelBar />
       <main className="main-section">

@@ -1,4 +1,6 @@
-export default function ChannelBar() {
+import React from "react";
+
+const ChannelBar: React.FC = () => {
   return (
     <section className="channel-bar">
       <h3 className="channelbar-title">Channels</h3>
@@ -32,4 +34,6 @@ export default function ChannelBar() {
       </aside>
     </section>
   );
-}
+};
+
+export default ChannelBar;

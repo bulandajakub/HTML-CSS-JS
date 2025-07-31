@@ -8,6 +8,7 @@ interface ButtonProps {
   onClick?: () => void;
   // className allows to pass additional Tailwind/CSS classes
   className?: string;
+  applyDefaultStyles?: boolean;
 }
 
 // Functional component, React.FC is a generic type that automatically provides types for children and context
@@ -15,10 +16,13 @@ const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   className = "",
+  applyDefaultStyles = true,
 }) => {
+  const baseStyles = applyDefaultStyles ? "top-navigation-icon" : "";
+
   return (
     // Any additional classes passed via `className` prop will be appended
-    <button className={`top-navigation-icon ${className}`} onClick={onClick}>
+    <button className={`${baseStyles} ${className}`} onClick={onClick}>
       {children}
     </button>
   );
