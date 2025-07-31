@@ -6,6 +6,7 @@ import {
   FaUserFriends,
 } from "react-icons/fa";
 import ThemeSwitch from "@/components/theme/ThemeSwitch";
+import Button from "@/components/ui/button";
 
 const TopNavigation = () => {
   return (
@@ -18,21 +19,10 @@ const TopNavigation = () => {
 
 const Title = () => (
   <div className="title">
-    <TopIcon
-      icon={<FaHashtag />}
-      className="title-icon"
-      applyDefaultStyles={false}
-    />
+    <Button className="title-icon" applyDefaultStyles={false}>
+      <FaHashtag />
+    </Button>
     <h3 className="top-navigation-title channel-name-text">general</h3>
-  </div>
-);
-const TopIcon = ({ icon, className = "", applyDefaultStyles = true }) => (
-  <div
-    className={`${
-      applyDefaultStyles ? "top-navigation-icon" : ""
-    } ${className}`}
-  >
-    {icon}
   </div>
 );
 const SearchInput = () => (
@@ -44,9 +34,15 @@ const SearchInput = () => (
 const NavigationActions = () => (
   <div className="top-navigation-actions">
     <ThemeSwitch />
-    <TopIcon icon={<FaBell />} />
-    <TopIcon icon={<FaThumbtack />} />
-    <TopIcon icon={<FaUserFriends />} />
+    <Button>
+      <FaBell />
+    </Button>
+    <Button>
+      <FaThumbtack />
+    </Button>
+    <Button>
+      <FaUserFriends />
+    </Button>
     <SearchInput />
   </div>
 );
