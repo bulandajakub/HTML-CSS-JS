@@ -6,7 +6,7 @@ import {
   FaUserFriends,
 } from "react-icons/fa";
 import ThemeSwitch from "@/components/theme/ThemeSwitch";
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/Button";
 
 const TopNavigation = () => {
   return (
