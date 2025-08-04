@@ -19,7 +19,7 @@ const TopNavigation: React.FC = () => {
 
 const Title: React.FC = () => (
   <div className="title">
-    <Button className="title-icon" applyDefaultStyles={false}>
+    <Button className="title-icon">
       <FaHashtag />
     </Button>
     <h3 className="top-navigation-title channel-name-text">general</h3>

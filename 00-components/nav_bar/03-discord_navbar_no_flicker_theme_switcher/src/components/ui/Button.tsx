@@ -1,28 +1,72 @@
 import React from "react";
 
-// Define the shape of button's properties (props)
-interface ButtonProps {
-  // children will contain anything valid in React (text, icons, other components, etc.)
-  children: React.ReactNode;
-  // onClick is an optional function, takes no arguments and returns nothing (void)
-  onClick?: () => void;
-  // className allows to pass additional Tailwind/CSS classes
-  className?: string;
-  applyDefaultStyles?: boolean;
+/**
+ * Props for the Button component.
+ *
+ * @public
+ */
+export interface ButtonProps {
+  /**
+   * The content of the button. This can be text, an icon, or a combination of both.
+   */
+  readonly children: React.ReactNode;
+  /**
+   * The visual style of the button. In component libraries, this is often called 'variant'.
+   *
+   * @default "neutral"
+   */
+  readonly variant?: "primary" | "neutral" | "success" | "error" | "info";
+  /**
+   * A variable that defines the button's visual style.
+   *
+   * @default "filled"
+   */
+  readonly mode?: "filled" | "outline" | "text";
+  /**
+   * A prop to handle the `disabled` state.
+   *
+   * @default false
+   */
+  readonly disabled?: boolean;
+  /**
+   * The onClick event handler.
+   */
+  readonly onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  /**
+   * A title for accessibility and a tooltip.
+   */
+  readonly title?: string;
+  /**
+   * Additional Tailwind/CSS classes to be applied to the button.
+   */
+  readonly className?: string;
 }
 
-// Functional component, React.FC is a generic type that automatically provides types for children and context
+/**
+ * A generic, fully customizable button component.
+ */
 const Button: React.FC<ButtonProps> = ({
   children,
-  onClick,
+  variant = "neutral",
+  mode = "filled",
+  disabled = false,
+  title,
   className = "",
-  applyDefaultStyles = true,
+  onClick,
+  ...rest
 }) => {
-  const baseStyles = applyDefaultStyles ? "top-navigation-icon" : "";
+  // Logic to build the button's classes based on props.
+  const composedClasses = `button button--${variant} button--${mode} ${className}`;
 
   return (
-    // Any additional classes passed via `className` prop will be appended
-    <button className={`${baseStyles} ${className}`} onClick={onClick}>
+    <button
+      className={composedClasses}
+      onClick={onClick}
+      disabled={disabled}
+      title={title}
+      type="button"
+      {...rest}
+    >
       {children}
     </button>
   );
