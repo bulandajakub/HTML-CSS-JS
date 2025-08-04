@@ -11,7 +11,7 @@ export interface ButtonProps {
    */
   readonly children: React.ReactNode;
   /**
-   * The visual style of the button. In component libraries, this is often called 'variant'.
+   * The visual style of the button.
    *
    * @default "neutral"
    */
