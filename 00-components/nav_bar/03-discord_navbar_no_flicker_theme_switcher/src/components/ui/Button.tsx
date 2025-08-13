@@ -21,7 +21,7 @@ export interface ButtonProps {
    *
    * @default "filled"
    */
-  readonly mode?: "filled" | "outline" | "text";
+  readonly mode?: "filled" | "outline" | "ghost";
   /**
    * A prop to handle the `disabled` state.
    *
