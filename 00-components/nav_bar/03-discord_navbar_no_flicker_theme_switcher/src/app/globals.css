@@ -320,19 +320,6 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     p-[var(--spacing-1)];
   }
 
-  .top-navigation-icon {
-    @apply bg-[var(--color-topnav-icon-background-default)]
-    hover:bg-[var(--color-topnav-icon-background-hover)]
-    rounded-[var(--radius-round)] hover:rounded-[var(--radius-3)]
-    flex items-center justify-center
-    p-[var(--spacing-1)]
-    w-[var(--size-icon-1)] h-[var(--size-icon-1)]
-    text-[var(--color-topnav-icon-text-default)]
-    hover:text-[var(--color-topnav-icon-text-hover)]
-    cursor-pointer
-    transition-all duration-300 ease-in-out;
-  }
-
   .title-icon {
     @apply flex items-center justify-center
     p-[var(--spacing-1)]
@@ -368,10 +355,47 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
 
   /* Main Content */
   .main-content {
-    @apply flex-1 overflow-y-auto
+    @apply flex flex-col
+    h-full
+    p-[var(--spacing-8)]
+    gap-[var(--spacing-4)]
+
     bg-[var(--color-main-content-background-default)]
-    text-[var(--color-main-content-text-default)]
-    p-[var(--spacing-4)];
+    text-[var(--color-main-content-text-default)];
+  }
+
+  .button-component {
+    @apply flex flex-col
+    gap-[var(--spacing-8)];
+  }
+
+  .button-container {
+    @apply flex flex-col
+    gap-[var(--spacing-2)];
+  }
+
+  .button-list {
+    @apply flex flex-wrap
+    gap-[var(--spacing-4)];
+  }
+
+  /* Buttons */
+  .button {
+    @apply rounded-[var(--radius-round)]
+    hover:rounded-[var(--radius-3)]
+    flex items-center justify-center
+    p-[var(--spacing-1)]
+    w-[var(--size-icon-1)]
+    h-[var(--size-icon-1)]
+    cursor-pointer
+    transition-all duration-300 ease-in-out;
+  }
+
+  .button-neutral-ghost {
+    @apply text-[var(--color-topnav-icon-text-default)]
+    hover:text-[var(--color-topnav-icon-text-hover)];
+    /* bg-[var(--color-topnav-icon-background-default)]
+    hover:bg-[var(--color-topnav-icon-background-hover)] */
   }
 }
 

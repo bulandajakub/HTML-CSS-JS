@@ -56,7 +56,7 @@ const Button: React.FC<ButtonProps> = ({
   ...rest
 }) => {
   // Logic to build the button's classes based on props.
-  const composedClasses = `button button--${variant} button--${mode} ${className}`;
+  const composedClasses = `button-${variant}-${mode} ${className}`;
 
   return (
     <button
