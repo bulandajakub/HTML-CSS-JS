@@ -355,22 +355,28 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
 
   /* Main Content */
   .main-content {
-    @apply flex flex-col
-    h-full
-    p-[var(--spacing-8)]
-    gap-[var(--spacing-4)]
+    @apply flex
+    flex-auto
+    flex-col
+
+    p-[var(--spacing-6)]
+    gap-[var(--spacing-2)]
 
     bg-[var(--color-main-content-background-default)]
     text-[var(--color-main-content-text-default)];
   }
 
   .button-component {
-    @apply flex flex-col
+    @apply flex
+    flex-col
+
     gap-[var(--spacing-8)];
   }
 
   .button-container {
-    @apply flex flex-col
+    @apply flex
+    flex-col
+
     gap-[var(--spacing-2)];
   }
 
@@ -381,11 +387,12 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
 
   /* Buttons */
   .button {
-    @apply rounded-[var(--radius-round)]
-    hover:rounded-[var(--radius-3)]
-    flex
+    @apply flex
     items-center
     justify-center
+
+    rounded-[var(--radius-round)]
+    hover:rounded-[var(--radius-3)]
 
     p-[var(--spacing-1)]
     w-[var(--size-icon-1)]
@@ -396,10 +403,31 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .button-neutral-ghost {
-    @apply text-[var(--color-topnav-icon-text-default)]
-    hover:text-[var(--color-topnav-icon-text-hover)];
-    /* bg-[var(--color-topnav-icon-background-default)]
-    hover:bg-[var(--color-topnav-icon-background-hover)] */
+    @apply /* Layout / Flexbox */
+    inline-flex items-center gap-[var(--spacing-1)]
+
+    /* Sizing / Spacing */
+    px-[var(--spacing-2)] py-[var(--spacing-1)]
+
+    /* Typography */
+    text-sm font-medium text-center
+    text-[var(--color-topnav-icon-text-default)]
+    hover:text-[var(--color-topnav-icon-text-hover)]
+    dark:text-[var(--color-topnav-icon-text-default)]
+    dark:hover:text-[var(--color-topnav-icon-text-hover)]
+
+    /* Background / Borders */
+    bg-transparent
+    hover:bg-[var(--color-topnav-icon-background-hover)]
+    dark:hover:bg-[var(--color-topnav-icon-background-hover)]
+    /* border border-[var(--color-border)] */
+    dark:border-[var(--color-border)]
+
+    /* Focus / Ring / Outline */
+    focus:outline-none focus:ring-1 focus:ring-[var(--color-border)]
+
+    /* Radius */
+    rounded-[var(--radius-3)];
   }
 }
 
