@@ -5,7 +5,7 @@ const MainContent: React.FC = () => {
     <section className="main-content">
       <h2 className="text-xl font-bold">Button Variants</h2>
       <div className="button-component">
-        <div className="button-container">
+        <article className="button-container">
           <h3 className="text-lg font-semibold">Filled</h3>
           <div className="button-list">
             <Button variant="primary" mode="filled">
@@ -24,9 +24,9 @@ const MainContent: React.FC = () => {
               Info
             </Button>
           </div>
-        </div>
+        </article>
 
-        <div className="button-container">
+        <article className="button-container">
           <h3 className="text-lg font-semibold">Outline</h3>
           <div className="button-list">
             <Button variant="primary" mode="outline">
@@ -45,9 +45,9 @@ const MainContent: React.FC = () => {
               Info
             </Button>
           </div>
-        </div>
+        </article>
 
-        <div className="button-container">
+        <article className="button-container">
           <h3 className="text-lg font-semibold">Ghost</h3>
           <div className="button-list">
             <Button variant="primary" mode="ghost">
@@ -66,7 +66,7 @@ const MainContent: React.FC = () => {
               Info
             </Button>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   );

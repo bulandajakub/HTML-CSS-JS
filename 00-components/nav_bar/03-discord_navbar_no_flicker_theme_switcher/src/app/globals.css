@@ -383,10 +383,14 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .button {
     @apply rounded-[var(--radius-round)]
     hover:rounded-[var(--radius-3)]
-    flex items-center justify-center
+    flex
+    items-center
+    justify-center
+
     p-[var(--spacing-1)]
     w-[var(--size-icon-1)]
     h-[var(--size-icon-1)]
+
     cursor-pointer
     transition-all duration-300 ease-in-out;
   }
