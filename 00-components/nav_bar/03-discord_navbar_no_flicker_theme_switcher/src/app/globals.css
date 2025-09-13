@@ -120,111 +120,189 @@
   --color-text-1: var(--color-neutral-800);
   --color-text-2: var(--color-neutral-600);
 
-  /* Components */
+  /*--- Background ---*/
   /* Sidebar */
   --color-sidebar-background-default: var(--color-background-1);
-  --color-sidebar-text-default: var(--color-text-1);
-  --color-sidebar-border-default: var(--color-border);
-
-  --color-sidebar-icon-text-default: var(--color-primary-500);
-  --color-sidebar-icon-text-hover: var(--color-background-1);
-  --color-sidebar-icon-background-default: var(--color-background-2);
-  --color-sidebar-icon-background-hover: var(--color-sidebar-icon-text-default);
 
   /* Tooltip */
   --color-tooltip-background-default: var(--color-background-1);
-  --color-tooltip-text-default: var(--color-text-1);
-  --color-tooltip-border-default: var(--color-border);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--color-background-1);
-  --color-channelbar-title-default: var(--color-text-2);
-  --color-channelbar-text-default: var(--color-text-1);
-  --color-channelbar-border-default: var(--color-border);
 
   /* Top Navigation */
   --color-topnav-background-default: var(--color-background-1);
+
+  /* Top Navigation-title */
+  --color-topnav-title-icon-background-default: transparent;
+
+  /* Top Navigation-search */
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-white);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
+
+  /* Button */
+  --color-button-background-default: var(--color-background-1);
+  --color-button-background-hover: var(--color-background-2);
+
+  /* Button-sidebar */
+  --color-button-sidebar-background-default: var(--color-background-2);
+  --color-button-sidebar-background-hover: var(--color-text-1);
+
+  /*--- Border ---*/
+  /* Sidebar */
+  --color-sidebar-border-default: var(--color-border);
+
+  /* Tooltip */
+  --color-tooltip-border-default: var(--color-border);
+
+  /* Channel Bar */
+  --color-channelbar-border-default: var(--color-border);
+
+  /* Top Navigation */
   --color-topnav-border-default: var(--color-border);
 
-  --color-topnav-icon-background-default: var(--color-background-1);
-  --color-topnav-icon-background-hover: var(--color-background-2);
-  --color-topnav-icon-text-default: var(--color-text-2);
-  --color-topnav-icon-text-hover: var(--color-text-1);
+  /* Title */
+
+  /* Search */
+
+  /* Main Content */
+  --color-main-content-border-default: var(--color-border);
+
+  /* Divider */
+  --color-divider: var(--color-border);
+
+  /* Button */
+
+  /*--- Text ---*/
+  /* Sidebar */
+  --color-sidebar-text-default: var(--color-button-sidebar-background-hover);
+
+  /* Tooltip */
+  --color-tooltip-text-default: var(--color-text-1);
+
+  /* Channel Bar */
+  --color-channelbar-title-default: var(--color-text-2);
+  --color-channelbar-text-default: var(--color-text-1);
+
+  /* Top Navigation */
 
   /* Title */
   --color-topnav-title-text-default: var(--color-text-1);
-  --color-topnav-title-icon-background-default: transparent;
 
   /* Search */
-  --color-topnav-search-background-default: var(--color-background-2);
-  --color-topnav-search-background-hover: var(--color-white);
   --color-topnav-search-text-default: var(--color-text-2);
   --color-topnav-search-text-hover: var(--color-text-1);
 
   /* Main Content */
-  --color-main-content-background-default: var(--color-background-2);
   --color-main-content-text-default: var(--color-text-1);
-  --color-main-content-border-default: var(--color-border);
 
-  --color-divider: var(--color-border);
+  /* Button */
+  --color-button-text-default: var(--color-text-2);
+  --color-button-text-hover: var(--color-text-1);
+
+  /* Button-sidebar */
+  --color-button-sidebar-text-default: var(--color-primary-500);
+  --color-button-sidebar-text-hover: var(--color-background-1);
 }
 
 /* Dark mode override */
 .dark {
-  /* Mapped semantic colors */
+  /* Semantic colors */
   --color-background-1: var(--color-neutral-950);
   --color-background-2: var(--color-neutral-900);
   --color-border: var(--color-neutral-800);
   --color-text-1: var(--color-neutral-100);
   --color-text-2: var(--color-neutral-300);
 
-  /* Component mapping */
+  /*--- Background ---*/
   /* Sidebar */
   --color-sidebar-background-default: var(--color-background-1);
-  --color-sidebar-text-default: var(--color-text-1);
-  --color-sidebar-border-default: var(--color-border);
-
-  --color-sidebar-icon-text-default: var(--color-primary-600);
-  --color-sidebar-icon-text-hover: var(--color-text-1);
-  --color-sidebar-icon-background-default: var(--color-background-2);
-  --color-sidebar-icon-background-hover: var(--color-sidebar-icon-text-default);
 
   /* Tooltip */
   --color-tooltip-background-default: var(--color-neutral-800);
-  --color-tooltip-text-default: var(--zinc-100);
-  --color-tooltip-border-default: var(--zinc-800);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--color-background-1);
-  --color-channelbar-title-default: var(--color-text-2);
-  --color-channelbar-text-default: var(--color-text-1);
-  --color-channelbar-border-default: var(--color-border);
 
   /* Top Navigation */
   --color-topnav-background-default: var(--color-background-1);
+
+  /* Top Navigation-title */
+  --color-topnav-title-icon-background-default: transparent;
+
+  /* Top Navigation-search */
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-neutral-800);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
+
+  /* Button */
+  --color-button-background-default: var(--color-background-1);
+  --color-button-background-hover: var(--color-background-2);
+
+  /* Button-sidebar */
+  --color-button-sidebar-background-default: var(--color-background-2);
+  --color-button-sidebar-background-hover: var(--color-primary-500);
+
+  /*--- Border ---*/
+  /* Sidebar */
+  --color-sidebar-border-default: var(--color-border);
+
+  /* Tooltip */
+  --color-tooltip-border-default: var(--color-border);
+
+  /* Channel Bar */
+  --color-channelbar-border-default: var(--color-border);
+
+  /* Top Navigation */
   --color-topnav-border-default: var(--color-border);
 
-  --color-topnav-icon-background-default: var(--color-background-1);
-  --color-topnav-icon-background-hover: var(--color-background-2);
-  --color-topnav-icon-text-default: var(--color-text-2);
-  --color-topnav-icon-text-hover: var(--color-text-1);
+  /* Title */
+
+  /* Search */
+
+  /* Main Content */
+  --color-main-content-border-default: var(--color-border);
+
+  /* Divider */
+  --color-divider: var(--color-border);
+
+  /* Button */
+
+  /*--- Text ---*/
+  /* Sidebar */
+  --color-sidebar-text-default: var(--color-text-1);
+
+  /* Tooltip */
+  --color-tooltip-text-default: var(--color-text-1);
+
+  /* Channel Bar */
+  --color-channelbar-title-default: var(--color-text-2);
+  --color-channelbar-text-default: var(--color-text-1);
+
+  /* Top Navigation */
 
   /* Title */
   --color-topnav-title-text-default: var(--color-text-1);
-  --color-topnav-title-icon-background-default: transparent;
 
   /* Search */
-  --color-topnav-search-background-default: var(--color-background-2);
-  --color-topnav-search-background-hover: var(--color-neutral-800);
   --color-topnav-search-text-default: var(--color-neutral-500);
   --color-topnav-search-text-hover: var(--color-neutral-400);
 
   /* Main Content */
-  --color-main-content-background-default: var(--color-background-2);
   --color-main-content-text-default: var(--color-text-1);
-  --color-main-content-border-default: var(--color-border);
 
-  --color-divider: var(--color-border);
+  /* Button */
+  --color-button-text-default: var(--color-text-2);
+  --color-button-text-hover: var(--color-text-1);
+
+  /* Button-sidebar */
+  --color-button-sidebar-text-default: var(--color-primary-600);
+  --color-button-sidebar-text-hover: var(--color-text-1);
 }
 
 /* Global styles */
@@ -260,15 +338,15 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     p-[var(--spacing-3)];
   }
 
-  .sidebar-icon {
+  .button-sidebar {
     @apply relative flex items-center justify-center
     h-[var(--size-icon-2)] w-[var(--size-icon-2)]
     mt-[var(--spacing-2)] mb-[var(--spacing-2)] mx-auto
-    bg-[var(--color-sidebar-icon-background-default)]
+    bg-[var(--color-button-sidebar-background-default)]
     cursor-pointer shadow-lg
-    hover:bg-[var(--color-sidebar-icon-background-hover)]
-    text-[var(--color-sidebar-icon-text-default)]
-    hover:text-[var(--color-sidebar-icon-text-hover)]
+    hover:bg-[var(--color-button-sidebar-background-hover)]
+    text-[var(--color-button-sidebar-text-default)]
+    hover:text-[var(--color-button-sidebar-text-hover)]
     rounded-[var(--radius-round)] hover:rounded-[var(--radius-3)]
     transition-all duration-300 ease-in-out;
   }
@@ -285,7 +363,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .sidebar-hr {
-    @apply bg-[var(--color-sidebar-icon-background-default)]
+    @apply bg-[var(--color-button-sidebar-background-default)]
     border-[var(--color-sidebar-border-default)]
     rounded-[var(--radius-round)] mx-[var(--spacing-2)];
   }
@@ -412,23 +490,24 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   }
 
   .button-neutral-ghost {
-    @apply /* Text */
-    text-[var(--color-topnav-icon-text-default)]
-    hover:text-[var(--color-topnav-icon-text-hover)]
-    dark:text-[var(--color-topnav-icon-text-default)]
-    dark:hover:text-[var(--color-topnav-icon-text-hover)]
+    @apply /* Background */
+    bg-transparent
+    hover:bg-[var(--color-button-background-default)]
+    dark:hover:bg-[var(--color-button-background-default)]
 
     /* Border */
-    bg-transparent
-    hover:bg-[var(--color-topnav-icon-background-hover)]
-    dark:hover:bg-[var(--color-topnav-icon-background-hover)]
     /* border border-[var(--color-border)] */
     dark:border-[var(--color-border)]
 
-    /* Ring */
     focus:outline-none
     focus:ring-1
-    focus:ring-[var(--color-border)];
+    focus:ring-[var(--color-border)]
+
+    /* Text */
+    text-[var(--color-button-text-default)]
+    hover:text-[var(--color-button-text-hover)]
+    dark:text-[var(--color-button-text-default)]
+    dark:hover:text-[var(--color-button-text-hover)];
   }
 }
 
