@@ -387,47 +387,48 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
 
   /* Buttons */
   .button {
-    @apply flex
+    @apply /* Layout */
+    inline-flex
     items-center
-    justify-center
+    
+    /* Spacing */
+    px-[var(--spacing-2)]
+    py-[var(--spacing-1)]
+    gap-[var(--spacing-1)]
 
-    rounded-[var(--radius-round)]
-    hover:rounded-[var(--radius-3)]
+    /* Radius */
+    rounded-[var(--radius-3)]
 
-    p-[var(--spacing-1)]
-    w-[var(--size-icon-1)]
-    h-[var(--size-icon-1)]
+    /* Typography */
+    text-sm
+    font-medium
+    text-center
 
+    /* Animation */
     cursor-pointer
-    transition-all duration-300 ease-in-out;
+    transition-all
+    duration-300
+    ease-in-out;
   }
 
   .button-neutral-ghost {
-    @apply /* Layout / Flexbox */
-    inline-flex items-center gap-[var(--spacing-1)]
-
-    /* Sizing / Spacing */
-    px-[var(--spacing-2)] py-[var(--spacing-1)]
-
-    /* Typography */
-    text-sm font-medium text-center
+    @apply /* Text */
     text-[var(--color-topnav-icon-text-default)]
     hover:text-[var(--color-topnav-icon-text-hover)]
     dark:text-[var(--color-topnav-icon-text-default)]
     dark:hover:text-[var(--color-topnav-icon-text-hover)]
 
-    /* Background / Borders */
+    /* Border */
     bg-transparent
     hover:bg-[var(--color-topnav-icon-background-hover)]
     dark:hover:bg-[var(--color-topnav-icon-background-hover)]
     /* border border-[var(--color-border)] */
     dark:border-[var(--color-border)]
 
-    /* Focus / Ring / Outline */
-    focus:outline-none focus:ring-1 focus:ring-[var(--color-border)]
-
-    /* Radius */
-    rounded-[var(--radius-3)];
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+    focus:ring-[var(--color-border)];
   }
 }
 
