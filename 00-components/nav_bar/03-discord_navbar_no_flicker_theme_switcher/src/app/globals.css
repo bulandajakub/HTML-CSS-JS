@@ -120,7 +120,7 @@
   --color-text-1: var(--color-neutral-800);
   --color-text-2: var(--color-neutral-600);
 
-  /*--- Background ---*/
+  /*--- BACKGROUND ---*/
   /* Sidebar */
   --color-sidebar-background-default: var(--color-background-1);
 
@@ -144,14 +144,14 @@
   --color-main-content-background-default: var(--color-background-2);
 
   /* Button */
-  --color-button-background-default: var(--color-background-1);
-  --color-button-background-hover: var(--color-background-2);
+  --color-button-background-neutral-default: var(--color-background-1);
+  --color-button-background-neutral-hover: var(--color-background-2);
 
   /* Button-sidebar */
   --color-button-sidebar-background-default: var(--color-background-2);
   --color-button-sidebar-background-hover: var(--color-text-1);
 
-  /*--- Border ---*/
+  /*--- BORDER ---*/
   /* Sidebar */
   --color-sidebar-border-default: var(--color-border);
 
@@ -175,8 +175,9 @@
   --color-divider: var(--color-border);
 
   /* Button */
+  --color-button-border-neutral-default: var(--color-border);
 
-  /*--- Text ---*/
+  /*--- TEXT ---*/
   /* Sidebar */
   --color-sidebar-text-default: var(--color-button-sidebar-background-hover);
 
@@ -200,8 +201,20 @@
   --color-main-content-text-default: var(--color-text-1);
 
   /* Button */
-  --color-button-text-default: var(--color-text-2);
-  --color-button-text-hover: var(--color-text-1);
+  --color-button-text-primary-default: var(--color-primary-800);
+  --color-button-text-primary-hover: var(--color-primary-600);
+
+  --color-button-text-neutral-default: var(--color-text-2);
+  --color-button-text-neutral-hover: var(--color-text-1);
+
+  --color-button-text-success-default: var(--color-success-800);
+  --color-button-text-success-hover: var(--color-success-600);
+
+  --color-button-text-error-default: var(--color-error-800);
+  --color-button-text-error-hover: var(--color-error-600);
+
+  --color-button-text-info-default: var(--color-info-800);
+  --color-button-text-info-hover: var(--color-info-600);
 
   /* Button-sidebar */
   --color-button-sidebar-text-default: var(--color-primary-500);
@@ -217,7 +230,7 @@
   --color-text-1: var(--color-neutral-100);
   --color-text-2: var(--color-neutral-300);
 
-  /*--- Background ---*/
+  /*--- BACKGROUND ---*/
   /* Sidebar */
   --color-sidebar-background-default: var(--color-background-1);
 
@@ -241,14 +254,14 @@
   --color-main-content-background-default: var(--color-background-2);
 
   /* Button */
-  --color-button-background-default: var(--color-background-1);
-  --color-button-background-hover: var(--color-background-2);
+  --color-button-background-neutral-default: var(--color-background-1);
+  --color-button-background-neutral-hover: var(--color-background-2);
 
   /* Button-sidebar */
   --color-button-sidebar-background-default: var(--color-background-2);
   --color-button-sidebar-background-hover: var(--color-primary-500);
 
-  /*--- Border ---*/
+  /*--- BORDER ---*/
   /* Sidebar */
   --color-sidebar-border-default: var(--color-border);
 
@@ -272,8 +285,9 @@
   --color-divider: var(--color-border);
 
   /* Button */
+  --color-button-border-neutral-default: var(--color-border);
 
-  /*--- Text ---*/
+  /*--- TEXT ---*/
   /* Sidebar */
   --color-sidebar-text-default: var(--color-text-1);
 
@@ -297,8 +311,20 @@
   --color-main-content-text-default: var(--color-text-1);
 
   /* Button */
-  --color-button-text-default: var(--color-text-2);
-  --color-button-text-hover: var(--color-text-1);
+  --color-button-text-primary-default: var(--color-primary-300);
+  --color-button-text-primary-hover: var(--color-primary-500);
+
+  --color-button-text-neutral-default: var(--color-text-2);
+  --color-button-text-neutral-hover: var(--color-text-1);
+
+  --color-button-text-success-default: var(--color-success-300);
+  --color-button-text-success-hover: var(--color-success-500);
+
+  --color-button-text-error-default: var(--color-error-300);
+  --color-button-text-error-hover: var(--color-error-500);
+
+  --color-button-text-info-default: var(--color-info-300);
+  --color-button-text-info-hover: var(--color-info-500);
 
   /* Button-sidebar */
   --color-button-sidebar-text-default: var(--color-primary-600);
@@ -476,25 +502,104 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     ease-in-out;
   }
 
-  .button-neutral-ghost {
+  .button-primary-ghost {
     @apply /* Background */
     bg-transparent
-    /* hover:bg-[var(--color-button-background-default)]
+    /* hover:bg-[var(--color-button-background-neutral-default)]
 
 
     /* Border */
     /* border border-[var(--color-border)] */
-    dark:border-[var(--color-border)]
 
     focus:outline-none
     focus:ring-1
-    focus:ring-[var(--color-border)]
+    focus:ring-[var(--color-button-border-primary-default)]
 
     /* Text */
-    text-[var(--color-button-text-default)]
-    hover:text-[var(--color-button-text-hover)]
-    dark:text-[var(--color-button-text-default)]
-    dark:hover:text-[var(--color-button-text-hover)];
+    text-[var(--color-button-text-primary-default)]
+    hover:text-[var(--color-button-text-primary-hover)]
+    dark:text-[var(--color-button-text-primary-default)]
+    dark:hover:text-[var(--color-button-text-primary-hover)];
+  }
+
+  .button-neutral-ghost {
+    @apply /* Background */
+    bg-transparent
+    /* hover:bg-[var(--color-button-background-neutral-default)]
+
+
+    /* Border */
+    /* border border-[var(--color-border)] */
+
+    focus:outline-none
+    focus:ring-1
+    focus:ring-[var(--color-button-border-neutral-default)]
+
+    /* Text */
+    text-[var(--color-button-text-neutral-default)]
+    hover:text-[var(--color-button-text-neutral-hover)]
+    dark:text-[var(--color-button-text-neutral-default)]
+    dark:hover:text-[var(--color-button-text-neutral-hover)];
+  }
+
+  .button-success-ghost {
+    @apply /* Background */
+    bg-transparent
+    /* hover:bg-[var(--color-button-background-neutral-default)]
+
+
+    /* Border */
+    /* border border-[var(--color-border)] */
+
+    focus:outline-none
+    focus:ring-1
+    focus:ring-[var(--color-button-border-success-default)]
+
+    /* Text */
+    text-[var(--color-button-text-success-default)]
+    hover:text-[var(--color-button-text-success-hover)]
+    dark:text-[var(--color-button-text-success-default)]
+    dark:hover:text-[var(--color-button-text-success-hover)];
+  }
+
+  .button-error-ghost {
+    @apply /* Background */
+    bg-transparent
+    /* hover:bg-[var(--color-button-background-neutral-default)]
+
+
+    /* Border */
+    /* border border-[var(--color-border)] */
+
+    focus:outline-none
+    focus:ring-1
+    focus:ring-[var(--color-button-border-error-default)]
+
+    /* Text */
+    text-[var(--color-button-text-error-default)]
+    hover:text-[var(--color-button-text-error-hover)]
+    dark:text-[var(--color-button-text-error-default)]
+    dark:hover:text-[var(--color-button-text-error-hover)];
+  }
+
+  .button-info-ghost {
+    @apply /* Background */
+    bg-transparent
+    /* hover:bg-[var(--color-button-background-neutral-default)]
+
+
+    /* Border */
+    /* border border-[var(--color-border)] */
+
+    focus:outline-none
+    focus:ring-1
+    focus:ring-[var(--color-button-border-info-default)]
+
+    /* Text */
+    text-[var(--color-button-text-info-default)]
+    hover:text-[var(--color-button-text-info-hover)]
+    dark:text-[var(--color-button-text-info-default)]
+    dark:hover:text-[var(--color-button-text-info-hover)];
   }
 
   .button-sidebar {
