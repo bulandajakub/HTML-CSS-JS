@@ -17,7 +17,7 @@ const SidebarButton: React.FC<SidebarButtonProps> = ({
 }) => {
   return (
     // Directly use the existing classes and the `group` utility class to manage the hover state
-    <div className={`sidebar-icon group ${className}`}>
+    <div className={`button-sidebar group ${className}`}>
       {icon}
       <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
     </div>
