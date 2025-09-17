@@ -117,8 +117,8 @@
   --color-background-1: var(--color-neutral-100);
   --color-background-2: var(--color-neutral-50);
   --color-border: var(--color-neutral-200);
-  --color-text-1: var(--color-neutral-800);
-  --color-text-2: var(--color-neutral-600);
+  --color-text-1: var(--color-neutral-700);
+  --color-text-2: var(--color-neutral-500);
 
   /*--- BACKGROUND ---*/
   /* Sidebar */
@@ -144,10 +144,11 @@
   --color-main-content-background-default: var(--color-background-2);
 
   /* Button */
-  --color-button-background-neutral-default: var(--color-background-1);
-  --color-button-background-neutral-hover: var(
-    --color-button-text-neutral-hover
-  );
+  --color-button-background-primary-hover: var(--color-primary-100);
+  --color-button-background-neutral-hover: var(--color-background-1);
+  --color-button-background-success-hover: var(--color-success-100);
+  --color-button-background-error-hover: var(--color-error-100);
+  --color-button-background-info-hover: var(--color-info-100);
 
   /* Button-sidebar */
   --color-button-sidebar-background-default: var(--color-background-2);
@@ -205,20 +206,20 @@
   --color-main-content-text-default: var(--color-text-1);
 
   /* Button */
-  --color-button-text-primary-default: var(--color-primary-700);
-  --color-button-text-primary-hover: var(--color-primary-500);
+  --color-button-text-primary-default: var(--color-primary-500);
+  --color-button-text-primary-hover: var(--color-primary-700);
 
-  --color-button-text-neutral-default: var(--color-text-1);
-  --color-button-text-neutral-hover: var(--color-text-2);
+  --color-button-text-neutral-default: var(--color-text-2);
+  --color-button-text-neutral-hover: var(--color-text-1);
 
-  --color-button-text-success-default: var(--color-success-700);
-  --color-button-text-success-hover: var(--color-success-500);
+  --color-button-text-success-default: var(--color-success-500);
+  --color-button-text-success-hover: var(--color-success-700);
 
-  --color-button-text-error-default: var(--color-error-700);
-  --color-button-text-error-hover: var(--color-error-500);
+  --color-button-text-error-default: var(--color-error-500);
+  --color-button-text-error-hover: var(--color-error-700);
 
-  --color-button-text-info-default: var(--color-info-700);
-  --color-button-text-info-hover: var(--color-info-500);
+  --color-button-text-info-default: var(--color-info-500);
+  --color-button-text-info-hover: var(--color-info-700);
 
   /* Button-sidebar */
   --color-button-sidebar-text-default: var(--color-primary-500);
@@ -258,8 +259,11 @@
   --color-main-content-background-default: var(--color-background-2);
 
   /* Button */
-  --color-button-background-neutral-default: var(--color-background-1);
+  --color-button-background-primary-hover: var(--color-primary-900);
   --color-button-background-neutral-hover: var(--color-background-2);
+  --color-button-background-success-hover: var(--color-success-900);
+  --color-button-background-error-hover: var(--color-error-900);
+  --color-button-background-info-hover: var(--color-info-900);
 
   /* Button-sidebar */
   --color-button-sidebar-background-default: var(--color-background-2);
@@ -315,20 +319,20 @@
   --color-main-content-text-default: var(--color-text-1);
 
   /* Button */
-  --color-button-text-primary-default: var(--color-primary-300);
-  --color-button-text-primary-hover: var(--color-primary-500);
+  --color-button-text-primary-default: var(--color-primary-500);
+  --color-button-text-primary-hover: var(--color-primary-300);
 
   --color-button-text-neutral-default: var(--color-text-2);
   --color-button-text-neutral-hover: var(--color-text-1);
 
-  --color-button-text-success-default: var(--color-success-300);
-  --color-button-text-success-hover: var(--color-success-500);
+  --color-button-text-success-default: var(--color-success-500);
+  --color-button-text-success-hover: var(--color-success-300);
 
-  --color-button-text-error-default: var(--color-error-300);
-  --color-button-text-error-hover: var(--color-error-500);
+  --color-button-text-error-default: var(--color-error-500);
+  --color-button-text-error-hover: var(--color-error-300);
 
-  --color-button-text-info-default: var(--color-info-300);
-  --color-button-text-info-hover: var(--color-info-500);
+  --color-button-text-info-default: var(--color-info-500);
+  --color-button-text-info-hover: var(--color-info-300);
 
   /* Button-sidebar */
   --color-button-sidebar-text-default: var(--color-primary-600);
@@ -504,6 +508,107 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     transition-all
     duration-300
     ease-in-out;
+  }
+
+  .button-primary-filled {
+    @apply /* Background */
+    bg-transparent
+    hover:bg-[var(--color-button-background-primary-hover)]
+
+    /* Border */
+    border border-[var(--color-button-text-primary-default)]
+    hover:border-[var(--color-button-text-primary-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+    /* --tw-ring-color: currentColor */
+
+    /* Text */
+    text-[var(--color-button-text-primary-default)]
+    hover:text-[var(--color-button-text-primary-hover)]
+    dark:text-[var(--color-button-text-primary-default)]
+    dark:hover:text-[var(--color-button-text-primary-hover)];
+  }
+
+  .button-neutral-filled {
+    @apply /* Background */
+    bg-transparent
+    hover:bg-[var(--color-button-background-neutral-hover)]
+
+    /* Border */
+    border border-[var(--color-button-text-neutral-default)]
+    hover:border-[var(--color-button-text-neutral-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-neutral-default)]
+    hover:text-[var(--color-button-text-neutral-hover)]
+    dark:text-[var(--color-button-text-neutral-default)]
+    dark:hover:text-[var(--color-button-text-neutral-hover)];
+  }
+
+  .button-success-filled {
+    @apply /* Background */
+    bg-transparent
+    hover:bg-[var(--color-button-background-success-hover)]
+
+    /* Border */
+    border border-[var(--color-button-text-success-default)]
+    hover:border-[var(--color-button-text-success-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-success-default)]
+    hover:text-[var(--color-button-text-success-hover)]
+    dark:text-[var(--color-button-text-success-default)]
+    dark:hover:text-[var(--color-button-text-success-hover)];
+  }
+
+  .button-error-filled {
+    @apply /* Background */
+    bg-transparent
+    hover:bg-[var(--color-button-background-error-hover)]
+
+    /* Border */
+    border border-[var(--color-button-text-error-default)]
+    hover:border-[var(--color-button-text-error-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-error-default)]
+    hover:text-[var(--color-button-text-error-hover)]
+    dark:text-[var(--color-button-text-error-default)]
+    dark:hover:text-[var(--color-button-text-error-hover)];
+  }
+
+  .button-info-filled {
+    @apply /* Background */
+    bg-transparent
+    hover:bg-[var(--color-button-background-info-hover)]
+
+    /* Border */
+    border border-[var(--color-button-text-info-default)]
+    hover:border-[var(--color-button-text-info-hover)]
+    
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-info-default)]
+    hover:text-[var(--color-button-text-info-hover)]
+    dark:text-[var(--color-button-text-info-default)]
+    dark:hover:text-[var(--color-button-text-info-hover)];
   }
 
   .button-primary-ghost {
