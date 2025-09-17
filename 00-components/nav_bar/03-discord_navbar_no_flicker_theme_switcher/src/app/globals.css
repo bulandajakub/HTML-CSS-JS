@@ -145,11 +145,15 @@
 
   /* Button */
   --color-button-background-neutral-default: var(--color-background-1);
-  --color-button-background-neutral-hover: var(--color-background-2);
+  --color-button-background-neutral-hover: var(
+    --color-button-text-neutral-hover
+  );
 
   /* Button-sidebar */
   --color-button-sidebar-background-default: var(--color-background-2);
-  --color-button-sidebar-background-hover: var(--color-text-1);
+  --color-button-sidebar-background-hover: var(
+    --color-button-sidebar-text-default
+  );
 
   /*--- BORDER ---*/
   /* Sidebar */
@@ -201,20 +205,20 @@
   --color-main-content-text-default: var(--color-text-1);
 
   /* Button */
-  --color-button-text-primary-default: var(--color-primary-800);
-  --color-button-text-primary-hover: var(--color-primary-600);
+  --color-button-text-primary-default: var(--color-primary-700);
+  --color-button-text-primary-hover: var(--color-primary-500);
 
-  --color-button-text-neutral-default: var(--color-text-2);
-  --color-button-text-neutral-hover: var(--color-text-1);
+  --color-button-text-neutral-default: var(--color-text-1);
+  --color-button-text-neutral-hover: var(--color-text-2);
 
-  --color-button-text-success-default: var(--color-success-800);
-  --color-button-text-success-hover: var(--color-success-600);
+  --color-button-text-success-default: var(--color-success-700);
+  --color-button-text-success-hover: var(--color-success-500);
 
-  --color-button-text-error-default: var(--color-error-800);
-  --color-button-text-error-hover: var(--color-error-600);
+  --color-button-text-error-default: var(--color-error-700);
+  --color-button-text-error-hover: var(--color-error-500);
 
-  --color-button-text-info-default: var(--color-info-800);
-  --color-button-text-info-hover: var(--color-info-600);
+  --color-button-text-info-default: var(--color-info-700);
+  --color-button-text-info-hover: var(--color-info-500);
 
   /* Button-sidebar */
   --color-button-sidebar-text-default: var(--color-primary-500);
@@ -507,13 +511,14 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     bg-transparent
     /* hover:bg-[var(--color-button-background-neutral-default)]
 
-
     /* Border */
-    /* border border-[var(--color-border)] */
+    /* border border-[var(--color-button-text-primary-default)]
+    hover:border-[var(--color-button-text-primary-hover)] */
 
+    /* Ring */
     focus:outline-none
     focus:ring-1
-    focus:ring-[var(--color-button-border-primary-default)]
+    /* --tw-ring-color: currentColor */
 
     /* Text */
     text-[var(--color-button-text-primary-default)]
@@ -525,15 +530,10 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .button-neutral-ghost {
     @apply /* Background */
     bg-transparent
-    /* hover:bg-[var(--color-button-background-neutral-default)]
 
-
-    /* Border */
-    /* border border-[var(--color-border)] */
-
+    /* Ring */
     focus:outline-none
     focus:ring-1
-    focus:ring-[var(--color-button-border-neutral-default)]
 
     /* Text */
     text-[var(--color-button-text-neutral-default)]
@@ -545,15 +545,10 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .button-success-ghost {
     @apply /* Background */
     bg-transparent
-    /* hover:bg-[var(--color-button-background-neutral-default)]
 
-
-    /* Border */
-    /* border border-[var(--color-border)] */
-
+    /* Ring */
     focus:outline-none
     focus:ring-1
-    focus:ring-[var(--color-button-border-success-default)]
 
     /* Text */
     text-[var(--color-button-text-success-default)]
@@ -565,15 +560,10 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .button-error-ghost {
     @apply /* Background */
     bg-transparent
-    /* hover:bg-[var(--color-button-background-neutral-default)]
 
-
-    /* Border */
-    /* border border-[var(--color-border)] */
-
+    /* Ring */
     focus:outline-none
     focus:ring-1
-    focus:ring-[var(--color-button-border-error-default)]
 
     /* Text */
     text-[var(--color-button-text-error-default)]
@@ -585,15 +575,10 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .button-info-ghost {
     @apply /* Background */
     bg-transparent
-    /* hover:bg-[var(--color-button-background-neutral-default)]
-
-
-    /* Border */
-    /* border border-[var(--color-border)] */
-
+    
+    /* Ring */
     focus:outline-none
     focus:ring-1
-    focus:ring-[var(--color-button-border-info-default)]
 
     /* Text */
     text-[var(--color-button-text-info-default)]
