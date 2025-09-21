@@ -145,7 +145,7 @@
 
   /* Button */
   --color-button-background-primary-hover: var(--color-primary-100);
-  --color-button-background-neutral-hover: var(--color-background-1);
+  --color-button-background-neutral-hover: var(--color-neutral-200);
   --color-button-background-success-hover: var(--color-success-100);
   --color-button-background-error-hover: var(--color-error-100);
   --color-button-background-info-hover: var(--color-info-100);
@@ -209,8 +209,8 @@
   --color-button-text-primary-default: var(--color-primary-500);
   --color-button-text-primary-hover: var(--color-primary-700);
 
-  --color-button-text-neutral-default: var(--color-text-2);
-  --color-button-text-neutral-hover: var(--color-text-1);
+  --color-button-text-neutral-default: var(--color-neutral-500);
+  --color-button-text-neutral-hover: var(--color-neutral-700);
 
   --color-button-text-success-default: var(--color-success-500);
   --color-button-text-success-hover: var(--color-success-700);
@@ -260,7 +260,7 @@
 
   /* Button */
   --color-button-background-primary-hover: var(--color-primary-900);
-  --color-button-background-neutral-hover: var(--color-background-2);
+  --color-button-background-neutral-hover: var(--color-neutral-700);
   --color-button-background-success-hover: var(--color-success-900);
   --color-button-background-error-hover: var(--color-error-900);
   --color-button-background-info-hover: var(--color-info-900);
@@ -322,8 +322,8 @@
   --color-button-text-primary-default: var(--color-primary-500);
   --color-button-text-primary-hover: var(--color-primary-300);
 
-  --color-button-text-neutral-default: var(--color-text-2);
-  --color-button-text-neutral-hover: var(--color-text-1);
+  --color-button-text-neutral-default: var(--color-neutral-500);
+  --color-button-text-neutral-hover: var(--color-neutral-300);
 
   --color-button-text-success-default: var(--color-success-500);
   --color-button-text-success-hover: var(--color-success-300);
@@ -595,6 +595,102 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     @apply /* Background */
     bg-transparent
     hover:bg-[var(--color-button-background-info-hover)]
+
+    /* Border */
+    border border-[var(--color-button-text-info-default)]
+    hover:border-[var(--color-button-text-info-hover)]
+    
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-info-default)]
+    hover:text-[var(--color-button-text-info-hover)]
+    dark:text-[var(--color-button-text-info-default)]
+    dark:hover:text-[var(--color-button-text-info-hover)];
+  }
+
+  .button-primary-outline {
+    @apply /* Background */
+    bg-transparent
+
+    /* Border */
+    border border-[var(--color-button-text-primary-default)]
+    hover:border-[var(--color-button-text-primary-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+    /* --tw-ring-color: currentColor */
+
+    /* Text */
+    text-[var(--color-button-text-primary-default)]
+    hover:text-[var(--color-button-text-primary-hover)]
+    dark:text-[var(--color-button-text-primary-default)]
+    dark:hover:text-[var(--color-button-text-primary-hover)];
+  }
+
+  .button-neutral-outline {
+    @apply /* Background */
+    bg-transparent
+
+    /* Border */
+    border border-[var(--color-button-text-neutral-default)]
+    hover:border-[var(--color-button-text-neutral-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-neutral-default)]
+    hover:text-[var(--color-button-text-neutral-hover)]
+    dark:text-[var(--color-button-text-neutral-default)]
+    dark:hover:text-[var(--color-button-text-neutral-hover)];
+  }
+
+  .button-success-outline {
+    @apply /* Background */
+    bg-transparent
+
+    /* Border */
+    border border-[var(--color-button-text-success-default)]
+    hover:border-[var(--color-button-text-success-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-success-default)]
+    hover:text-[var(--color-button-text-success-hover)]
+    dark:text-[var(--color-button-text-success-default)]
+    dark:hover:text-[var(--color-button-text-success-hover)];
+  }
+
+  .button-error-outline {
+    @apply /* Background */
+    bg-transparent
+
+    /* Border */
+    border border-[var(--color-button-text-error-default)]
+    hover:border-[var(--color-button-text-error-hover)]
+
+    /* Ring */
+    focus:outline-none
+    focus:ring-1
+
+    /* Text */
+    text-[var(--color-button-text-error-default)]
+    hover:text-[var(--color-button-text-error-hover)]
+    dark:text-[var(--color-button-text-error-default)]
+    dark:hover:text-[var(--color-button-text-error-hover)];
+  }
+
+  .button-info-outline {
+    @apply /* Background */
+    bg-transparent
 
     /* Border */
     border border-[var(--color-button-text-info-default)]
