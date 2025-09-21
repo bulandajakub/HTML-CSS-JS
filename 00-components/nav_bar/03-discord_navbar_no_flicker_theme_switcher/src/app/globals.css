@@ -180,7 +180,6 @@
   --color-divider: var(--color-border);
 
   /* Button */
-  --color-button-border-neutral-default: var(--color-border);
 
   /*--- TEXT ---*/
   /* Sidebar */
@@ -206,20 +205,20 @@
   --color-main-content-text-default: var(--color-text-1);
 
   /* Button */
-  --color-button-text-primary-default: var(--color-primary-500);
-  --color-button-text-primary-hover: var(--color-primary-700);
+  --color-button-text-primary-default: var(--color-primary-700);
+  --color-button-text-primary-hover: var(--color-primary-500);
 
-  --color-button-text-neutral-default: var(--color-neutral-500);
-  --color-button-text-neutral-hover: var(--color-neutral-700);
+  --color-button-text-neutral-default: var(--color-neutral-700);
+  --color-button-text-neutral-hover: var(--color-neutral-500);
 
-  --color-button-text-success-default: var(--color-success-500);
-  --color-button-text-success-hover: var(--color-success-700);
+  --color-button-text-success-default: var(--color-success-700);
+  --color-button-text-success-hover: var(--color-success-500);
 
-  --color-button-text-error-default: var(--color-error-500);
-  --color-button-text-error-hover: var(--color-error-700);
+  --color-button-text-error-default: var(--color-error-700);
+  --color-button-text-error-hover: var(--color-error-500);
 
-  --color-button-text-info-default: var(--color-info-500);
-  --color-button-text-info-hover: var(--color-info-700);
+  --color-button-text-info-default: var(--color-info-700);
+  --color-button-text-info-hover: var(--color-info-500);
 
   /* Button-sidebar */
   --color-button-sidebar-text-default: var(--color-primary-500);
@@ -293,7 +292,6 @@
   --color-divider: var(--color-border);
 
   /* Button */
-  --color-button-border-neutral-default: var(--color-border);
 
   /*--- TEXT ---*/
   /* Sidebar */
