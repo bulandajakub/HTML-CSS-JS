@@ -1,0 +1,225 @@
+/* level-3-mapped */
+@theme inline {
+  /* Semantic colors */
+  --color-background-1: var(--color-neutral-100);
+  --color-background-2: var(--color-neutral-50);
+  --color-border: var(--color-neutral-200);
+  --color-text-1: var(--color-neutral-700);
+  --color-text-2: var(--color-neutral-500);
+
+  /*--- BACKGROUND ---*/
+  /* Sidebar */
+  --color-sidebar-background-default: var(--color-background-1);
+
+  /* Tooltip */
+  --color-tooltip-background-default: var(--color-background-1);
+
+  /* Channel Bar */
+  --color-channelbar-background-default: var(--color-background-1);
+
+  /* Top Navigation */
+  --color-topnav-background-default: var(--color-background-1);
+
+  /* Top Navigation-title */
+  --color-topnav-title-icon-background-default: transparent;
+
+  /* Top Navigation-search */
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-white);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
+
+  /* Button */
+  --color-button-background-primary-hover: var(--color-primary-100);
+  --color-button-background-neutral-hover: var(--color-neutral-200);
+  --color-button-background-success-hover: var(--color-success-100);
+  --color-button-background-error-hover: var(--color-error-100);
+  --color-button-background-info-hover: var(--color-info-100);
+
+  /* Button-sidebar */
+  --color-button-sidebar-background-default: var(--color-background-2);
+  --color-button-sidebar-background-hover: var(
+    --color-button-sidebar-text-default
+  );
+
+  /*--- BORDER ---*/
+  /* Sidebar */
+  --color-sidebar-border-default: var(--color-border);
+
+  /* Tooltip */
+  --color-tooltip-border-default: var(--color-border);
+
+  /* Channel Bar */
+  --color-channelbar-border-default: var(--color-border);
+
+  /* Top Navigation */
+  --color-topnav-border-default: var(--color-border);
+
+  /* Title */
+
+  /* Search */
+
+  /* Main Content */
+  --color-main-content-border-default: var(--color-border);
+
+  /* Divider */
+  --color-divider: var(--color-border);
+
+  /* Button */
+
+  /*--- TEXT ---*/
+  /* Sidebar */
+  --color-sidebar-text-default: var(--color-button-sidebar-background-hover);
+
+  /* Tooltip */
+  --color-tooltip-text-default: var(--color-text-1);
+
+  /* Channel Bar */
+  --color-channelbar-title-default: var(--color-text-2);
+  --color-channelbar-text-default: var(--color-text-1);
+
+  /* Top Navigation */
+
+  /* Title */
+  --color-topnav-title-text-default: var(--color-text-1);
+
+  /* Search */
+  --color-topnav-search-text-default: var(--color-text-2);
+  --color-topnav-search-text-hover: var(--color-text-1);
+
+  /* Main Content */
+  --color-main-content-text-default: var(--color-text-1);
+
+  /* Button */
+  --color-button-text-primary-default: var(--color-primary-700);
+  --color-button-text-primary-hover: var(--color-primary-500);
+
+  --color-button-text-neutral-default: var(--color-neutral-700);
+  --color-button-text-neutral-hover: var(--color-neutral-500);
+
+  --color-button-text-success-default: var(--color-success-700);
+  --color-button-text-success-hover: var(--color-success-500);
+
+  --color-button-text-error-default: var(--color-error-700);
+  --color-button-text-error-hover: var(--color-error-500);
+
+  --color-button-text-info-default: var(--color-info-700);
+  --color-button-text-info-hover: var(--color-info-500);
+
+  /* Button-sidebar */
+  --color-button-sidebar-text-default: var(--color-primary-500);
+  --color-button-sidebar-text-hover: var(--color-background-1);
+}
+
+/* Dark mode override */
+.dark {
+  /* Semantic colors */
+  --color-background-1: var(--color-neutral-950);
+  --color-background-2: var(--color-neutral-900);
+  --color-border: var(--color-neutral-800);
+  --color-text-1: var(--color-neutral-100);
+  --color-text-2: var(--color-neutral-300);
+
+  /*--- BACKGROUND ---*/
+  /* Sidebar */
+  --color-sidebar-background-default: var(--color-background-1);
+
+  /* Tooltip */
+  --color-tooltip-background-default: var(--color-neutral-800);
+
+  /* Channel Bar */
+  --color-channelbar-background-default: var(--color-background-1);
+
+  /* Top Navigation */
+  --color-topnav-background-default: var(--color-background-1);
+
+  /* Top Navigation-title */
+  --color-topnav-title-icon-background-default: transparent;
+
+  /* Top Navigation-search */
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-neutral-800);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
+
+  /* Button */
+  --color-button-background-primary-hover: var(--color-primary-900);
+  --color-button-background-neutral-hover: var(--color-neutral-700);
+  --color-button-background-success-hover: var(--color-success-900);
+  --color-button-background-error-hover: var(--color-error-900);
+  --color-button-background-info-hover: var(--color-info-900);
+
+  /* Button-sidebar */
+  --color-button-sidebar-background-default: var(--color-background-2);
+  --color-button-sidebar-background-hover: var(--color-primary-500);
+
+  /*--- BORDER ---*/
+  /* Sidebar */
+  --color-sidebar-border-default: var(--color-border);
+
+  /* Tooltip */
+  --color-tooltip-border-default: var(--color-border);
+
+  /* Channel Bar */
+  --color-channelbar-border-default: var(--color-border);
+
+  /* Top Navigation */
+  --color-topnav-border-default: var(--color-border);
+
+  /* Title */
+
+  /* Search */
+
+  /* Main Content */
+  --color-main-content-border-default: var(--color-border);
+
+  /* Divider */
+  --color-divider: var(--color-border);
+
+  /* Button */
+
+  /*--- TEXT ---*/
+  /* Sidebar */
+  --color-sidebar-text-default: var(--color-text-1);
+
+  /* Tooltip */
+  --color-tooltip-text-default: var(--color-text-1);
+
+  /* Channel Bar */
+  --color-channelbar-title-default: var(--color-text-2);
+  --color-channelbar-text-default: var(--color-text-1);
+
+  /* Top Navigation */
+
+  /* Title */
+  --color-topnav-title-text-default: var(--color-text-1);
+
+  /* Search */
+  --color-topnav-search-text-default: var(--color-neutral-500);
+  --color-topnav-search-text-hover: var(--color-neutral-400);
+
+  /* Main Content */
+  --color-main-content-text-default: var(--color-text-1);
+
+  /* Button */
+  --color-button-text-primary-default: var(--color-primary-500);
+  --color-button-text-primary-hover: var(--color-primary-300);
+
+  --color-button-text-neutral-default: var(--color-neutral-500);
+  --color-button-text-neutral-hover: var(--color-neutral-300);
+
+  --color-button-text-success-default: var(--color-success-500);
+  --color-button-text-success-hover: var(--color-success-300);
+
+  --color-button-text-error-default: var(--color-error-500);
+  --color-button-text-error-hover: var(--color-error-300);
+
+  --color-button-text-info-default: var(--color-info-500);
+  --color-button-text-info-hover: var(--color-info-300);
+
+  /* Button-sidebar */
+  --color-button-sidebar-text-default: var(--color-primary-600);
+  --color-button-sidebar-text-hover: var(--color-text-1);
+}

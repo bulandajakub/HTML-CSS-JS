@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@import "./css/_tokens.css";
+@import "./css/_themes.css";
+@import "./css/_components.css";
+
+/* Tailwind 4.1 dark mode using class selector */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* level-1-global | Base variables - Fundamental, raw design tokens */
+:root {
+  --radius: 0.625rem; /* Base for radius calculations */
+  --spacing: 0.25rem;
+
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* In addition to using the utilities that ship with Tailwind, you can also add your own custom utilities. This can be useful when there's a CSS feature you'd like to use in your project that Tailwind doesn't include utilities for out of the box. */
+/* @layer utilities {
+
+} */
