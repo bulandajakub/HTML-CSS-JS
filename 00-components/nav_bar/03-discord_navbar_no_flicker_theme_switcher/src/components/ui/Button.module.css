@@ -5,8 +5,10 @@
 }
 .button-primary-filled:hover {
   background-color: var(--color-button-background-primary-hover);
-  border-color: var(--color-button-text-primary-hover);
+  border-color: 1px solid var(--color-button-text-primary-hover);
   color: var(--color-button-text-primary-hover);
 }
 .button-primary-filled:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px currentColor;
 }
