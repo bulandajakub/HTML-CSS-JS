@@ -1,8 +1,8 @@
-@import "tailwindcss";
-
 @import "./css/_tokens.css";
 @import "./css/_themes.css";
 @import "./css/_components.css";
+
+@import "tailwindcss";
 
 /* Tailwind 4.1 dark mode using class selector */
 @custom-variant dark (&:where(.dark, .dark *));

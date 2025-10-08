@@ -1,4 +1,6 @@
 import React from "react";
+import clsx from "clsx";
+import styles from "./Button.module.css";
 
 /**
  * Props for the Button component.
@@ -55,9 +57,15 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   ...rest
 }) => {
-  // Logic to build the button's classes based on props.
-  // First button for styling across all buttons, next one with variant, mode and className for specific variants
-  const composedClasses = `button button-${variant}-${mode} ${className}`;
+  // Compose class names dynamically using clsx
+  // We use the GLOBAL class 'button' (defined in _components.css) for base styles.
+  // We use the CSS MODULE styles for the variant, which are defined in Button.module.css.
+  const composedClasses = clsx(
+    "button",
+    // Local variant styles (standard CSS properties)
+    styles[`button-${variant}-${mode}`],
+    className
+  );
 
   return (
     <button

@@ -31,7 +31,10 @@
   --color-main-content-background-default: var(--color-background-2);
 
   /* Button */
-  --color-button-background-primary-hover: var(--color-primary-100);
+  --color-button-background-primary: var(--color-background-2);
+  --color-button-background-primary-hover: var(
+    --color-button-sidebar-text-default
+  );
   --color-button-background-neutral-hover: var(--color-neutral-200);
   --color-button-background-success-hover: var(--color-success-100);
   --color-button-background-error-hover: var(--color-error-100);
@@ -92,8 +95,8 @@
   --color-main-content-text-default: var(--color-text-1);
 
   /* Button */
-  --color-button-text-primary-default: var(--color-primary-700);
-  --color-button-text-primary-hover: var(--color-primary-500);
+  --color-button-text-primary-default: var(--color-primary-500);
+  --color-button-text-primary-hover: var(--color-background-1);
 
   --color-button-text-neutral-default: var(--color-neutral-700);
   --color-button-text-neutral-hover: var(--color-neutral-500);
