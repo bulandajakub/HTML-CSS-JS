@@ -32,9 +32,8 @@
 
   /* Button */
   --color-button-background-primary: var(--color-primary-100);
-  --color-button-background-primary-hover: var(
-    --color-button-sidebar-text-default
-  );
+  --color-button-background-primary-hover: var(--color-primary-200);
+  --color-button-background-primary-active: var(--color-primary-300);
   --color-button-background-primary-focus: var(--color-primary-400);
 
   --color-button-background-neutral-hover: var(--color-neutral-200);

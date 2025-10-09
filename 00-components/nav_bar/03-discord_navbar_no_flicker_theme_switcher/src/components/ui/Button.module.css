@@ -1,14 +1,23 @@
 .button-primary-filled {
-  background-color: var(--color-button-background-primary);
-  border: 1px solid var(--color-button-text-primary-default);
-  color: var(--color-button-text-primary-default);
+  background-color: var(--color-background-2);
+  color: var(--color-primary-500);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .button-primary-filled:hover {
-  background-color: var(--color-button-background-primary-hover);
-  border-color: 1px solid var(--color-button-text-primary-hover);
-  color: var(--color-button-text-primary-hover);
+  background-color: var(--color-primary-500);
+  color: var(--color-background-2);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .button-primary-filled:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px currentColor;
+  background-color: var(--color-primary-500);
+  color: var(--color-background-2);
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 0 transparent;
+}
+.button-primary-filled:active {
+  background-color: var(--color-primary-600);
+  color: var(--color-background-2);
 }
