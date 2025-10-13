@@ -7,47 +7,21 @@
   --color-text-1: var(--color-neutral-700);
   --color-text-2: var(--color-neutral-500);
 
-  /*----- BACKGROUND -----*/
-  /* Sidebar */
-  --color-sidebar-background-default: var(--color-background-1);
-
-  /* Tooltip */
-  --color-tooltip-background-default: var(--color-background-1);
-
-  /* Channel Bar */
-  --color-channelbar-background-default: var(--color-background-1);
-
-  /* Top Navigation */
-  --color-topnav-background-default: var(--color-background-1);
-
-  /* Top Navigation-title */
-  --color-topnav-title-icon-background-default: transparent;
-
-  /* Top Navigation-search */
-  --color-topnav-search-background-default: var(--color-background-2);
-  --color-topnav-search-background-hover: var(--color-white);
-
-  /* Main Content */
-  --color-main-content-background-default: var(--color-background-2);
-
-  /* Button */
-  --color-button-background-primary-default: var(--color-primary-100);
-  --color-button-background-primary-hover: var(--color-primary-500);
-  --color-button-background-primary-focus: var(--color-primary-500);
-  --color-button-background-primary-active: var(--color-primary-400);
-
-  --color-button-background-neutral-hover: var(--color-neutral-200);
-  --color-button-background-success-hover: var(--color-success-100);
-  --color-button-background-error-hover: var(--color-error-100);
-  --color-button-background-info-hover: var(--color-info-100);
-
-  /* Button-sidebar */
-  --color-button-sidebar-background-default: var(--color-background-2);
-  --color-button-sidebar-background-hover: var(
-    --color-button-sidebar-text-default
-  );
-
   /*----- TEXT -----*/
+  /* Button */
+  --color-button-text-hover: var(--color-background-2);
+  --color-button-text-active: var(--color-white);
+  /* Button-primary */
+  --color-button-text-primary-default: var(--color-primary-500);
+  /* Button-neutral */
+  --color-button-text-neutral-default: var(--color-neutral-500);
+  /* Button-success */
+  --color-button-text-success-default: var(--color-success-500);
+  /* Button-error */
+  --color-button-text-error-default: var(--color-error-500);
+  /* Button-info */
+  --color-button-text-info-default: var(--color-info-500);
+
   /* Sidebar */
   --color-sidebar-text-default: var(--color-button-sidebar-background-hover);
 
@@ -70,28 +44,100 @@
   /* Main Content */
   --color-main-content-text-default: var(--color-text-1);
 
-  /* Button */
-  --color-button-text-primary-default: var(--color-primary-500);
-  --color-button-text-primary-hover: var(--color-background-2);
-  --color-button-text-primary-active: var(--color-white);
-
-  --color-button-text-neutral-default: var(--color-neutral-700);
-  --color-button-text-neutral-hover: var(--color-neutral-500);
-
-  --color-button-text-success-default: var(--color-success-700);
-  --color-button-text-success-hover: var(--color-success-500);
-
-  --color-button-text-error-default: var(--color-error-700);
-  --color-button-text-error-hover: var(--color-error-500);
-
-  --color-button-text-info-default: var(--color-info-700);
-  --color-button-text-info-hover: var(--color-info-500);
-
   /* Button-sidebar */
   --color-button-sidebar-text-default: var(--color-primary-500);
   --color-button-sidebar-text-hover: var(--color-background-1);
 
+  /*----- BACKGROUND -----*/
+  /* Button-primary */
+  --color-button-background-primary-default: var(--color-primary-100);
+  --color-button-background-primary-hover: var(
+    --color-button-text-primary-default
+  );
+  --color-button-background-primary-focus: var(
+    --color-button-text-primary-default
+  );
+  --color-button-background-primary-active: var(--color-primary-400);
+  /* Button-neutral */
+  --color-button-background-neutral-default: var(--color-neutral-100);
+  --color-button-background-neutral-hover: var(
+    --color-button-text-neutral-default
+  );
+  --color-button-background-neutral-focus: var(
+    --color-button-background-neutral-hover
+  );
+  --color-button-background-neutral-active: var(--color-neutral-400);
+  /* Button-success */
+  --color-button-background-success-default: var(--color-success-100);
+  --color-button-background-success-hover: var(
+    --color-button-text-success-default
+  );
+  --color-button-background-success-focus: var(
+    --color-button-background-success-hover
+  );
+  --color-button-background-success-active: var(--color-success-400);
+  /* Button-error */
+  --color-button-background-error-default: var(--color-error-100);
+  --color-button-background-error-hover: var(--color-button-text-error-default);
+  --color-button-background-error-focus: var(
+    --color-button-background-error-hover
+  );
+  --color-button-background-error-active: var(--color-error-400);
+  /* Button-info */
+  --color-button-background-info-default: var(--color-info-100);
+  --color-button-background-info-hover: var(--color-button-text-info-default);
+  --color-button-background-info-focus: var(
+    --color-button-background-info-hover
+  );
+  --color-button-background-info-active: var(--color-info-400);
+
+  /* Sidebar */
+  --color-sidebar-background-default: var(--color-background-1);
+
+  /* Tooltip */
+  --color-tooltip-background-default: var(--color-background-1);
+
+  /* Channel Bar */
+  --color-channelbar-background-default: var(--color-background-1);
+
+  /* Top Navigation */
+  --color-topnav-background-default: var(--color-background-1);
+
+  /* Top Navigation-title */
+  --color-topnav-title-icon-background-default: transparent;
+
+  /* Top Navigation-search */
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-white);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
+
+  /* Button-sidebar */
+  --color-button-sidebar-background-default: var(--color-background-2);
+  --color-button-sidebar-background-hover: var(
+    --color-button-sidebar-text-default
+  );
+
   /*----- BORDER -----*/
+  /* Button */
+  --color-button-outline-offset: 2px;
+  /* Button-primary */
+  --color-button-outline-primary-focus: 2px solid
+    rgb(var(--color-button-text-primary-default));
+  /* Button-neutral */
+  --color-button-outline-neutral-focus: 2px solid
+    rgb(var(--color-button-text-neutral-default));
+  /* Button-success */
+  --color-button-outline-success-focus: 2px solid
+    rgb(var(--color-button-text-success-default));
+  /* Button-error */
+  --color-button-outline-error-focus: 2px solid
+    rgb(var(--color-button-text-error-default));
+  /* Button-info */
+  --color-button-outline-info-focus: 2px solid
+    rgb(var(--color-button-text-info-default));
+
   /* Sidebar */
   --color-sidebar-border-default: var(--color-border);
 
@@ -115,8 +161,21 @@
   --color-divider: var(--color-border);
 
   /*----- SHADOW -----*/
+  /* Shadow-primary */
   --shadow-primary: 0 4px 6px -1px rgba(var(--color-primary-600) / 0.4),
     0 2px 4px -1px rgba(var(--color-primary-600) / 0.2);
+  /* Shadow-neutral */
+  --shadow-neutral: 0 4px 6px -1px rgba(var(--color-neutral-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-neutral-600) / 0.2);
+  /* Shadow-success */
+  --shadow-success: 0 4px 6px -1px rgba(var(--color-success-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-success-600) / 0.2);
+  /* Shadow-error */
+  --shadow-error: 0 4px 6px -1px rgba(var(--color-error-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-error-600) / 0.2);
+  /* Shadow-info */
+  --shadow-info: 0 4px 6px -1px rgba(var(--color-info-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-info-600) / 0.2);
 }
 
 /* Dark mode override */

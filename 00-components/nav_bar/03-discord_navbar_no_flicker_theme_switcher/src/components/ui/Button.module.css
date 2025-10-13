@@ -1,21 +1,110 @@
+/*----- PRIMARY -----*/
 .button-primary-filled {
-  background-color: rgb(var(--color-button-background-primary-default));
   color: rgb(var(--color-button-text-primary-default));
+  background-color: rgb(var(--color-button-background-primary-default));
   box-shadow: var(--shadow-primary);
 }
 .button-primary-filled:hover {
+  color: rgb(var(--color-button-text-hover));
   background-color: rgb(var(--color-button-background-primary-hover));
-  color: rgb(var(--color-button-text-primary-hover));
   box-shadow: var(--shadow-primary);
 }
 .button-primary-filled:focus {
+  color: rgb(var(--color-button-text-hover));
   background-color: rgb(var(--color-button-background-primary-focus));
-  color: rgb(var(--color-button-text-primary-hover));
-  outline: 2px solid rgb(var(--color-primary-500));
-  outline-offset: 2px;
+  outline: var(--color-button-outline-primary-focus);
+  outline-offset: var(--color-button-outline-offset);
 }
 .button-primary-filled:active {
+  color: rgb(var(--color-button-text-active));
   background-color: rgb(var(--color-button-background-primary-active));
-  color: rgb(var(--color-button-text-primary-active));
+  box-shadow: 0 0 0 0 transparent;
+}
+/*----- NEUTRAL -----*/
+.button-neutral-filled {
+  color: rgb(var(--color-button-text-neutral-default));
+  background-color: rgb(var(--color-button-background-neutral-default));
+  box-shadow: var(--shadow-neutral);
+}
+.button-neutral-filled:hover {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-neutral-hover));
+  box-shadow: var(--shadow-neutral);
+}
+.button-neutral-filled:focus {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-neutral-focus));
+  outline: var(--color-button-outline-neutral-focus);
+  outline-offset: var(--color-button-outline-offset);
+}
+.button-neutral-filled:active {
+  color: rgb(var(--color-button-text-active));
+  background-color: rgb(var(--color-button-background-neutral-active));
+  box-shadow: 0 0 0 0 transparent;
+}
+/*----- SUCCESS -----*/
+.button-success-filled {
+  color: rgb(var(--color-button-text-success-default));
+  background-color: rgb(var(--color-button-background-success-default));
+  box-shadow: var(--shadow-success);
+}
+.button-success-filled:hover {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-success-hover));
+  box-shadow: var(--shadow-success);
+}
+.button-success-filled:focus {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-success-focus));
+  outline: var(--color-button-outline-success-focus);
+  outline-offset: var(--color-button-outline-offset);
+}
+.button-success-filled:active {
+  color: rgb(var(--color-button-text-active));
+  background-color: rgb(var(--color-button-background-success-active));
+  box-shadow: 0 0 0 0 transparent;
+}
+/*----- ERROR -----*/
+.button-error-filled {
+  color: rgb(var(--color-button-text-error-default));
+  background-color: rgb(var(--color-button-background-error-default));
+  box-shadow: var(--shadow-error);
+}
+.button-error-filled:hover {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-error-hover));
+  box-shadow: var(--shadow-error);
+}
+.button-error-filled:focus {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-error-focus));
+  outline: var(--color-button-outline-error-focus);
+  outline-offset: var(--color-button-outline-offset);
+}
+.button-error-filled:active {
+  color: rgb(var(--color-button-text-active));
+  background-color: rgb(var(--color-button-background-error-active));
+  box-shadow: 0 0 0 0 transparent;
+}
+/*----- INFO -----*/
+.button-info-filled {
+  color: rgb(var(--color-button-text-info-default));
+  background-color: rgb(var(--color-button-background-info-default));
+  box-shadow: var(--shadow-info);
+}
+.button-info-filled:hover {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-info-hover));
+  box-shadow: var(--shadow-info);
+}
+.button-info-filled:focus {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-background-info-focus));
+  outline: var(--color-button-outline-info-focus);
+  outline-offset: var(--color-button-outline-offset);
+}
+.button-info-filled:active {
+  color: rgb(var(--color-button-text-active));
+  background-color: rgb(var(--color-button-background-info-active));
   box-shadow: 0 0 0 0 transparent;
 }
