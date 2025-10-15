@@ -13,6 +13,8 @@
   --color-button-text-active: var(--color-white);
   /* Button-primary */
   --color-button-text-primary-default: var(--color-primary-500);
+  --color-button-text-primary-outline-hover: var(--color-primary-400);
+  --color-button-text-primary-outline-active: var(--color-primary-300);
   /* Button-neutral */
   --color-button-text-neutral-default: var(--color-neutral-500);
   /* Button-success */
@@ -121,21 +123,27 @@
 
   /*----- BORDER -----*/
   /* Button */
-  --color-button-outline-offset: 2px;
-  /* Button-primary */
-  --color-button-outline-primary-focus: 2px solid
+  --ring-offset-button-filled: 2px;
+  --ring-offset-button-outline: 0px;
+  /* Button-primary-filled */
+  --ring-button-primary-focus: 2px solid
     rgb(var(--color-button-text-primary-default));
+  /* Button-primary-outline */
+  --border-button-outline-primary-hover: 2px solid
+    rgb(var(--color-button-text-primary-outline-hover));
+  --border-button-outline-primary-active: 2px solid
+    rgb(var(--color-button-text-primary-outline-active));
   /* Button-neutral */
-  --color-button-outline-neutral-focus: 2px solid
+  --color-button-ring-neutral-focus: 2px solid
     rgb(var(--color-button-text-neutral-default));
   /* Button-success */
-  --color-button-outline-success-focus: 2px solid
+  --color-button-ring-success-focus: 2px solid
     rgb(var(--color-button-text-success-default));
   /* Button-error */
-  --color-button-outline-error-focus: 2px solid
+  --color-button-ring-error-focus: 2px solid
     rgb(var(--color-button-text-error-default));
   /* Button-info */
-  --color-button-outline-info-focus: 2px solid
+  --color-button-ring-info-focus: 2px solid
     rgb(var(--color-button-text-info-default));
 
   /* Sidebar */
