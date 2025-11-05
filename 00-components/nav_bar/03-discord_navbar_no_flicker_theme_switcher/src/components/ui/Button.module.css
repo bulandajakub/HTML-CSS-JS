@@ -19,7 +19,7 @@
 .button-primary-filled:active {
   color: rgb(var(--color-button-active));
   background-color: rgb(var(--background-button-primary-active));
-  outline: var(--ring-button-primary-active);
+  outline: var(--ring-button-primary-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Neutral */
@@ -42,7 +42,7 @@
 .button-neutral-filled:active {
   color: rgb(var(--color-button-active));
   background-color: rgb(var(--background-button-neutral-active));
-  outline: var(--ring-button-neutral-active);
+  outline: var(--ring-button-neutral-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Success */
@@ -65,7 +65,7 @@
 .button-success-filled:active {
   color: rgb(var(--color-button-active));
   background-color: rgb(var(--background-button-success-active));
-  outline: var(--ring-button-success-active);
+  outline: var(--ring-button-success-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Error */
@@ -88,7 +88,7 @@
 .button-error-filled:active {
   color: rgb(var(--color-button-active));
   background-color: rgb(var(--background-button-error-active));
-  outline: var(--ring-button-error-active);
+  outline: var(--ring-button-error-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Info */
@@ -111,7 +111,7 @@
 .button-info-filled:active {
   color: rgb(var(--color-button-active));
   background-color: rgb(var(--background-button-info-active));
-  outline: var(--ring-button-info-active);
+  outline: var(--ring-button-info-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 
@@ -132,14 +132,15 @@
 .button-primary-outline:focus {
   color: rgb(var(--color-button-primary-outline-hover));
   background-color: transparent;
-  border: var(--ring-button-primary-active);
-  outline: var(--ring-button-primary-active);
+  border: var(--ring-button-primary-focus);
+  outline: var(--ring-button-primary-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-primary-outline:active {
   color: rgb(var(--color-button-primary-outline-active));
   background-color: transparent;
   border: var(--ring-button-primary-active);
+  outline: var(--ring-button-primary-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Neutral */
@@ -158,14 +159,15 @@
 .button-neutral-outline:focus {
   color: rgb(var(--color-button-neutral-outline-hover));
   background-color: transparent;
-  border: var(--ring-button-neutral-active);
-  outline: var(--ring-button-neutral-active);
+  border: var(--ring-button-neutral-focus);
+  outline: var(--ring-button-neutral-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-neutral-outline:active {
   color: rgb(var(--color-button-neutral-outline-active));
   background-color: transparent;
   border: var(--ring-button-neutral-active);
+  outline: var(--ring-button-neutral-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Success */
@@ -184,14 +186,15 @@
 .button-success-outline:focus {
   color: rgb(var(--color-button-success-outline-hover));
   background-color: transparent;
-  border: var(--ring-button-success-active);
-  outline: var(--ring-button-success-active);
+  border: var(--ring-button-success-focus);
+  outline: var(--ring-button-success-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-success-outline:active {
   color: rgb(var(--color-button-success-outline-active));
   background-color: transparent;
   border: var(--ring-button-success-active);
+  outline: var(--ring-button-success-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Error */
@@ -210,14 +213,15 @@
 .button-error-outline:focus {
   color: rgb(var(--color-button-error-outline-hover));
   background-color: transparent;
-  border: var(--ring-button-error-active);
-  outline: var(--ring-button-error-active);
+  border: var(--ring-button-error-focus);
+  outline: var(--ring-button-error-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-error-outline:active {
   color: rgb(var(--color-button-error-outline-active));
   background-color: transparent;
   border: var(--ring-button-error-active);
+  outline: var(--ring-button-error-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Info */
@@ -236,19 +240,116 @@
 .button-info-outline:focus {
   color: rgb(var(--color-button-info-outline-hover));
   background-color: transparent;
-  border: var(--ring-button-info-active);
-  outline: var(--ring-button-info-active);
+  border: var(--ring-button-info-focus);
+  outline: var(--ring-button-info-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-info-outline:active {
   color: rgb(var(--color-button-info-outline-active));
   background-color: transparent;
   border: var(--ring-button-info-active);
+  outline: var(--ring-button-info-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 
-/* 
-Ghost
-- text-shadow instead of shadow,
-- ring on focus.
-*/
+/*----- GHOST -----*/
+/* Primary */
+.button-primary-ghost {
+  color: rgb(var(--color-button-primary-default));
+  text-shadow: var(--text-shadow-primary);
+}
+.button-primary-ghost:hover {
+  color: rgb(var(--color-button-primary-outline-hover));
+  text-shadow: var(--text-shadow-primary);
+}
+.button-primary-ghost:focus {
+  color: rgb(var(--color-button-primary-outline-hover));
+  outline: var(--ring-button-primary-focus);
+  outline-offset: var(--ring-offset-button-outline);
+  text-shadow: var(--text-shadow-primary);
+}
+.button-primary-ghost:active {
+  color: rgb(var(--color-button-primary-outline-active));
+  outline: var(--ring-button-primary-focus);
+  text-shadow: 0 0 0 transparent;
+}
+/* Neutral */
+.button-neutral-ghost {
+  color: rgb(var(--color-button-neutral-default));
+  text-shadow: var(--text-shadow-neutral);
+}
+.button-neutral-ghost:hover {
+  color: rgb(var(--color-button-neutral-outline-hover));
+  text-shadow: var(--text-shadow-neutral);
+}
+.button-neutral-ghost:focus {
+  color: rgb(var(--color-button-neutral-outline-hover));
+  outline: var(--ring-button-neutral-focus);
+  outline-offset: var(--ring-offset-button-outline);
+  text-shadow: var(--text-shadow-neutral);
+}
+.button-neutral-ghost:active {
+  color: rgb(var(--color-button-neutral-outline-active));
+  outline: var(--ring-button-neutral-focus);
+  text-shadow: 0 0 0 transparent;
+}
+/* Success */
+.button-success-ghost {
+  color: rgb(var(--color-button-success-default));
+  text-shadow: var(--text-shadow-success);
+}
+.button-success-ghost:hover {
+  color: rgb(var(--color-button-success-outline-hover));
+  text-shadow: var(--text-shadow-success);
+}
+.button-success-ghost:focus {
+  color: rgb(var(--color-button-success-outline-hover));
+  outline: var(--ring-button-success-focus);
+  outline-offset: var(--ring-offset-button-outline);
+  text-shadow: var(--text-shadow-success);
+}
+.button-success-ghost:active {
+  color: rgb(var(--color-button-success-outline-active));
+  outline: var(--ring-button-success-focus);
+  text-shadow: 0 0 0 transparent;
+}
+/* Error */
+.button-error-ghost {
+  color: rgb(var(--color-button-error-default));
+  text-shadow: var(--text-shadow-error);
+}
+.button-error-ghost:hover {
+  color: rgb(var(--color-button-error-outline-hover));
+  text-shadow: var(--text-shadow-error);
+}
+.button-error-ghost:focus {
+  color: rgb(var(--color-button-error-outline-hover));
+  outline: var(--ring-button-error-focus);
+  outline-offset: var(--ring-offset-button-outline);
+  text-shadow: var(--text-shadow-error);
+}
+.button-error-ghost:active {
+  color: rgb(var(--color-button-error-outline-active));
+  outline: var(--ring-button-error-focus);
+  text-shadow: 0 0 0 transparent;
+}
+/* Info */
+.button-info-ghost {
+  color: rgb(var(--color-button-info-default));
+  text-shadow: var(--text-shadow-info);
+}
+.button-info-ghost:hover {
+  color: rgb(var(--color-button-info-outline-hover));
+  text-shadow: var(--text-shadow-info);
+}
+.button-info-ghost:focus {
+  color: rgb(var(--color-button-info-outline-hover));
+  outline: var(--ring-button-info-focus);
+  outline-offset: var(--ring-offset-button-outline);
+  text-shadow: var(--text-shadow-info);
+}
+.button-info-ghost:active {
+  color: rgb(var(--color-button-info-outline-active));
+  outline: var(--ring-button-info-focus);
+  text-shadow: 0 0 0 transparent;
+}
