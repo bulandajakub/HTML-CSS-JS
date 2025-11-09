@@ -1,0 +1,12 @@
+.sidebar {
+  background: rgb(var(--background-sidebar-default));
+}
+/* Divider */
+.sidebar-hr {
+  border: 2px solid rgb(var(--border-sidebar-default));
+}
+/* Tooltip */
+.sidebar-tooltip {
+  color: rgb(var(--color-tooltip-default));
+  background: rgb(var(--background-tooltip-default));
+}

@@ -16,36 +16,86 @@
 
 Traditionally these would be classes like card, btn, badge — that kind of thing. */
 @layer components {
+  /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
+  /* This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML. */
   /* Home */
   .home {
-    @apply flex h-screen divide-x-2 divide-[var(--color-border)];
+    @apply flex
+    h-screen
+    divide-x-2
+    divide-[var(--color-border)];
   }
+  /* Buttons */
+  .button {
+    @apply /* Layout */
+    inline-flex
+    items-center
+    
+    /* Spacing */
+    px-[var(--spacing-2)]
+    py-[var(--spacing-1)]
+    gap-[var(--spacing-1)]
 
+    /* Border */
+    rounded-[var(--radius-3)]
+
+    /* Typography */
+    text-sm
+    font-medium
+    text-center
+
+    /* Animation */
+    cursor-pointer
+    transition-all
+    duration-300
+    ease-in-out;
+  }
   /* Sidebar */
   .sidebar {
-    /* Use the @apply directive to inline any existing utility classes into your own custom CSS: */
-    /* This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML. */
-    @apply flex flex-col justify-center h-full
-    bg-[var(--color-sidebar-background-default)]
-    text-[var(--color-sidebar-text-default)]
+    @apply /* Layout */
+    flex
+    flex-col
+    justify-center
+    h-full
+
+    /* Spacing */
     p-[var(--spacing-3)];
   }
 
   .sidebar-tooltip {
-    @apply absolute w-auto p-[var(--spacing-2)] m-[var(--spacing-2)]
-    min-w-max left-14
+    @apply /* Layout */
+    absolute
+    w-auto
+    min-w-max
+
+    /* Spacing */
+    p-[var(--spacing-2)]
+    m-[var(--spacing-2)]
+    left-14
+
+    /* Border */
     rounded-[var(--radius-2)]
+    
+    /* Shadow */
     shadow-md
-    text-[var(--color-tooltip-text-default)]
-    bg-[var(--color-tooltip-background-default)]
-    text-xs font-bold
-    transition-all duration-100 scale-0 origin-left;
+
+    /* Typography */
+    text-xs
+    font-bold
+
+    /* Animation */
+    transition-all
+    duration-100
+    scale-0
+    origin-left;
   }
 
   .sidebar-hr {
-    @apply bg-[var(--color-button-sidebar-background-default)]
-    border-[var(--color-sidebar-border-default)]
-    rounded-[var(--radius-round)] mx-[var(--spacing-2)];
+    @apply /* Spacing */
+    mx-[var(--spacing-2)]
+    
+    /* Border */
+    rounded-[var(--radius-round)];
   }
 
   /* Channel Bar */
@@ -141,32 +191,6 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   .button-list {
     @apply flex flex-wrap
     gap-[var(--spacing-4)];
-  }
-
-  /* Buttons */
-  .button {
-    @apply /* Layout */
-    inline-flex
-    items-center
-    
-    /* Spacing */
-    px-[var(--spacing-2)]
-    py-[var(--spacing-1)]
-    gap-[var(--spacing-1)]
-
-    /* Radius */
-    rounded-[var(--radius-3)]
-
-    /* Typography */
-    text-sm
-    font-medium
-    text-center
-
-    /* Animation */
-    cursor-pointer
-    transition-all
-    duration-300
-    ease-in-out;
   }
 
   .button-sidebar {

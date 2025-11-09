@@ -3,7 +3,7 @@
   /* Semantic colors */
   --color-background-1: var(--color-neutral-100);
   --color-background-2: var(--color-neutral-50);
-  --color-border: var(--color-neutral-200);
+  --color-border: var(--color-neutral-300);
   --color-text-1: var(--color-neutral-700);
   --color-text-2: var(--color-neutral-500);
 
@@ -33,10 +33,7 @@
   --color-button-info-outline-active: var(--color-info-300);
 
   /* Sidebar */
-  --color-sidebar-text-default: var(--color-button-sidebar-background-hover);
-
-  /* Tooltip */
-  --color-tooltip-text-default: var(--color-text-1);
+  --color-tooltip-default: var(--color-text-1);
 
   /* Channel Bar */
   --color-channelbar-title-default: var(--color-text-2);
@@ -86,10 +83,9 @@
   --background-button-info-active: var(--color-info-400);
 
   /* Sidebar */
-  --color-sidebar-background-default: var(--color-background-1);
+  --background-sidebar-default: var(--color-background-1);
 
-  /* Tooltip */
-  --color-tooltip-background-default: var(--color-background-1);
+  --background-tooltip-default: var(--color-background-1);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--color-background-1);
@@ -157,9 +153,8 @@
     rgb(var(--color-button-info-outline-hover));
 
   /* Sidebar */
-  --color-sidebar-border-default: var(--color-border);
+  --border-sidebar-default: var(--color-border);
 
-  /* Tooltip */
   --color-tooltip-border-default: var(--color-border);
 
   /* Channel Bar */
@@ -236,10 +231,10 @@
   --color-button-info-outline-active: var(--color-info-300);
 
   /* Sidebar */
-  --color-sidebar-text-default: var(--color-text-1);
+  --color-sidebar-default: var(--color-text-1);
 
   /* Tooltip */
-  --color-tooltip-text-default: var(--color-text-1);
+  --color-tooltip-default: var(--color-text-1);
 
   /* Channel Bar */
   --color-channelbar-title-default: var(--color-text-2);
