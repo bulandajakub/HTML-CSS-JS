@@ -210,41 +210,31 @@
   --color-text-1: var(--color-neutral-100);
   --color-text-2: var(--color-neutral-300);
 
-  /*----- BACKGROUND -----*/
-  /* Sidebar */
-  --color-sidebar-background-default: var(--color-background-1);
-
-  /* Tooltip */
-  --color-tooltip-background-default: var(--color-neutral-800);
-
-  /* Channel Bar */
-  --color-channelbar-background-default: var(--color-background-1);
-
-  /* Top Navigation */
-  --color-topnav-background-default: var(--color-background-1);
-
-  /* Top Navigation-title */
-  --color-topnav-title-icon-background-default: transparent;
-
-  /* Top Navigation-search */
-  --color-topnav-search-background-default: var(--color-background-2);
-  --color-topnav-search-background-hover: var(--color-neutral-800);
-
-  /* Main Content */
-  --color-main-content-background-default: var(--color-background-2);
-
-  /* Button */
-  --background-button-primary-hover: var(--color-primary-900);
-  --background-button-neutral-hover: var(--color-neutral-700);
-  --background-button-success-hover: var(--color-success-900);
-  --background-button-error-hover: var(--color-error-900);
-  --background-button-info-hover: var(--color-info-900);
-
-  /* Button-sidebar */
-  --color-button-sidebar-background-default: var(--color-background-2);
-  --color-button-sidebar-background-hover: var(--color-primary-500);
-
   /*----- TEXT -----*/
+  /* Button */
+  --color-button-hover: var(--color-background-2);
+  --color-button-active: var(--color-black);
+  /* Button-primary */
+  --color-button-primary-default: var(--color-primary-500);
+  --color-button-primary-outline-hover: var(--color-primary-400);
+  --color-button-primary-outline-active: var(--color-primary-300);
+  /* Button-neutral */
+  --color-button-neutral-default: var(--color-neutral-500);
+  --color-button-neutral-outline-hover: var(--color-neutral-400);
+  --color-button-neutral-outline-active: var(--color-neutral-300);
+  /* Button-success */
+  --color-button-success-default: var(--color-success-500);
+  --color-button-success-outline-hover: var(--color-success-400);
+  --color-button-success-outline-active: var(--color-success-300);
+  /* Button-error */
+  --color-button-error-default: var(--color-error-500);
+  --color-button-error-outline-hover: var(--color-error-400);
+  --color-button-error-outline-active: var(--color-error-300);
+  /* Button-info */
+  --color-button-info-default: var(--color-info-500);
+  --color-button-info-outline-hover: var(--color-info-400);
+  --color-button-info-outline-active: var(--color-info-300);
+
   /* Sidebar */
   --color-sidebar-text-default: var(--color-text-1);
 
@@ -267,27 +257,98 @@
   /* Main Content */
   --color-main-content-text-default: var(--color-text-1);
 
-  /* Button */
-  --color-button-primary-default: var(--color-primary-500);
-  --color-button-text-primary-hover: var(--color-primary-300);
+  /*----- BACKGROUND -----*/
+  /* Button-primary */
+  --background-button-primary-default: var(--color-primary-900);
+  --background-button-primary-hover: var(--color-button-primary-default);
+  --background-button-primary-focus: var(--color-button-primary-default);
+  --background-button-primary-active: var(--color-primary-400);
+  /* Button-neutral */
+  --background-button-neutral-default: var(--color-neutral-800);
+  --background-button-neutral-hover: var(--color-button-neutral-default);
+  --background-button-neutral-focus: var(--background-button-neutral-hover);
+  --background-button-neutral-active: var(--color-neutral-400);
+  /* Button-success */
+  --background-button-success-default: var(--color-success-900);
+  --background-button-success-hover: var(--color-button-success-default);
+  --background-button-success-focus: var(--background-button-success-hover);
+  --background-button-success-active: var(--color-success-400);
+  /* Button-error */
+  --background-button-error-default: var(--color-error-900);
+  --background-button-error-hover: var(--color-button-error-default);
+  --background-button-error-focus: var(--background-button-error-hover);
+  --background-button-error-active: var(--color-error-400);
+  /* Button-info */
+  --background-button-info-default: var(--color-info-900);
+  --background-button-info-hover: var(--color-button-info-default);
+  --background-button-info-focus: var(--background-button-info-hover);
+  --background-button-info-active: var(--color-info-400);
 
-  --color-button-neutral-default: var(--color-neutral-500);
-  --color-button-text-neutral-hover: var(--color-neutral-300);
+  /* Sidebar */
+  --color-sidebar-background-default: var(--color-background-1);
 
-  --color-button-success-default: var(--color-success-500);
-  --color-button-text-success-hover: var(--color-success-300);
+  /* Tooltip */
+  --color-tooltip-background-default: var(--color-neutral-800);
 
-  --color-button-error-default: var(--color-error-500);
-  --color-button-text-error-hover: var(--color-error-300);
+  /* Channel Bar */
+  --color-channelbar-background-default: var(--color-background-1);
 
-  --color-button-info-default: var(--color-info-500);
-  --color-button-text-info-hover: var(--color-info-300);
+  /* Top Navigation */
+  --color-topnav-background-default: var(--color-background-1);
 
-  /* Button-sidebar */
-  --color-button-sidebar-text-default: var(--color-primary-600);
-  --color-button-sidebar-text-hover: var(--color-text-1);
+  /* Top Navigation-title */
+  --color-topnav-title-icon-background-default: transparent;
+
+  /* Top Navigation-search */
+  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-hover: var(--color-neutral-800);
+
+  /* Main Content */
+  --color-main-content-background-default: var(--color-background-2);
 
   /*----- BORDER -----*/
+  /* Button */
+  --ring-offset-button-filled: 2px;
+  --ring-offset-button-outline: 0px;
+  /* Button-primary-filled */
+  --ring-button-primary-focus: 2px solid
+    rgb(var(--color-button-primary-outline-hover));
+  --ring-button-primary-active: 2px solid
+    rgb(var(--color-button-primary-outline-active));
+  /* Button-primary-outline */
+  --border-button-outline-primary-hover: 2px solid
+    rgb(var(--color-button-primary-outline-hover));
+  /* Button-neutral-filled */
+  --ring-button-neutral-focus: 2px solid
+    rgb(var(--color-button-neutral-outline-hover));
+  --ring-button-neutral-active: 2px solid
+    rgb(var(--color-button-neutral-outline-active));
+  /* Button-neutral-outline */
+  --border-button-outline-neutral-hover: 2px solid
+    rgb(var(--color-button-neutral-outline-hover));
+  /* Button-success-filled */
+  --ring-button-success-focus: 2px solid
+    rgb(var(--color-button-success-outline-hover));
+  --ring-button-success-active: 2px solid
+    rgb(var(--color-button-success-outline-active));
+  /* Button-success-outline */
+  --border-button-outline-success-hover: 2px solid
+    rgb(var(--color-button-success-outline-hover));
+  /* Button-error-filled */
+  --ring-button-error-focus: 2px solid rgb(var(--color-button-error-default));
+  --ring-button-error-active: 2px solid
+    rgb(var(--color-button-error-outline-active));
+  /* Button-error-outline */
+  --border-button-outline-error-hover: 2px solid
+    rgb(var(--color-button-error-outline-hover));
+  /* Button-info-filled */
+  --ring-button-info-focus: 2px solid rgb(var(--color-button-info-default));
+  --ring-button-info-active: 2px solid
+    rgb(var(--color-button-info-outline-active));
+  /* Button-info-outline */
+  --border-button-outline-info-hover: 2px solid
+    rgb(var(--color-button-info-outline-hover));
+
   /* Sidebar */
   --color-sidebar-border-default: var(--color-border);
 
@@ -311,4 +372,26 @@
   --color-divider: var(--color-border);
 
   /* Button */
+
+  /*----- SHADOW -----*/
+  /* Shadow-primary */
+  --shadow-primary: 0 4px 6px -1px rgba(var(--color-primary-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-primary-600) / 0.2);
+  --text-shadow-primary: 2px 2px 4px rgba(var(--color-primary-600) / 0.4);
+  /* Shadow-neutral */
+  --shadow-neutral: 0 4px 6px -1px rgba(var(--color-neutral-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-neutral-600) / 0.2);
+  --text-shadow-neutral: 2px 2px 4px rgba(var(--color-neutral-600) / 0.4);
+  /* Shadow-success */
+  --shadow-success: 0 4px 6px -1px rgba(var(--color-success-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-success-600) / 0.2);
+  --text-shadow-success: 2px 2px 4px rgba(var(--color-success-600) / 0.4);
+  /* Shadow-error */
+  --shadow-error: 0 4px 6px -1px rgba(var(--color-error-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-error-600) / 0.2);
+  --text-shadow-error: 2px 2px 4px rgba(var(--color-error-600) / 0.4);
+  /* Shadow-info */
+  --shadow-info: 0 4px 6px -1px rgba(var(--color-info-600) / 0.4),
+    0 2px 4px -1px rgba(var(--color-info-600) / 0.2);
+  --text-shadow-info: 2px 2px 4px rgba(var(--color-info-600) / 0.4);
 }
