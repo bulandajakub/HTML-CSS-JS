@@ -7,6 +7,6 @@
 }
 /* Tooltip */
 .sidebar-tooltip {
-  color: rgb(var(--color-tooltip-default));
+  color: rgb(var(--text-tooltip-default));
   background: rgb(var(--background-tooltip-default));
 }

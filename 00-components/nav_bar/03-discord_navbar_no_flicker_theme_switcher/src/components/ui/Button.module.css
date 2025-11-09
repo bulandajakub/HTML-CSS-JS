@@ -1,115 +1,115 @@
 /*----- FILLED -----*/
 /* Primary */
 .button-primary-filled {
-  color: rgb(var(--color-button-primary-default));
+  color: rgb(var(--text-button-primary-default));
   background-color: rgb(var(--background-button-primary-default));
   box-shadow: var(--shadow-primary);
 }
 .button-primary-filled:hover {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-primary-hover));
   box-shadow: var(--shadow-primary);
 }
 .button-primary-filled:focus {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-primary-focus));
   outline: var(--ring-button-primary-focus);
   outline-offset: var(--ring-offset-button-filled);
 }
 .button-primary-filled:active {
-  color: rgb(var(--color-button-active));
+  color: rgb(var(--text-button-active));
   background-color: rgb(var(--background-button-primary-active));
   outline: var(--ring-button-primary-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Neutral */
 .button-neutral-filled {
-  color: rgb(var(--color-button-neutral-default));
+  color: rgb(var(--text-button-neutral-default));
   background-color: rgb(var(--background-button-neutral-default));
   box-shadow: var(--shadow-neutral);
 }
 .button-neutral-filled:hover {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-neutral-hover));
   box-shadow: var(--shadow-neutral);
 }
 .button-neutral-filled:focus {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-neutral-focus));
   outline: var(--ring-button-neutral-focus);
   outline-offset: var(--ring-offset-button-filled);
 }
 .button-neutral-filled:active {
-  color: rgb(var(--color-button-active));
+  color: rgb(var(--text-button-active));
   background-color: rgb(var(--background-button-neutral-active));
   outline: var(--ring-button-neutral-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Success */
 .button-success-filled {
-  color: rgb(var(--color-button-success-default));
+  color: rgb(var(--text-button-success-default));
   background-color: rgb(var(--background-button-success-default));
   box-shadow: var(--shadow-success);
 }
 .button-success-filled:hover {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-success-hover));
   box-shadow: var(--shadow-success);
 }
 .button-success-filled:focus {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-success-focus));
   outline: var(--ring-button-success-focus);
   outline-offset: var(--ring-offset-button-filled);
 }
 .button-success-filled:active {
-  color: rgb(var(--color-button-active));
+  color: rgb(var(--text-button-active));
   background-color: rgb(var(--background-button-success-active));
   outline: var(--ring-button-success-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Error */
 .button-error-filled {
-  color: rgb(var(--color-button-error-default));
+  color: rgb(var(--text-button-error-default));
   background-color: rgb(var(--background-button-error-default));
   box-shadow: var(--shadow-error);
 }
 .button-error-filled:hover {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-error-hover));
   box-shadow: var(--shadow-error);
 }
 .button-error-filled:focus {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-error-focus));
   outline: var(--ring-button-error-focus);
   outline-offset: var(--ring-offset-button-filled);
 }
 .button-error-filled:active {
-  color: rgb(var(--color-button-active));
+  color: rgb(var(--text-button-active));
   background-color: rgb(var(--background-button-error-active));
   outline: var(--ring-button-error-focus);
   box-shadow: 0 0 0 0 transparent;
 }
 /* Info */
 .button-info-filled {
-  color: rgb(var(--color-button-info-default));
+  color: rgb(var(--text-button-info-default));
   background-color: rgb(var(--background-button-info-default));
   box-shadow: var(--shadow-info);
 }
 .button-info-filled:hover {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-info-hover));
   box-shadow: var(--shadow-info);
 }
 .button-info-filled:focus {
-  color: rgb(var(--color-button-hover));
+  color: rgb(var(--text-button-hover));
   background-color: rgb(var(--background-button-info-focus));
   outline: var(--ring-button-info-focus);
   outline-offset: var(--ring-offset-button-filled);
 }
 .button-info-filled:active {
-  color: rgb(var(--color-button-active));
+  color: rgb(var(--text-button-active));
   background-color: rgb(var(--background-button-info-active));
   outline: var(--ring-button-info-focus);
   box-shadow: 0 0 0 0 transparent;
@@ -118,26 +118,26 @@
 /*----- OUTLINE -----*/
 /* Primary */
 .button-primary-outline {
-  color: rgb(var(--color-button-primary-default));
+  color: rgb(var(--text-button-primary-default));
   background-color: transparent;
   border: var(--ring-button-primary-focus);
   box-shadow: var(--shadow-primary);
 }
 .button-primary-outline:hover {
-  color: rgb(var(--color-button-primary-outline-hover));
+  color: rgb(var(--text-button-primary-outline-hover));
   background-color: transparent;
   border: var(--border-button-outline-primary-hover);
   box-shadow: var(--shadow-primary);
 }
 .button-primary-outline:focus {
-  color: rgb(var(--color-button-primary-outline-hover));
+  color: rgb(var(--text-button-primary-outline-hover));
   background-color: transparent;
   border: var(--ring-button-primary-focus);
   outline: var(--ring-button-primary-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-primary-outline:active {
-  color: rgb(var(--color-button-primary-outline-active));
+  color: rgb(var(--text-button-primary-outline-active));
   background-color: transparent;
   border: var(--ring-button-primary-active);
   outline: var(--ring-button-primary-focus);
@@ -145,26 +145,26 @@
 }
 /* Neutral */
 .button-neutral-outline {
-  color: rgb(var(--color-button-neutral-default));
+  color: rgb(var(--text-button-neutral-default));
   background-color: transparent;
   border: var(--ring-button-neutral-focus);
   box-shadow: var(--shadow-neutral);
 }
 .button-neutral-outline:hover {
-  color: rgb(var(--color-button-neutral-outline-hover));
+  color: rgb(var(--text-button-neutral-outline-hover));
   background-color: transparent;
   border: var(--border-button-outline-neutral-hover);
   box-shadow: var(--shadow-neutral);
 }
 .button-neutral-outline:focus {
-  color: rgb(var(--color-button-neutral-outline-hover));
+  color: rgb(var(--text-button-neutral-outline-hover));
   background-color: transparent;
   border: var(--ring-button-neutral-focus);
   outline: var(--ring-button-neutral-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-neutral-outline:active {
-  color: rgb(var(--color-button-neutral-outline-active));
+  color: rgb(var(--text-button-neutral-outline-active));
   background-color: transparent;
   border: var(--ring-button-neutral-active);
   outline: var(--ring-button-neutral-focus);
@@ -172,26 +172,26 @@
 }
 /* Success */
 .button-success-outline {
-  color: rgb(var(--color-button-success-default));
+  color: rgb(var(--text-button-success-default));
   background-color: transparent;
   border: var(--ring-button-success-focus);
   box-shadow: var(--shadow-success);
 }
 .button-success-outline:hover {
-  color: rgb(var(--color-button-success-outline-hover));
+  color: rgb(var(--text-button-success-outline-hover));
   background-color: transparent;
   border: var(--border-button-outline-success-hover);
   box-shadow: var(--shadow-success);
 }
 .button-success-outline:focus {
-  color: rgb(var(--color-button-success-outline-hover));
+  color: rgb(var(--text-button-success-outline-hover));
   background-color: transparent;
   border: var(--ring-button-success-focus);
   outline: var(--ring-button-success-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-success-outline:active {
-  color: rgb(var(--color-button-success-outline-active));
+  color: rgb(var(--text-button-success-outline-active));
   background-color: transparent;
   border: var(--ring-button-success-active);
   outline: var(--ring-button-success-focus);
@@ -199,26 +199,26 @@
 }
 /* Error */
 .button-error-outline {
-  color: rgb(var(--color-button-error-default));
+  color: rgb(var(--text-button-error-default));
   background-color: transparent;
   border: var(--ring-button-error-focus);
   box-shadow: var(--shadow-error);
 }
 .button-error-outline:hover {
-  color: rgb(var(--color-button-error-outline-hover));
+  color: rgb(var(--text-button-error-outline-hover));
   background-color: transparent;
   border: var(--border-button-outline-error-hover);
   box-shadow: var(--shadow-error);
 }
 .button-error-outline:focus {
-  color: rgb(var(--color-button-error-outline-hover));
+  color: rgb(var(--text-button-error-outline-hover));
   background-color: transparent;
   border: var(--ring-button-error-focus);
   outline: var(--ring-button-error-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-error-outline:active {
-  color: rgb(var(--color-button-error-outline-active));
+  color: rgb(var(--text-button-error-outline-active));
   background-color: transparent;
   border: var(--ring-button-error-active);
   outline: var(--ring-button-error-focus);
@@ -226,26 +226,26 @@
 }
 /* Info */
 .button-info-outline {
-  color: rgb(var(--color-button-info-default));
+  color: rgb(var(--text-button-info-default));
   background-color: transparent;
   border: var(--ring-button-info-focus);
   box-shadow: var(--shadow-info);
 }
 .button-info-outline:hover {
-  color: rgb(var(--color-button-info-outline-hover));
+  color: rgb(var(--text-button-info-outline-hover));
   background-color: transparent;
   border: var(--border-button-outline-info-hover);
   box-shadow: var(--shadow-info);
 }
 .button-info-outline:focus {
-  color: rgb(var(--color-button-info-outline-hover));
+  color: rgb(var(--text-button-info-outline-hover));
   background-color: transparent;
   border: var(--ring-button-info-focus);
   outline: var(--ring-button-info-focus);
   outline-offset: var(--ring-offset-button-outline);
 }
 .button-info-outline:active {
-  color: rgb(var(--color-button-info-outline-active));
+  color: rgb(var(--text-button-info-outline-active));
   background-color: transparent;
   border: var(--ring-button-info-active);
   outline: var(--ring-button-info-focus);
@@ -255,101 +255,101 @@
 /*----- GHOST -----*/
 /* Primary */
 .button-primary-ghost {
-  color: rgb(var(--color-button-primary-default));
+  color: rgb(var(--text-button-primary-default));
   text-shadow: var(--text-shadow-primary);
 }
 .button-primary-ghost:hover {
-  color: rgb(var(--color-button-primary-outline-hover));
+  color: rgb(var(--text-button-primary-outline-hover));
   text-shadow: var(--text-shadow-primary);
 }
 .button-primary-ghost:focus {
-  color: rgb(var(--color-button-primary-outline-hover));
+  color: rgb(var(--text-button-primary-outline-hover));
   outline: var(--ring-button-primary-focus);
   outline-offset: var(--ring-offset-button-outline);
   text-shadow: var(--text-shadow-primary);
 }
 .button-primary-ghost:active {
-  color: rgb(var(--color-button-primary-outline-active));
+  color: rgb(var(--text-button-primary-outline-active));
   outline: var(--ring-button-primary-focus);
   text-shadow: 0 0 0 transparent;
 }
 /* Neutral */
 .button-neutral-ghost {
-  color: rgb(var(--color-button-neutral-default));
+  color: rgb(var(--text-button-neutral-default));
   text-shadow: var(--text-shadow-neutral);
 }
 .button-neutral-ghost:hover {
-  color: rgb(var(--color-button-neutral-outline-hover));
+  color: rgb(var(--text-button-neutral-outline-hover));
   text-shadow: var(--text-shadow-neutral);
 }
 .button-neutral-ghost:focus {
-  color: rgb(var(--color-button-neutral-outline-hover));
+  color: rgb(var(--text-button-neutral-outline-hover));
   outline: var(--ring-button-neutral-focus);
   outline-offset: var(--ring-offset-button-outline);
   text-shadow: var(--text-shadow-neutral);
 }
 .button-neutral-ghost:active {
-  color: rgb(var(--color-button-neutral-outline-active));
+  color: rgb(var(--text-button-neutral-outline-active));
   outline: var(--ring-button-neutral-focus);
   text-shadow: 0 0 0 transparent;
 }
 /* Success */
 .button-success-ghost {
-  color: rgb(var(--color-button-success-default));
+  color: rgb(var(--text-button-success-default));
   text-shadow: var(--text-shadow-success);
 }
 .button-success-ghost:hover {
-  color: rgb(var(--color-button-success-outline-hover));
+  color: rgb(var(--text-button-success-outline-hover));
   text-shadow: var(--text-shadow-success);
 }
 .button-success-ghost:focus {
-  color: rgb(var(--color-button-success-outline-hover));
+  color: rgb(var(--text-button-success-outline-hover));
   outline: var(--ring-button-success-focus);
   outline-offset: var(--ring-offset-button-outline);
   text-shadow: var(--text-shadow-success);
 }
 .button-success-ghost:active {
-  color: rgb(var(--color-button-success-outline-active));
+  color: rgb(var(--text-button-success-outline-active));
   outline: var(--ring-button-success-focus);
   text-shadow: 0 0 0 transparent;
 }
 /* Error */
 .button-error-ghost {
-  color: rgb(var(--color-button-error-default));
+  color: rgb(var(--text-button-error-default));
   text-shadow: var(--text-shadow-error);
 }
 .button-error-ghost:hover {
-  color: rgb(var(--color-button-error-outline-hover));
+  color: rgb(var(--text-button-error-outline-hover));
   text-shadow: var(--text-shadow-error);
 }
 .button-error-ghost:focus {
-  color: rgb(var(--color-button-error-outline-hover));
+  color: rgb(var(--text-button-error-outline-hover));
   outline: var(--ring-button-error-focus);
   outline-offset: var(--ring-offset-button-outline);
   text-shadow: var(--text-shadow-error);
 }
 .button-error-ghost:active {
-  color: rgb(var(--color-button-error-outline-active));
+  color: rgb(var(--text-button-error-outline-active));
   outline: var(--ring-button-error-focus);
   text-shadow: 0 0 0 transparent;
 }
 /* Info */
 .button-info-ghost {
-  color: rgb(var(--color-button-info-default));
+  color: rgb(var(--text-button-info-default));
   text-shadow: var(--text-shadow-info);
 }
 .button-info-ghost:hover {
-  color: rgb(var(--color-button-info-outline-hover));
+  color: rgb(var(--text-button-info-outline-hover));
   text-shadow: var(--text-shadow-info);
 }
 .button-info-ghost:focus {
-  color: rgb(var(--color-button-info-outline-hover));
+  color: rgb(var(--text-button-info-outline-hover));
   outline: var(--ring-button-info-focus);
   outline-offset: var(--ring-offset-button-outline);
   text-shadow: var(--text-shadow-info);
 }
 .button-info-ghost:active {
-  color: rgb(var(--color-button-info-outline-active));
+  color: rgb(var(--text-button-info-outline-active));
   outline: var(--ring-button-info-focus);
   text-shadow: 0 0 0 transparent;
 }

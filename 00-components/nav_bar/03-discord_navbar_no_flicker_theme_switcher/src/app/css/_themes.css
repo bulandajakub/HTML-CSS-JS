@@ -1,112 +1,112 @@
 /* level-3-mapped */
 @theme inline {
   /* Semantic colors */
-  --color-background-1: var(--color-neutral-100);
-  --color-background-2: var(--color-neutral-50);
-  --color-border: var(--color-neutral-300);
-  --color-text-1: var(--color-neutral-700);
-  --color-text-2: var(--color-neutral-500);
+  --background-1: var(--color-neutral-100);
+  --background-2: var(--color-neutral-50);
+  --border: var(--color-neutral-300);
+  --text-1: var(--color-neutral-700);
+  --text-2: var(--color-neutral-500);
 
   /*----- TEXT -----*/
   /* Button */
-  --color-button-hover: var(--color-background-2);
-  --color-button-active: var(--color-white);
+  --text-button-hover: var(--background-2);
+  --text-button-active: var(--color-white);
   /* Button-primary */
-  --color-button-primary-default: var(--color-primary-500);
-  --color-button-primary-outline-hover: var(--color-primary-400);
-  --color-button-primary-outline-active: var(--color-primary-300);
+  --text-button-primary-default: var(--color-primary-500);
+  --text-button-primary-outline-hover: var(--color-primary-400);
+  --text-button-primary-outline-active: var(--color-primary-300);
   /* Button-neutral */
-  --color-button-neutral-default: var(--color-neutral-500);
-  --color-button-neutral-outline-hover: var(--color-neutral-400);
-  --color-button-neutral-outline-active: var(--color-neutral-300);
+  --text-button-neutral-default: var(--color-neutral-500);
+  --text-button-neutral-outline-hover: var(--color-neutral-400);
+  --text-button-neutral-outline-active: var(--color-neutral-300);
   /* Button-success */
-  --color-button-success-default: var(--color-success-500);
-  --color-button-success-outline-hover: var(--color-success-400);
-  --color-button-success-outline-active: var(--color-success-300);
+  --text-button-success-default: var(--color-success-500);
+  --text-button-success-outline-hover: var(--color-success-400);
+  --text-button-success-outline-active: var(--color-success-300);
   /* Button-error */
-  --color-button-error-default: var(--color-error-500);
-  --color-button-error-outline-hover: var(--color-error-400);
-  --color-button-error-outline-active: var(--color-error-300);
+  --text-button-error-default: var(--color-error-500);
+  --text-button-error-outline-hover: var(--color-error-400);
+  --text-button-error-outline-active: var(--color-error-300);
   /* Button-info */
-  --color-button-info-default: var(--color-info-500);
-  --color-button-info-outline-hover: var(--color-info-400);
-  --color-button-info-outline-active: var(--color-info-300);
+  --text-button-info-default: var(--color-info-500);
+  --text-button-info-outline-hover: var(--color-info-400);
+  --text-button-info-outline-active: var(--color-info-300);
 
   /* Sidebar */
-  --color-tooltip-default: var(--color-text-1);
+  --text-tooltip-default: var(--text-1);
 
   /* Channel Bar */
-  --color-channelbar-title-default: var(--color-text-2);
-  --color-channelbar-text-default: var(--color-text-1);
+  --text-channelbar-title-default: var(--text-2);
+  --text-channelbar-text-default: var(--text-1);
 
   /* Top Navigation */
 
   /* Title */
-  --color-topnav-title-text-default: var(--color-text-1);
+  --text-topnav-title-text-default: var(--text-1);
 
   /* Search */
-  --color-topnav-search-text-default: var(--color-text-2);
-  --color-topnav-search-text-hover: var(--color-text-1);
+  --text-topnav-search-text-default: var(--text-2);
+  --text-topnav-search-text-hover: var(--text-1);
 
   /* Main Content */
-  --color-main-content-text-default: var(--color-text-1);
+  --text-main-content-text-default: var(--text-1);
 
   /* Button-sidebar */
-  --color-button-sidebar-text-default: var(--color-primary-500);
-  --color-button-sidebar-text-hover: var(--color-background-1);
+  --text-button-sidebar-text-default: var(--color-primary-500);
+  --text-button-sidebar-text-hover: var(--background-1);
 
   /*----- BACKGROUND -----*/
   /* Button-primary */
   --background-button-primary-default: var(--color-primary-100);
-  --background-button-primary-hover: var(--color-button-primary-default);
-  --background-button-primary-focus: var(--color-button-primary-default);
+  --background-button-primary-hover: var(--text-button-primary-default);
+  --background-button-primary-focus: var(--text-button-primary-default);
   --background-button-primary-active: var(--color-primary-400);
   /* Button-neutral */
   --background-button-neutral-default: var(--color-neutral-100);
-  --background-button-neutral-hover: var(--color-button-neutral-default);
+  --background-button-neutral-hover: var(--text-button-neutral-default);
   --background-button-neutral-focus: var(--background-button-neutral-hover);
   --background-button-neutral-active: var(--color-neutral-400);
   /* Button-success */
   --background-button-success-default: var(--color-success-100);
-  --background-button-success-hover: var(--color-button-success-default);
+  --background-button-success-hover: var(--text-button-success-default);
   --background-button-success-focus: var(--background-button-success-hover);
   --background-button-success-active: var(--color-success-400);
   /* Button-error */
   --background-button-error-default: var(--color-error-100);
-  --background-button-error-hover: var(--color-button-error-default);
+  --background-button-error-hover: var(--text-button-error-default);
   --background-button-error-focus: var(--background-button-error-hover);
   --background-button-error-active: var(--color-error-400);
   /* Button-info */
   --background-button-info-default: var(--color-info-100);
-  --background-button-info-hover: var(--color-button-info-default);
+  --background-button-info-hover: var(--text-button-info-default);
   --background-button-info-focus: var(--background-button-info-hover);
   --background-button-info-active: var(--color-info-400);
 
   /* Sidebar */
-  --background-sidebar-default: var(--color-background-1);
+  --background-sidebar-default: var(--background-1);
 
-  --background-tooltip-default: var(--color-background-1);
+  --background-tooltip-default: var(--background-1);
 
   /* Channel Bar */
-  --color-channelbar-background-default: var(--color-background-1);
+  --color-channelbar-background-default: var(--background-1);
 
   /* Top Navigation */
-  --color-topnav-background-default: var(--color-background-1);
+  --color-topnav-background-default: var(--background-1);
 
   /* Top Navigation-title */
   --color-topnav-title-icon-background-default: transparent;
 
   /* Top Navigation-search */
-  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-default: var(--background-2);
   --color-topnav-search-background-hover: var(--color-white);
 
   /* Main Content */
-  --color-main-content-background-default: var(--color-background-2);
+  --color-main-content-background-default: var(--background-2);
 
   /* Button-sidebar */
-  --color-button-sidebar-background-default: var(--color-background-2);
-  --color-button-sidebar-background-hover: var(
-    --color-button-sidebar-text-default
+  --text-button-sidebar-background-default: var(--background-2);
+  --text-button-sidebar-background-hover: var(
+    --text-button-sidebar-text-default
   );
 
   /*----- BORDER -----*/
@@ -115,63 +115,63 @@
   --ring-offset-button-outline: 0px;
   /* Button-primary-filled */
   --ring-button-primary-focus: 2px solid
-    rgb(var(--color-button-primary-outline-hover));
+    rgb(var(--text-button-primary-outline-hover));
   --ring-button-primary-active: 2px solid
-    rgb(var(--color-button-primary-outline-active));
+    rgb(var(--text-button-primary-outline-active));
   /* Button-primary-outline */
   --border-button-outline-primary-hover: 2px solid
-    rgb(var(--color-button-primary-outline-hover));
+    rgb(var(--text-button-primary-outline-hover));
   /* Button-neutral-filled */
   --ring-button-neutral-focus: 2px solid
-    rgb(var(--color-button-neutral-outline-hover));
+    rgb(var(--text-button-neutral-outline-hover));
   --ring-button-neutral-active: 2px solid
-    rgb(var(--color-button-neutral-outline-active));
+    rgb(var(--text-button-neutral-outline-active));
   /* Button-neutral-outline */
   --border-button-outline-neutral-hover: 2px solid
-    rgb(var(--color-button-neutral-outline-hover));
+    rgb(var(--text-button-neutral-outline-hover));
   /* Button-success-filled */
   --ring-button-success-focus: 2px solid
-    rgb(var(--color-button-success-outline-hover));
+    rgb(var(--text-button-success-outline-hover));
   --ring-button-success-active: 2px solid
-    rgb(var(--color-button-success-outline-active));
+    rgb(var(--text-button-success-outline-active));
   /* Button-success-outline */
   --border-button-outline-success-hover: 2px solid
-    rgb(var(--color-button-success-outline-hover));
+    rgb(var(--text-button-success-outline-hover));
   /* Button-error-filled */
-  --ring-button-error-focus: 2px solid rgb(var(--color-button-error-default));
+  --ring-button-error-focus: 2px solid rgb(var(--text-button-error-default));
   --ring-button-error-active: 2px solid
-    rgb(var(--color-button-error-outline-active));
+    rgb(var(--text-button-error-outline-active));
   /* Button-error-outline */
   --border-button-outline-error-hover: 2px solid
-    rgb(var(--color-button-error-outline-hover));
+    rgb(var(--text-button-error-outline-hover));
   /* Button-info-filled */
-  --ring-button-info-focus: 2px solid rgb(var(--color-button-info-default));
+  --ring-button-info-focus: 2px solid rgb(var(--text-button-info-default));
   --ring-button-info-active: 2px solid
-    rgb(var(--color-button-info-outline-active));
+    rgb(var(--text-button-info-outline-active));
   /* Button-info-outline */
   --border-button-outline-info-hover: 2px solid
-    rgb(var(--color-button-info-outline-hover));
+    rgb(var(--text-button-info-outline-hover));
 
   /* Sidebar */
-  --border-sidebar-default: var(--color-border);
+  --border-sidebar-default: var(--border);
 
-  --color-tooltip-border-default: var(--color-border);
+  --color-tooltip-border-default: var(--border);
 
   /* Channel Bar */
-  --color-channelbar-border-default: var(--color-border);
+  --color-channelbar-border-default: var(--border);
 
   /* Top Navigation */
-  --color-topnav-border-default: var(--color-border);
+  --color-topnav-border-default: var(--border);
 
   /* Title */
 
   /* Search */
 
   /* Main Content */
-  --color-main-content-border-default: var(--color-border);
+  --color-main-content-border-default: var(--border);
 
   /* Divider */
-  --color-divider: var(--color-border);
+  --color-divider: var(--border);
 
   /*----- SHADOW -----*/
   /* Shadow-primary */
@@ -199,107 +199,107 @@
 /* Dark mode override */
 .dark {
   /* Semantic colors */
-  --color-background-1: var(--color-neutral-950);
-  --color-background-2: var(--color-neutral-900);
-  --color-border: var(--color-neutral-800);
-  --color-text-1: var(--color-neutral-100);
-  --color-text-2: var(--color-neutral-300);
+  --background-1: var(--color-neutral-950);
+  --background-2: var(--color-neutral-900);
+  --border: var(--color-neutral-800);
+  --text-1: var(--color-neutral-100);
+  --text-2: var(--color-neutral-300);
 
   /*----- TEXT -----*/
   /* Button */
-  --color-button-hover: var(--color-background-2);
-  --color-button-active: var(--color-black);
+  --text-button-hover: var(--background-2);
+  --text-button-active: var(--color-black);
   /* Button-primary */
-  --color-button-primary-default: var(--color-primary-500);
-  --color-button-primary-outline-hover: var(--color-primary-400);
-  --color-button-primary-outline-active: var(--color-primary-300);
+  --text-button-primary-default: var(--color-primary-500);
+  --text-button-primary-outline-hover: var(--color-primary-400);
+  --text-button-primary-outline-active: var(--color-primary-300);
   /* Button-neutral */
-  --color-button-neutral-default: var(--color-neutral-500);
-  --color-button-neutral-outline-hover: var(--color-neutral-400);
-  --color-button-neutral-outline-active: var(--color-neutral-300);
+  --text-button-neutral-default: var(--color-neutral-500);
+  --text-button-neutral-outline-hover: var(--color-neutral-400);
+  --text-button-neutral-outline-active: var(--color-neutral-300);
   /* Button-success */
-  --color-button-success-default: var(--color-success-500);
-  --color-button-success-outline-hover: var(--color-success-400);
-  --color-button-success-outline-active: var(--color-success-300);
+  --text-button-success-default: var(--color-success-500);
+  --text-button-success-outline-hover: var(--color-success-400);
+  --text-button-success-outline-active: var(--color-success-300);
   /* Button-error */
-  --color-button-error-default: var(--color-error-500);
-  --color-button-error-outline-hover: var(--color-error-400);
-  --color-button-error-outline-active: var(--color-error-300);
+  --text-button-error-default: var(--color-error-500);
+  --text-button-error-outline-hover: var(--color-error-400);
+  --text-button-error-outline-active: var(--color-error-300);
   /* Button-info */
-  --color-button-info-default: var(--color-info-500);
-  --color-button-info-outline-hover: var(--color-info-400);
-  --color-button-info-outline-active: var(--color-info-300);
+  --text-button-info-default: var(--color-info-500);
+  --text-button-info-outline-hover: var(--color-info-400);
+  --text-button-info-outline-active: var(--color-info-300);
 
   /* Sidebar */
-  --color-sidebar-default: var(--color-text-1);
+  --color-sidebar-default: var(--text-1);
 
   /* Tooltip */
-  --color-tooltip-default: var(--color-text-1);
+  --color-tooltip-default: var(--text-1);
 
   /* Channel Bar */
-  --color-channelbar-title-default: var(--color-text-2);
-  --color-channelbar-text-default: var(--color-text-1);
+  --color-channelbar-title-default: var(--text-2);
+  --color-channelbar-text-default: var(--text-1);
 
   /* Top Navigation */
 
   /* Title */
-  --color-topnav-title-text-default: var(--color-text-1);
+  --color-topnav-title-text-default: var(--text-1);
 
   /* Search */
   --color-topnav-search-text-default: var(--color-neutral-500);
   --color-topnav-search-text-hover: var(--color-neutral-400);
 
   /* Main Content */
-  --color-main-content-text-default: var(--color-text-1);
+  --color-main-content-text-default: var(--text-1);
 
   /*----- BACKGROUND -----*/
   /* Button-primary */
   --background-button-primary-default: var(--color-primary-900);
-  --background-button-primary-hover: var(--color-button-primary-default);
-  --background-button-primary-focus: var(--color-button-primary-default);
+  --background-button-primary-hover: var(--text-button-primary-default);
+  --background-button-primary-focus: var(--text-button-primary-default);
   --background-button-primary-active: var(--color-primary-400);
   /* Button-neutral */
   --background-button-neutral-default: var(--color-neutral-800);
-  --background-button-neutral-hover: var(--color-button-neutral-default);
+  --background-button-neutral-hover: var(--text-button-neutral-default);
   --background-button-neutral-focus: var(--background-button-neutral-hover);
   --background-button-neutral-active: var(--color-neutral-400);
   /* Button-success */
   --background-button-success-default: var(--color-success-900);
-  --background-button-success-hover: var(--color-button-success-default);
+  --background-button-success-hover: var(--text-button-success-default);
   --background-button-success-focus: var(--background-button-success-hover);
   --background-button-success-active: var(--color-success-400);
   /* Button-error */
   --background-button-error-default: var(--color-error-900);
-  --background-button-error-hover: var(--color-button-error-default);
+  --background-button-error-hover: var(--text-button-error-default);
   --background-button-error-focus: var(--background-button-error-hover);
   --background-button-error-active: var(--color-error-400);
   /* Button-info */
   --background-button-info-default: var(--color-info-900);
-  --background-button-info-hover: var(--color-button-info-default);
+  --background-button-info-hover: var(--text-button-info-default);
   --background-button-info-focus: var(--background-button-info-hover);
   --background-button-info-active: var(--color-info-400);
 
   /* Sidebar */
-  --color-sidebar-background-default: var(--color-background-1);
+  --color-sidebar-background-default: var(--background-1);
 
   /* Tooltip */
   --color-tooltip-background-default: var(--color-neutral-800);
 
   /* Channel Bar */
-  --color-channelbar-background-default: var(--color-background-1);
+  --color-channelbar-background-default: var(--background-1);
 
   /* Top Navigation */
-  --color-topnav-background-default: var(--color-background-1);
+  --color-topnav-background-default: var(--background-1);
 
   /* Top Navigation-title */
   --color-topnav-title-icon-background-default: transparent;
 
   /* Top Navigation-search */
-  --color-topnav-search-background-default: var(--color-background-2);
+  --color-topnav-search-background-default: var(--background-2);
   --color-topnav-search-background-hover: var(--color-neutral-800);
 
   /* Main Content */
-  --color-main-content-background-default: var(--color-background-2);
+  --color-main-content-background-default: var(--background-2);
 
   /*----- BORDER -----*/
   /* Button */
@@ -307,64 +307,64 @@
   --ring-offset-button-outline: 0px;
   /* Button-primary-filled */
   --ring-button-primary-focus: 2px solid
-    rgb(var(--color-button-primary-outline-hover));
+    rgb(var(--text-button-primary-outline-hover));
   --ring-button-primary-active: 2px solid
-    rgb(var(--color-button-primary-outline-active));
+    rgb(var(--text-button-primary-outline-active));
   /* Button-primary-outline */
   --border-button-outline-primary-hover: 2px solid
-    rgb(var(--color-button-primary-outline-hover));
+    rgb(var(--text-button-primary-outline-hover));
   /* Button-neutral-filled */
   --ring-button-neutral-focus: 2px solid
-    rgb(var(--color-button-neutral-outline-hover));
+    rgb(var(--text-button-neutral-outline-hover));
   --ring-button-neutral-active: 2px solid
-    rgb(var(--color-button-neutral-outline-active));
+    rgb(var(--text-button-neutral-outline-active));
   /* Button-neutral-outline */
   --border-button-outline-neutral-hover: 2px solid
-    rgb(var(--color-button-neutral-outline-hover));
+    rgb(var(--text-button-neutral-outline-hover));
   /* Button-success-filled */
   --ring-button-success-focus: 2px solid
-    rgb(var(--color-button-success-outline-hover));
+    rgb(var(--text-button-success-outline-hover));
   --ring-button-success-active: 2px solid
-    rgb(var(--color-button-success-outline-active));
+    rgb(var(--text-button-success-outline-active));
   /* Button-success-outline */
   --border-button-outline-success-hover: 2px solid
-    rgb(var(--color-button-success-outline-hover));
+    rgb(var(--text-button-success-outline-hover));
   /* Button-error-filled */
-  --ring-button-error-focus: 2px solid rgb(var(--color-button-error-default));
+  --ring-button-error-focus: 2px solid rgb(var(--text-button-error-default));
   --ring-button-error-active: 2px solid
-    rgb(var(--color-button-error-outline-active));
+    rgb(var(--text-button-error-outline-active));
   /* Button-error-outline */
   --border-button-outline-error-hover: 2px solid
-    rgb(var(--color-button-error-outline-hover));
+    rgb(var(--text-button-error-outline-hover));
   /* Button-info-filled */
-  --ring-button-info-focus: 2px solid rgb(var(--color-button-info-default));
+  --ring-button-info-focus: 2px solid rgb(var(--text-button-info-default));
   --ring-button-info-active: 2px solid
-    rgb(var(--color-button-info-outline-active));
+    rgb(var(--text-button-info-outline-active));
   /* Button-info-outline */
   --border-button-outline-info-hover: 2px solid
-    rgb(var(--color-button-info-outline-hover));
+    rgb(var(--text-button-info-outline-hover));
 
   /* Sidebar */
-  --color-sidebar-border-default: var(--color-border);
+  --color-sidebar-border-default: var(--border);
 
   /* Tooltip */
-  --color-tooltip-border-default: var(--color-border);
+  --color-tooltip-border-default: var(--border);
 
   /* Channel Bar */
-  --color-channelbar-border-default: var(--color-border);
+  --color-channelbar-border-default: var(--border);
 
   /* Top Navigation */
-  --color-topnav-border-default: var(--color-border);
+  --color-topnav-border-default: var(--border);
 
   /* Title */
 
   /* Search */
 
   /* Main Content */
-  --color-main-content-border-default: var(--color-border);
+  --color-main-content-border-default: var(--border);
 
   /* Divider */
-  --color-divider: var(--color-border);
+  --color-divider: var(--border);
 
   /* Button */
 
