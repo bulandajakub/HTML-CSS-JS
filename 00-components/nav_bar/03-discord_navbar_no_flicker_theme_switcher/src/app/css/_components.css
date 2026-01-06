@@ -92,10 +92,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
 
   .sidebar-hr {
     @apply /* Spacing */
-    mx-[var(--spacing-2)]
-    
-    /* Border */
-    rounded-[var(--radius-round)];
+    mx-[var(--spacing-2)];
   }
 
   /* Channel Bar */
