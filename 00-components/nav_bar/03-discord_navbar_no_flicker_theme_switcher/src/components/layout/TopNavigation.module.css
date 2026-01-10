@@ -1,0 +1,15 @@
+.topNavigation {
+  background: rgb(var(--color-topnav-background-default));
+  color: rgb(var(--text-topnav-title-text-default));
+  border-bottom: 1px solid rgb(var(--color-divider));
+}
+
+.titleIcon {
+  background: rgb(var(--color-topnav-title-icon-background-default));
+  color: rgb(var(--text-topnav-title-text-default));
+}
+
+.topNavigationSearch {
+  background: rgb(var(--color-topnav-search-background-default));
+  color: rgb(var(--text-topnav-search-text-default));
+}
