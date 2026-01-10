@@ -1,0 +1,22 @@
+.divider {
+  display: block;
+  background: rgb(var(--color-divider));
+}
+
+.horizontal {
+  width: 24px;
+  height: 1px;
+  margin: 12px auto;
+}
+
+.vertical {
+  width: 2px;
+  height: 100%;
+  align-self: stretch;
+}
+
+.small {
+  width: 16px;
+  height: 1px;
+  margin: 8px auto;
+}

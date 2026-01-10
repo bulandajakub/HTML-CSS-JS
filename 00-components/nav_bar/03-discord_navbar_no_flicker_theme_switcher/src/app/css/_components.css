@@ -21,9 +21,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
   /* Home */
   .home {
     @apply flex
-    h-screen
-    divide-x-2
-    divide-[var(--color-divider)];
+    h-screen;
   }
   /* Buttons */
   .button {

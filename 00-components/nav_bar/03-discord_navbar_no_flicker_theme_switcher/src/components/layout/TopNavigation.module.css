@@ -1,7 +1,6 @@
 .topNavigation {
   background: rgb(var(--color-topnav-background-default));
   color: rgb(var(--text-topnav-title-text-default));
-  border-bottom: 1px solid rgb(var(--color-divider));
 }
 
 .titleIcon {

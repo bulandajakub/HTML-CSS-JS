@@ -1,0 +1,9 @@
+.channelBar {
+  background: rgb(var(--color-channelbar-background-default));
+  color: rgb(var(--color-channelbar-text-default));
+  border-color: rgb(var(--color-channelbar-border-default));
+}
+
+.channelbarTitle {
+  color: rgb(var(--text-channelbar-title-default));
+}
