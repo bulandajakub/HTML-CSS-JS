@@ -85,7 +85,7 @@
   /* Sidebar */
   --background-sidebar-default: var(--background-1);
 
-  --background-tooltip-default: var(--background-1);
+  --background-tooltip-default: var(--color-neutral-700);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--background-1);

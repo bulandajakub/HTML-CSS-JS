@@ -77,7 +77,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     rounded-[var(--radius-2)]
     
     /* Shadow */
-    shadow-md
+    /* shadow-md */
 
     /* Typography */
     text-xs
