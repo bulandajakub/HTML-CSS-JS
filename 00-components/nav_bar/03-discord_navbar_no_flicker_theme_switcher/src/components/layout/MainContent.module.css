@@ -1,0 +1,5 @@
+.mainContent {
+  background: rgb(var(--color-main-content-background-default));
+  color: rgb(var(--color-main-content-text-default));
+  border-color: rgb(var(--color-main-content-border-default));
+}
