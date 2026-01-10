@@ -3,7 +3,7 @@
 }
 /* Divider */
 .sidebar-hr {
-  border: 1px solid rgb(var(--border-sidebar-default));
+  border: 1px solid rgb(var(--color-divider));
 }
 /* Tooltip */
 .sidebar-tooltip {
