@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./ChannelBar.module.css";
 
 const ChannelBar: React.FC = () => {
   return (
-    <section className="channel-bar">
-      <h3 className="channelbar-title">Channels</h3>
+    <section className={`channel-bar ${styles.channelBar}`}>
+      <h3 className={`channelbar-title ${styles.channelbarTitle}`}>Channels</h3>
       <aside>
         <details>
           <summary>Topics</summary>

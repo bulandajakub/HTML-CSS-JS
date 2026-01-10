@@ -3,15 +3,12 @@
 }
 /* Divider */
 .sidebar-hr {
-  /* Small vertical group separator between sidebar buttons */
-  width: 1px;
-  height: 28px;
+  /* Small horizontal group separator between sidebar buttons */
+  width: 24px;
+  height: 1px;
   margin: 12px auto;
   background: rgb(var(--color-divider));
   border: none;
 }
 /* Tooltip */
-.sidebar-tooltip {
-  color: rgb(var(--text-tooltip-default));
-  background: rgb(var(--background-tooltip-default));
-}
+/* Tooltip visual tokens moved to Tooltip.module.css; layout remains in _components.css */

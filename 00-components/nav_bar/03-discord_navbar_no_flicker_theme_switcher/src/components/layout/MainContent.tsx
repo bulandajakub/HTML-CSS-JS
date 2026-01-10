@@ -1,8 +1,9 @@
 import Button from "@/components/ui/Button";
+import styles from "./MainContent.module.css";
 
 const MainContent: React.FC = () => {
   return (
-    <section className="main-content">
+    <section className={`main-content ${styles.mainContent}`}>
       <h2 className="text-xl font-bold">Button Variants</h2>
       <div className="button-component">
         <article className="button-container">

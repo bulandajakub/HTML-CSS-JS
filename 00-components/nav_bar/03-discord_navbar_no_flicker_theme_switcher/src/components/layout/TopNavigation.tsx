@@ -7,10 +7,11 @@ import {
 } from "react-icons/fa";
 import ThemeSwitch from "@/components/theme/ThemeSwitch";
 import Button from "@/components/ui/Button";
+import styles from "./TopNavigation.module.css";
 
 const TopNavigation: React.FC = () => {
   return (
-    <header className="top-navigation">
+    <header className={`top-navigation ${styles.topNavigation}`}>
       <Title />
       <NavigationActions />
     </header>
@@ -19,7 +20,7 @@ const TopNavigation: React.FC = () => {
 
 const Title: React.FC = () => (
   <div className="title">
-    <Button className="title-icon">
+    <Button className={`title-icon ${styles.titleIcon}`}>
       <FaHashtag />
     </Button>
     <h3 className="top-navigation-title channel-name-text">general</h3>
@@ -28,7 +29,11 @@ const Title: React.FC = () => (
 
 const SearchInput: React.FC = () => (
   <div className="search">
-    <input type="text" placeholder="Search" className="top-navigation-search" />
+    <input
+      type="text"
+      placeholder="Search"
+      className={`top-navigation-search ${styles.topNavigationSearch}`}
+    />
     <FaSearch />
   </div>
 );
