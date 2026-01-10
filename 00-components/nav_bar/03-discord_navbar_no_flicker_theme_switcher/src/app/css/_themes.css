@@ -85,7 +85,7 @@
   /* Sidebar */
   --background-sidebar-default: var(--background-1);
 
-  --background-tooltip-default: var(--color-neutral-700);
+  --background-tooltip-default: var(--background-1);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--background-1);
@@ -194,6 +194,8 @@
   --shadow-info: 0 4px 6px -1px rgba(var(--color-info-600) / 0.4),
     0 2px 4px -1px rgba(var(--color-info-600) / 0.2);
   --text-shadow-info: 2px 2px 4px rgba(var(--color-info-600) / 0.4);
+  /* Sidebar tooltip shadow token intentionally omitted (use --shadow-neutral)
+      to avoid duplicate tokens. */
 }
 
 /* Dark mode override */
@@ -235,6 +237,8 @@
 
   /* Tooltip */
   --color-tooltip-default: var(--text-1);
+
+  /* Sidebar tooltip tokens removed where redundant; use base tooltip tokens */
 
   /* Channel Bar */
   --color-channelbar-title-default: var(--text-2);

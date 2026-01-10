@@ -11,6 +11,8 @@ export interface TooltipProps {
   readonly placement?: "top" | "right" | "bottom" | "left";
   /** Additional CSS classes */
   readonly className?: string;
+  /** Additional class(es) applied to the tooltip content element */
+  readonly contentClassName?: string;
   /** Optional accessibility label fallback when content is not plain text */
   readonly ariaLabel?: string;
 }
@@ -20,11 +22,16 @@ const Tooltip: React.FC<TooltipProps> = ({
   content,
   placement = "top",
   className = "",
+  contentClassName = "",
   ariaLabel,
 }) => {
   const composed = clsx(
+    // include both module-scoped and global class names so global styles from
+    // _components.css can apply while keeping CSS-module tokens local
     styles.tooltip,
+    `tooltip`,
     styles[`tooltip-${placement}`],
+    `tooltip-${placement}`,
     className
   );
 
@@ -33,7 +40,15 @@ const Tooltip: React.FC<TooltipProps> = ({
   return (
     <span className={composed} aria-label={aria} tabIndex={0}>
       {children}
-      <span className={styles["tooltip-content"]}>{content}</span>
+      <span
+        className={clsx(
+          styles["tooltip-content"],
+          "tooltip-content",
+          contentClassName
+        )}
+      >
+        {content}
+      </span>
     </span>
   );
 };

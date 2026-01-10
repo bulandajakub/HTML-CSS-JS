@@ -70,14 +70,6 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
 
     /* Spacing */
     p-[var(--spacing-2)]
-    m-[var(--spacing-2)]
-    left-14
-
-    /* Border */
-    rounded-[var(--radius-2)]
-    
-    /* Shadow */
-    /* shadow-md */
 
     /* Typography */
     text-xs
@@ -86,8 +78,66 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     /* Animation */
     transition-all
     duration-100
-    scale-0
-    origin-left;
+    origin-center;
+  }
+
+  /* Tooltip */
+  .tooltip {
+    @apply relative inline-flex items-center;
+  }
+
+  .tooltip .tooltip-content {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 160ms ease, transform 160ms ease;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 50;
+    transform: scale(0.95);
+  }
+
+  .tooltip:focus-within .tooltip-content,
+  .tooltip:hover .tooltip-content {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+    pointer-events: auto;
+  }
+
+  /* Placements */
+  .tooltip-top .tooltip-content {
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px) scale(0.95);
+  }
+  .tooltip-bottom .tooltip-content {
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(6px) scale(0.95);
+  }
+  .tooltip-bottom:focus-within .tooltip-content,
+  .tooltip-bottom:hover .tooltip-content {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  .tooltip-left .tooltip-content {
+    right: calc(100% + 6px);
+    top: 50%;
+    transform: translateY(-50%) scale(0.95);
+  }
+  .tooltip-left:focus-within .tooltip-content,
+  .tooltip-left:hover .tooltip-content {
+    transform: translateY(-50%) scale(1);
+  }
+  .tooltip-right .tooltip-content {
+    left: calc(100% + 6px);
+    top: 50%;
+    transform: translateY(-50%) scale(0.95);
+  }
+  .tooltip-right:focus-within .tooltip-content,
+  .tooltip-right:hover .tooltip-content {
+    transform: translateY(-50%) scale(1);
   }
 
   .sidebar-hr {
