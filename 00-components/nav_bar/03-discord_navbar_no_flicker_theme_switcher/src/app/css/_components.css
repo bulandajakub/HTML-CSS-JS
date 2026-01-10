@@ -23,7 +23,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     @apply flex
     h-screen
     divide-x-2
-    divide-[var(--color-border)];
+    divide-[var(--color-divider)];
   }
   /* Buttons */
   .button {
