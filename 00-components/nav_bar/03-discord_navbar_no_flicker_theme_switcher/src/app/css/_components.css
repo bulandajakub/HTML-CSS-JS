@@ -254,21 +254,6 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     mb-[var(--spacing-2)]
     mx-auto
 
-    /* Background */
-    bg-[var(--color-button-sidebar-background-default)]
-    hover:bg-[var(--color-button-sidebar-background-hover)]
-    
-    /* Radius */
-    rounded-[var(--radius-round)]
-    hover:rounded-[var(--radius-3)]
-
-    /* Shadow */
-    shadow-lg
-    
-    /* Text */
-    text-[var(--color-button-sidebar-text-default)]
-    hover:text-[var(--color-button-sidebar-text-hover)]
-
     /* Animation */
     cursor-pointer
     transition-all

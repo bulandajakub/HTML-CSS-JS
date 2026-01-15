@@ -1,30 +1,23 @@
-import React from "react";
+import clsx from "clsx";
+import styles from "./SidebarButton.module.css";
 import Tooltip from "./Tooltip";
-import styles from "./Tooltip.module.css";
 
 interface SidebarButtonProps {
-  icon: React.ReactNode;
-  text?: string;
+  children: React.ReactNode;
+  tooltip: string;
   className?: string;
 }
 
 const SidebarButton: React.FC<SidebarButtonProps> = ({
-  icon,
-  text = "tooltip 💡",
+  children,
+  tooltip,
   className = "",
-}) => {
-  return (
-    <div className={`button-sidebar ${className}`}>
-      <Tooltip
-        content={text}
-        placement="right"
-        className={""}
-        contentClassName={`${styles["tooltip-sidebar"]} sidebar-tooltip`}
-      >
-        {icon}
-      </Tooltip>
-    </div>
-  );
-};
+}) => (
+  <Tooltip content={tooltip} placement="right">
+    <button className={clsx("button-sidebar", styles.sidebarButton, className)}>
+      {children}
+    </button>
+  </Tooltip>
+);
 
 export default SidebarButton;
