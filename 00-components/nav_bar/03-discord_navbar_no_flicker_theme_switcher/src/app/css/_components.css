@@ -65,9 +65,12 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     absolute
     w-auto
     min-w-max
+    left-14
+    z-50
 
     /* Spacing */
     p-[var(--spacing-2)]
+    m-[var(--spacing-2)]
 
     /* Typography */
     text-xs
@@ -76,7 +79,8 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     /* Animation */
     transition-all
     duration-100
-    origin-center;
+    scale-0
+    origin-left;
   }
 
   /* Tooltip */
