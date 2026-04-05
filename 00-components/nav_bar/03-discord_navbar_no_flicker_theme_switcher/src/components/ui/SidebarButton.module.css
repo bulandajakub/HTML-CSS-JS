@@ -1,15 +1,14 @@
-/* Visual tokens only: background, text color, radius, shadow */
 .button-sidebar {
-  background: var(--color-button-sidebar-background-default);
-  color: var(--color-button-sidebar-text-default);
+  background: var(--background-button-sidebar-default);
+  color: var(--text-button-sidebar-default);
   border-radius: var(--radius-round);
   box-shadow: var(--shadow-lg);
 }
 
 .button-sidebar:hover,
 .button-sidebar:focus-visible {
-  background: var(--color-button-sidebar-background-hover);
-  color: var(--color-button-sidebar-text-hover);
+  background: var(--background-button-sidebar-hover);
+  color: var(--text-button-sidebar-hover);
   border-radius: var(--radius-3);
 }
 
