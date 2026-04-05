@@ -17,6 +17,18 @@ export interface SidebarButtonProps extends React.ButtonHTMLAttributes<HTMLButto
    * The tooltip text.
    */
   readonly tooltip: string;
+  /**
+   * The visual style of the button.
+   *
+   * @default "primary"
+   */
+  readonly variant?: "primary" | "neutral" | "success" | "error" | "info";
+  /**
+   * A variable that defines the button's visual style.
+   *
+   * @default "filled"
+   */
+  readonly mode?: "filled" | "outline" | "ghost";
 }
 
 /**
@@ -25,6 +37,8 @@ export interface SidebarButtonProps extends React.ButtonHTMLAttributes<HTMLButto
 const SidebarButton: React.FC<SidebarButtonProps> = ({
   children,
   tooltip,
+  variant = "primary",
+  mode = "filled",
   className = "",
   disabled = false,
   onClick,
@@ -32,10 +46,10 @@ const SidebarButton: React.FC<SidebarButtonProps> = ({
 }) => {
   // Compose class names dynamically using clsx
   // 'button-sidebar' for base styles and layout
-  // styles["button-sidebar"] for visual tokens defined in module
+  // styles[`button-sidebar-${variant}-${mode}`] for dynamic visual tokens
   const composedClasses = clsx(
     "button-sidebar",
-    styles["button-sidebar"],
+    styles[`button-sidebar-${variant}-${mode}`],
     className
   );
 

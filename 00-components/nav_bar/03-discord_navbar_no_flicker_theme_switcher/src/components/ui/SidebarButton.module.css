@@ -1,13 +1,12 @@
-/* Visual tokens only: background, text color, radius, shadow */
-.button-sidebar {
+.button-sidebar-primary-filled {
   background: rgb(var(--background-button-sidebar-default));
   color: rgb(var(--text-button-sidebar-default));
   border-radius: var(--radius-round);
   box-shadow: var(--shadow-lg);
 }
 
-.button-sidebar:hover,
-.button-sidebar:focus-visible {
+.button-sidebar-primary-filled:hover,
+.button-sidebar-primary-filled:focus-visible {
   background: rgb(var(--background-button-sidebar-hover));
   color: rgb(var(--text-button-sidebar-hover));
   border-radius: var(--radius-3);
