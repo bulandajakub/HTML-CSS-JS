@@ -253,11 +253,6 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     h-[var(--size-icon-2)]
     w-[var(--size-icon-2)]
 
-    /* Spacing */
-    mt-[var(--spacing-2)]
-    mb-[var(--spacing-2)]
-    mx-auto
-
     /* Animation */
     cursor-pointer
     transition-all

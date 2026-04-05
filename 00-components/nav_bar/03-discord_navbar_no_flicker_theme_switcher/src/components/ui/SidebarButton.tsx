@@ -40,7 +40,12 @@ const SidebarButton: React.FC<SidebarButtonProps> = ({
   );
 
   return (
-    <Tooltip content={tooltip} placement="right" contentClassName={clsx("sidebar-tooltip", styles["sidebar-tooltip"])}>
+    <Tooltip 
+      content={tooltip} 
+      placement="right" 
+      className="flex w-full justify-center my-2 mx-auto" 
+      contentClassName={styles["sidebar-tooltip"]}
+    >
       <button
         className={composedClasses}
         onClick={onClick}
