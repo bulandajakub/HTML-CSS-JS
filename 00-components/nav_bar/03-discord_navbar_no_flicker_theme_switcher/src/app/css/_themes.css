@@ -51,9 +51,9 @@
   /* Main Content */
   --text-main-content-text-default: var(--text-1);
 
-  /* Button-sidebar */
-  --text-button-sidebar-text-default: var(--color-primary-500);
-  --text-button-sidebar-text-hover: var(--background-1);
+  /* Sidebar-button */
+  --text-button-sidebar-default: var(--color-primary-500);
+  --text-button-sidebar-hover: var(--color-white);
 
   /*----- BACKGROUND -----*/
   /* Button-primary */
@@ -103,11 +103,9 @@
   /* Main Content */
   --color-main-content-background-default: var(--background-2);
 
-  /* Button-sidebar */
-  --text-button-sidebar-background-default: var(--background-2);
-  --text-button-sidebar-background-hover: var(
-    --text-button-sidebar-text-default
-  );
+  /* Sidebar-button */
+  --background-button-sidebar-default: var(--background-2);
+  --background-button-sidebar-hover: var(--text-button-sidebar-default);
 
   /*----- BORDER -----*/
   /* Button */
