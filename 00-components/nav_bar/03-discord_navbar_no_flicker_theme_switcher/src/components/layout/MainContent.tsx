@@ -1,6 +1,8 @@
 import Button from "@/components/ui/Button";
 import styles from "./MainContent.module.css";
 
+import Tooltip from "@/components/ui/Tooltip";
+
 const MainContent: React.FC = () => {
   return (
     <section className={`main-content ${styles.mainContent}`}>
@@ -9,21 +11,31 @@ const MainContent: React.FC = () => {
         <article className="button-container">
           <h3 className="text-lg font-semibold">Filled</h3>
           <div className="button-list">
-            <Button variant="primary" mode="filled">
-              Primary
-            </Button>
-            <Button variant="neutral" mode="filled">
-              Neutral
-            </Button>
-            <Button variant="success" mode="filled">
-              Success
-            </Button>
-            <Button variant="error" mode="filled">
-              Error
-            </Button>
-            <Button variant="info" mode="filled">
-              Info
-            </Button>
+            <Tooltip content="Tooltip top" placement="top">
+              <Button variant="primary" mode="filled">
+                Primary
+              </Button>
+            </Tooltip>
+            <Tooltip content="Tooltip bottom" placement="bottom">
+              <Button variant="neutral" mode="filled">
+                Neutral
+              </Button>
+            </Tooltip>
+            <Tooltip content="Tooltip left" placement="left">
+              <Button variant="success" mode="filled">
+                Success
+              </Button>
+            </Tooltip>
+            <Tooltip content="Tooltip right" placement="right">
+              <Button variant="error" mode="filled">
+                Error
+              </Button>
+            </Tooltip>
+            <Tooltip content="Tooltip top" placement="top">
+              <Button variant="info" mode="filled">
+                Info
+              </Button>
+            </Tooltip>
           </div>
         </article>
 
