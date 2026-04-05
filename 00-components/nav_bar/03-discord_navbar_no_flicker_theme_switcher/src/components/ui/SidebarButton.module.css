@@ -1,20 +1,14 @@
+/* Visual tokens only: background, text color, radius, shadow */
 .button-sidebar {
-  background: var(--background-button-sidebar-default);
-  color: var(--text-button-sidebar-default);
+  background: var(--color-button-sidebar-background-default);
+  color: var(--color-button-sidebar-text-default);
   border-radius: var(--radius-round);
   box-shadow: var(--shadow-lg);
 }
 
 .button-sidebar:hover,
 .button-sidebar:focus-visible {
-  background: var(--background-button-sidebar-hover);
-  color: var(--text-button-sidebar-hover);
+  background: var(--color-button-sidebar-background-hover);
+  color: var(--color-button-sidebar-text-hover);
   border-radius: var(--radius-3);
-}
-
-.sidebar-tooltip {
-  background-color: var(--color-tooltip-background-default);
-  color: var(--color-tooltip-text-default);
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-md);
 }
