@@ -17,5 +17,5 @@
   background-color: rgb(var(--background-tooltip-default));
   color: rgb(var(--text-tooltip-default));
   border-radius: var(--radius-2);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-neutral);
 }

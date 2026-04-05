@@ -85,7 +85,7 @@
   /* Sidebar */
   --background-sidebar-default: var(--background-1);
 
-  --background-tooltip-default: var(--background-1);
+  --background-tooltip-default: var(--background-button-sidebar-default);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--background-1);
@@ -234,7 +234,7 @@
   --color-sidebar-default: var(--text-1);
 
   /* Tooltip */
-  --color-tooltip-default: var(--text-1);
+  --text-tooltip-default: var(--text-1);
 
   /* Sidebar tooltip tokens removed where redundant; use base tooltip tokens */
 
@@ -285,7 +285,7 @@
   --color-sidebar-background-default: var(--background-1);
 
   /* Tooltip */
-  --color-tooltip-background-default: var(--color-neutral-800);
+  --background-tooltip-default: var(--background-button-sidebar-default);
 
   /* Channel Bar */
   --color-channelbar-background-default: var(--background-1);
