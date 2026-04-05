@@ -61,28 +61,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     p-[var(--spacing-3)];
   }
 
-  .sidebar-tooltip {
-    @apply /* Layout */
-    absolute
-    w-auto
-    min-w-max
-    left-14
-    z-50
 
-    /* Spacing */
-    p-[var(--spacing-2)]
-    m-[var(--spacing-2)]
-
-    /* Typography */
-    text-xs
-    font-bold
-
-    /* Animation */
-    transition-all
-    duration-100
-    scale-0
-    origin-left;
-  }
 
   /* Tooltip */
   .tooltip {

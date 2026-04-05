@@ -12,9 +12,4 @@
   border-radius: var(--radius-3);
 }
 
-.sidebar-tooltip {
-  background-color: rgb(var(--background-tooltip-default));
-  color: rgb(var(--text-tooltip-default));
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-neutral);
-}
+

@@ -153,7 +153,6 @@
   /* Sidebar */
   --border-sidebar-default: var(--border);
 
-  --color-tooltip-border-default: var(--border);
 
   /* Channel Bar */
   --color-channelbar-border-default: var(--border);
@@ -192,8 +191,6 @@
   --shadow-info: 0 4px 6px -1px rgba(var(--color-info-600) / 0.4),
     0 2px 4px -1px rgba(var(--color-info-600) / 0.2);
   --text-shadow-info: 2px 2px 4px rgba(var(--color-info-600) / 0.4);
-  /* Sidebar tooltip shadow token intentionally omitted (use --shadow-neutral)
-      to avoid duplicate tokens. */
 }
 
 /* Dark mode override */
@@ -236,7 +233,6 @@
   /* Tooltip */
   --text-tooltip-default: var(--text-1);
 
-  /* Sidebar tooltip tokens removed where redundant; use base tooltip tokens */
 
   /* Channel Bar */
   --color-channelbar-title-default: var(--text-2);
@@ -349,8 +345,6 @@
   /* Sidebar */
   --color-sidebar-border-default: var(--border);
 
-  /* Tooltip */
-  --color-tooltip-border-default: var(--border);
 
   /* Channel Bar */
   --color-channelbar-border-default: var(--border);
