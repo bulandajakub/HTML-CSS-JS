@@ -28,6 +28,7 @@ Traditionally these would be classes like card, btn, badge — that kind of thin
     @apply /* Layout */
     inline-flex
     items-center
+    justify-center
     
     /* Spacing */
     px-[var(--spacing-2)]
