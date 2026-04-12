@@ -20,7 +20,7 @@ const TopNavigation: React.FC = () => {
 
 const Title: React.FC = () => (
   <div className="title">
-    <Button className={`title-icon ${styles.titleIcon}`}>
+    <Button variant="neutral" mode="ghost" className={`title-icon ${styles.titleIcon}`}>
       <FaHashtag />
     </Button>
     <h3 className="top-navigation-title channel-name-text">general</h3>
@@ -41,13 +41,13 @@ const SearchInput: React.FC = () => (
 const NavigationActions: React.FC = () => (
   <div className="top-navigation-actions">
     <ThemeSwitch />
-    <Button>
+    <Button variant="neutral" mode="ghost">
       <FaBell />
     </Button>
-    <Button>
+    <Button variant="neutral" mode="ghost">
       <FaThumbtack />
     </Button>
-    <Button>
+    <Button variant="neutral" mode="ghost">
       <FaUserFriends />
     </Button>
     <SearchInput />

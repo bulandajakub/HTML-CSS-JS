@@ -3,13 +3,13 @@
 import { FiSun, FiMoon } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import Image from "next/image";
+import Button from "@/components/ui/Button";
 
 /**
  * ThemeSwitch component toggles between light and dark themes.
  *
- * This component uses the `next-themes` library to manage theme switching
- * between light and dark modes. It leverages the react-icons library to
+ * This component use the `next-themes` library to manage theme switching
+ * between light and dark modes. It leverage the react-icons library to
  * display respective icons for each theme. The component handles the mounted
  * state to ensure proper rendering and avoids flickering during the theme
  * switch. Depending on the resolved theme, it displays a sun icon to switch
@@ -23,27 +23,27 @@ function ThemeSwitch() {
   // check if component is mounted on client, use effect run only in client
   useEffect(() => setMounted(true), []);
 
-  if (!mounted)
+  const toggleTheme = () =>
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+
+  if (!mounted) {
     return (
-      <Image
-        src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNGRkZGRkYiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBoZWlnaHQ9IjIwMHB4IiB3aWR0aD0iMjAwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSIyIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIHJ4PSIyIj48L3JlY3Q+PC9zdmc+Cg=="
-        width={32}
-        height={32}
-        sizes="32x32"
-        alt="Loading Light/Dark Toggle"
-        priority={false}
-        title="Loading Light/Dark Toggle"
-      />
+      <Button variant="neutral" mode="ghost" disabled title="Loading Theme">
+        <div style={{ width: "20px", height: "20px" }} />
+      </Button>
     );
-
-  // set apropriate on click method and icon
-  if (resolvedTheme == "dark") {
-    return <FiSun onClick={() => setTheme("light")} />;
   }
 
-  if (resolvedTheme == "light") {
-    return <FiMoon onClick={() => setTheme("dark")} />;
-  }
+  return (
+    <Button
+      variant="neutral"
+      mode="ghost"
+      onClick={toggleTheme}
+      title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
+    >
+      {resolvedTheme === "dark" ? <FiSun /> : <FiMoon />}
+    </Button>
+  );
 }
 
 export default ThemeSwitch;
