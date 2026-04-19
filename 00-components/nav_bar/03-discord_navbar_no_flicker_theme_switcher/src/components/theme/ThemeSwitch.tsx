@@ -1,6 +1,6 @@
 "use client";
 
-import { FiSun, FiMoon } from "react-icons/fi";
+import { HiSun, HiMoon } from "react-icons/hi2";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Button from "@/components/ui/Button";
@@ -29,7 +29,7 @@ function ThemeSwitch() {
   if (!mounted) {
     return (
       <Button variant="neutral" mode="ghost" disabled title="Loading Theme">
-        <div style={{ width: "20px", height: "20px" }} />
+        <HiSun style={{ opacity: 0 }} />
       </Button>
     );
   }
@@ -41,7 +41,7 @@ function ThemeSwitch() {
       onClick={toggleTheme}
       title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
     >
-      {resolvedTheme === "dark" ? <FiSun /> : <FiMoon />}
+      {resolvedTheme === "dark" ? <HiSun /> : <HiMoon />}
     </Button>
   );
 }
