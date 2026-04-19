@@ -197,3 +197,17 @@ Based on the YouTube tutorial:
 📌 [Dave Gray – UI Component Library Tutorial](https://www.youtube.com/watch?v=v0_AT8zaLo8)
 
 ---
+
+## 07-good-design-system
+
+The **Good Design System** is a comprehensive, scalable UI framework designed for modularity and performance. It showcases a modern approach to web architecture, moving beyond monolithic styles into a structured system using **CSS Modules**, a centralized **Design Token** system, and atomic, reusable UI elements.
+
+Key features include:
+
+- 🏗️ **Modular CSS Architecture**: Scoped styles using CSS Modules to ensure zero global namespace pollution and maintainable code.
+- 🎨 **Design Token System**: Centralized primitives and themes (light/dark) driven by semantic CSS variables for easy theming and consistent branding.
+- 🧩 **Atomic Components**: A library of reusable, highly-customizable components like `Button`, `Tooltip`, and `Divider`.
+- 🌓 **No-Flicker Theming**: Optimized theme switching implementation with zero layout shift or flicker, ensuring a premium user experience.
+- 📐 **Scalable Foundation**: Architected as a production-ready starting point for complex React applications.
+
+---
