@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Good Design System (Foundation)
 
-## Getting Started
+Welcome to the **Good Design System**, the first step in our journey from good to perfect UI engineering. This project serves as a scalable foundation for modern web applications, focusing on modularity, performance, and a clear separation of design tokens and implementation.
 
-First, run the development server:
+## 🚀 The Vision: From Good to Perfect
+This project is part of a series of evolving design systems:
+-   **07-good-design-system**: This repository—focusing on tokens, scoped CSS modules, and atomic components.
+-   **08-great-design-system**: (Future) Expanded library, Storybook, and complex patterns.
+-   **09-superb-design-system**: (Future) Advanced motion, high accessibility, and refined developer experience.
+-   **10-perfect-design-system**: (Future) Professional-grade, exportable, and cross-framework ecosystem.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
+-   **Modular CSS**: Scoped styles using Next.js CSS Modules.
+-   **Design Tokens**: Centralized themes and primitives in `_tokens.css` and `_themes.css`.
+-   **Atomic Components**: Reusable, accessible UI components like `Button`, `Tooltip`, and `Divider`.
+-   **No-Flicker Theming**: Smooth dark/light mode switching.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-## Learn More
+3.  **Explore the Components**:
+    Check out the core components in `src/components/ui/` and their styles in `src/components/ui/*.module.css`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*This is just the beginning of our quest for the perfect UI.*

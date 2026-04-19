@@ -1,4 +1,4 @@
-# Design System Roadmap: Next Steps
+# Good Design System Roadmap
 
 ## 1. Token Expansion (Design Language)
 - [ ] **Typography Scale**: Define `--font-size-xs` to `--font-size-xxl`.
@@ -20,3 +20,10 @@
 
 ## 5. Portability
 - [ ] **Package Structure**: Prepare components for export to other projects.
+
+---
+
+*Phase 1: Good Design System (In Progress)*
+*Phase 2: Great Design System (Planned)*
+*Phase 3: Superb Design System (Planned)*
+*Phase 4: Perfect Design System (Goal)*
